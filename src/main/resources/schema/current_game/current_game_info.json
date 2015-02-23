@@ -1,30 +1,13 @@
 {
   "title": "Current Game Info",
   "type": "object",
+  "javaType": "gg.buff.dorans.objects.current_game.CurrentGame",
   "properties": {
     "bannedChampions": {
       "title": "Banned champion information",
       "type": "array",
       "items": {
-        "title": "BannedChampion",
-        "type": "object",
-        "properties": {
-          "championId": {
-            "title": "The ID of the banned champion",
-            "type": "object",
-            "javaType": "long"
-          },
-          "pickTurn": {
-            "title": "The turn during which the champion was banned",
-            "type": "object",
-            "javaType": "long"
-          },
-          "teamId": {
-            "title": "The ID of the team that banned the champion",
-            "type": "object",
-            "javaType": "long"
-          }
-        }
+        "$ref": "#/definitions/banned-champion"
       }
     },
     "gameId": {
@@ -79,105 +62,145 @@
       "title": "The observer information",
       "type": "array",
       "items": {
-        "title": "Observer",
-        "type": "object",
-        "properties": {
-          "encryptionKey": {
-            "title": "Key used to decrypt the spectator grid game data for playback",
-            "type": "String"
-          }
-        }
+        "$ref": "#/definitions/observer"
       }
     },
     "participants": {
       "title": "The participant information",
       "type": "array",
       "items": {
-        "title": "Participant",
-        "type": "object",
-        "properties": {
-          "bot": {
-            "title": "Flag indicating whether or not this participant is a bot",
-            "type": "boolean"
-          },
-          "championId": {
-            "title": "The ID of the champion played by this participant",
-            "type": "object",
-            "javaType": "long"
-          },
-          "masteries": {
-            "title": "THe masteries used by this participant",
-            "type": "array",
-            "items": {
-              "title": "Mastery",
-              "type": "object",
-              "properties": {
-                "masteryId": {
-                  "title": "The ID of the mastery",
-                  "type": "object",
-                  "javaType": "long"
-                },
-                "rank": {
-                  "title": "The number of points put into this mastery by the user",
-                  "type": "integer"
-                }
-              }
-            }
-          },
-          "profileIconId": {
-            "title": "The ID of the profile icon used by this participant",
-            "type": "object",
-            "javaType": "long"
-          },
-          "runes": {
-            "title": "The runes used by this participant",
-            "type": "array",
-            "items": {
-              "title": "Rune",
-              "type": "object",
-              "properties": {
-                "count": {
-                  "title": "The count of this rune used by the participant",
-                  "type": "integer"
-                },
-                "runeId": {
-                  "title": "The ID of the rune",
-                  "type": "object",
-                  "javaType": "long"
-                }
-              }
-            }
-          },
-          "spell1Id": {
-            "title": "The ID of the first summoner spell used by this participant",
-            "type": "object",
-            "javaType": "long"
-          },
-          "spell2Id": {
-            "title": "The ID of the second summoner spell used by this participant",
-            "type": "object",
-            "javaType": "long"
-          },
-          "summonerId": {
-            "title": "The summoner ID of this participant",
-            "type": "object",
-            "javaType": "long"
-          },
-          "summonerName": {
-            "title": "The summoner name of this participant",
-            "type": "string"
-          },
-          "teamId": {
-            "title": "The team ID of this participant, indicating the participants's team",
-            "type": "object",
-            "javaType": "long"
-          }
-        }
+        "$ref": "#/definitions/participant"
       }
     },
     "platformId": {
       "title": "The ID of the platform on which the game is being played",
       "type": "string"
+    }
+  },
+  "definitions": {
+    "banned-champion": {
+      "title": "BannedChampion",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.current_game.BannedChampion",
+      "properties": {
+        "championId": {
+          "title": "The ID of the banned champion",
+          "type": "object",
+          "javaType": "long"
+        },
+        "pickTurn": {
+          "title": "The turn during which the champion was banned",
+          "type": "object",
+          "javaType": "long"
+        },
+        "teamId": {
+          "title": "The ID of the team that banned the champion",
+          "type": "object",
+          "javaType": "long"
+        }
+      }
+    },
+    "observer": {
+      "title": "Observer",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.current_game.Observer",
+      "properties": {
+        "encryptionKey": {
+          "title": "Key used to decrypt the spectator grid game data for playback",
+          "type": "String"
+        }
+      }
+    },
+    "participant": {
+      "title": "Participant",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.current_game.Participant",
+      "properties": {
+        "bot": {
+          "title": "Flag indicating whether or not this participant is a bot",
+          "type": "boolean"
+        },
+        "championId": {
+          "title": "The ID of the champion played by this participant",
+          "type": "object",
+          "javaType": "long"
+        },
+        "masteries": {
+          "title": "THe masteries used by this participant",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/mastery"
+          }
+        },
+        "profileIconId": {
+          "title": "The ID of the profile icon used by this participant",
+          "type": "object",
+          "javaType": "long"
+        },
+        "runes": {
+          "title": "The runes used by this participant",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/rune"
+          }
+        },
+        "spell1Id": {
+          "title": "The ID of the first summoner spell used by this participant",
+          "type": "object",
+          "javaType": "long"
+        },
+        "spell2Id": {
+          "title": "The ID of the second summoner spell used by this participant",
+          "type": "object",
+          "javaType": "long"
+        },
+        "summonerId": {
+          "title": "The summoner ID of this participant",
+          "type": "object",
+          "javaType": "long"
+        },
+        "summonerName": {
+          "title": "The summoner name of this participant",
+          "type": "string"
+        },
+        "teamId": {
+          "title": "The team ID of this participant, indicating the participants' team",
+          "type": "object",
+          "javaType": "long"
+        }
+      }
+    },
+    "mastery": {
+      "title": "Mastery",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.current_game.Mastery",
+      "properties": {
+        "masteryId": {
+          "title": "The ID of the mastery",
+          "type": "object",
+          "javaType": "long"
+        },
+        "rank": {
+          "title": "The number of points put into this mastery by the user",
+          "type": "integer"
+        }
+      }
+    },
+    "rune": {
+      "title": "Rune",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.current_game.Rune",
+      "properties": {
+        "count": {
+          "title": "The count of this rune used by the participant",
+          "type": "integer"
+        },
+        "runeId": {
+          "title": "The ID of the rune",
+          "type": "object",
+          "javaType": "long"
+        }
+      }
     }
   }
 }

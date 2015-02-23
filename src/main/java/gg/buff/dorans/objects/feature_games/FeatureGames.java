@@ -1,11 +1,11 @@
 
-package gg.buff.dorans.objects.features_games;
+package gg.buff.dorans.objects.feature_games;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
-import gg.buff.dorans.objects.current_game.CurrentGameInfo;
+import gg.buff.dorans.objects.current_game.CurrentGame;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -18,7 +18,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * 
  */
 @Generated("org.jsonschema2pojo")
-public class FeaturedGames {
+public class FeatureGames {
 
     /**
      * The suggested interval to wait before requesting FeaturedGames again
@@ -35,7 +35,7 @@ public class FeaturedGames {
      * 
      */
     @Expose
-    private List<CurrentGameInfo> gamesList = new ArrayList<CurrentGameInfo>();
+    private List<CurrentGame> gamesList = new ArrayList<CurrentGame>();
 
     /**
      * The suggested interval to wait before requesting FeaturedGames again
@@ -69,7 +69,7 @@ public class FeaturedGames {
      * @return
      *     The gamesList
      */
-    public List<CurrentGameInfo> getGamesList() {
+    public List<CurrentGame> getGamesList() {
         return gamesList;
     }
 
@@ -81,7 +81,7 @@ public class FeaturedGames {
      * @param gamesList
      *     The gamesList
      */
-    public void setGamesList(List<CurrentGameInfo> gamesList) {
+    public void setGamesList(List<CurrentGame> gamesList) {
         this.gamesList = gamesList;
     }
 
@@ -100,10 +100,10 @@ public class FeaturedGames {
         if (other == this) {
             return true;
         }
-        if ((other instanceof FeaturedGames) == false) {
+        if ((other instanceof FeatureGames) == false) {
             return false;
         }
-        FeaturedGames rhs = ((FeaturedGames) other);
+        FeatureGames rhs = ((FeatureGames) other);
         return new EqualsBuilder().append(clientRefreshInterval, rhs.clientRefreshInterval).append(gamesList, rhs.gamesList).isEquals();
     }
 

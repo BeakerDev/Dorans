@@ -20,7 +20,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * 
  */
 @Generated("org.jsonschema2pojo")
-public class CurrentGameInfo {
+public class CurrentGame {
 
     /**
      * Banned champion information
@@ -53,7 +53,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private CurrentGameInfo.GameMode gameMode;
+    private CurrentGame.GameMode gameMode;
     /**
      * The queue type (queue types are documented on the Game Constants page)
      * <p>
@@ -77,7 +77,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private CurrentGameInfo.GameType gameType;
+    private CurrentGame.GameType gameType;
     /**
      * The Id of the map
      * <p>
@@ -191,7 +191,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameMode
      */
-    public CurrentGameInfo.GameMode getGameMode() {
+    public CurrentGame.GameMode getGameMode() {
         return gameMode;
     }
 
@@ -203,7 +203,7 @@ public class CurrentGameInfo {
      * @param gameMode
      *     The gameMode
      */
-    public void setGameMode(CurrentGameInfo.GameMode gameMode) {
+    public void setGameMode(CurrentGame.GameMode gameMode) {
         this.gameMode = gameMode;
     }
 
@@ -263,7 +263,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameType
      */
-    public CurrentGameInfo.GameType getGameType() {
+    public CurrentGame.GameType getGameType() {
         return gameType;
     }
 
@@ -275,7 +275,7 @@ public class CurrentGameInfo {
      * @param gameType
      *     The gameType
      */
-    public void setGameType(CurrentGameInfo.GameType gameType) {
+    public void setGameType(CurrentGame.GameType gameType) {
         this.gameType = gameType;
     }
 
@@ -390,10 +390,10 @@ public class CurrentGameInfo {
         if (other == this) {
             return true;
         }
-        if ((other instanceof CurrentGameInfo) == false) {
+        if ((other instanceof CurrentGame) == false) {
             return false;
         }
-        CurrentGameInfo rhs = ((CurrentGameInfo) other);
+        CurrentGame rhs = ((CurrentGame) other);
         return new EqualsBuilder().append(bannedChampions, rhs.bannedChampions).append(gameId, rhs.gameId).append(gameLength, rhs.gameLength).append(gameMode, rhs.gameMode).append(gameQueueConfigId, rhs.gameQueueConfigId).append(gameStartTime, rhs.gameStartTime).append(gameType, rhs.gameType).append(mapId, rhs.mapId).append(observers, rhs.observers).append(participants, rhs.participants).append(platformId, rhs.platformId).isEquals();
     }
 
@@ -417,10 +417,10 @@ public class CurrentGameInfo {
         @SerializedName("KINGPORO")
         KINGPORO("KINGPORO");
         private final String value;
-        private static Map<String, CurrentGameInfo.GameMode> constants = new HashMap<String, CurrentGameInfo.GameMode>();
+        private static Map<String, CurrentGame.GameMode> constants = new HashMap<String, CurrentGame.GameMode>();
 
         static {
-            for (CurrentGameInfo.GameMode c: values()) {
+            for (CurrentGame.GameMode c: values()) {
                 constants.put(c.value, c);
             }
         }
@@ -434,8 +434,8 @@ public class CurrentGameInfo {
             return this.value;
         }
 
-        public static CurrentGameInfo.GameMode fromValue(String value) {
-            CurrentGameInfo.GameMode constant = constants.get(value);
+        public static CurrentGame.GameMode fromValue(String value) {
+            CurrentGame.GameMode constant = constants.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {
@@ -455,10 +455,10 @@ public class CurrentGameInfo {
         @SerializedName("TUTORIAL_GAME")
         TUTORIAL_GAME("TUTORIAL_GAME");
         private final String value;
-        private static Map<String, CurrentGameInfo.GameType> constants = new HashMap<String, CurrentGameInfo.GameType>();
+        private static Map<String, CurrentGame.GameType> constants = new HashMap<String, CurrentGame.GameType>();
 
         static {
-            for (CurrentGameInfo.GameType c: values()) {
+            for (CurrentGame.GameType c: values()) {
                 constants.put(c.value, c);
             }
         }
@@ -472,8 +472,8 @@ public class CurrentGameInfo {
             return this.value;
         }
 
-        public static CurrentGameInfo.GameType fromValue(String value) {
-            CurrentGameInfo.GameType constant = constants.get(value);
+        public static CurrentGame.GameType fromValue(String value) {
+            CurrentGame.GameType constant = constants.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

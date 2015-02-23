@@ -92,7 +92,7 @@ public class Participant {
     @Expose
     private String summonerName;
     /**
-     * The team ID of this participant, indicating the participants's team
+     * The team ID of this participant, indicating the participants' team
      * <p>
      * 
      * 
@@ -317,7 +317,7 @@ public class Participant {
     }
 
     /**
-     * The team ID of this participant, indicating the participants's team
+     * The team ID of this participant, indicating the participants' team
      * <p>
      * 
      * 
@@ -329,7 +329,7 @@ public class Participant {
     }
 
     /**
-     * The team ID of this participant, indicating the participants's team
+     * The team ID of this participant, indicating the participants' team
      * <p>
      * 
      * 
