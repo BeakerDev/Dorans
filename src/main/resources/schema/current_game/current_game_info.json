@@ -1,0 +1,154 @@
+{
+  "title": "Current Game Info",
+  "type": "object",
+  "properties": {
+    "bannedChampions": {
+      "title": "Banned champion information",
+      "type": "array",
+      "items": {
+        "title": "BannedChampion",
+        "type": "object",
+        "properties": {
+          "championId": {
+            "title": "The ID of the banned champion",
+            "type": "long"
+          },
+          "pickTurn": {
+            "title": "The turn during which the champion was banned",
+            "type": "long"
+          },
+          "teamId": {
+            "title": "The ID of the team that banned the champion",
+            "type": "long"
+          }
+        }
+      }
+    },
+    "gameId": {
+      "title": "The ID of the game",
+      "type": "long"
+    },
+    "gameLength": {
+      "title": "The amount of time in seconds that has passed since the game started",
+      "type": "long"
+    },
+    "gameMode": {
+      "title": "The game mode",
+      "type": "enum",
+      "enum": ["CLASSIC", "ODIN", "ARAM", "TUTORIAL", "ONEFORALL", "ASCENSION", "FIRSTBLOOD", "KINGPORO"]
+    },
+    "gameQueueConfigId": {
+      "title": "The queue type (queue types are documented on the Game Constants page)",
+      "type": "long"
+    },
+    "gameStartTime": {
+      "title": "The game start time represented in epoch milliseconds",
+      "type": "long"
+    },
+    "gameType": {
+      "title": "The game type",
+      "type": "enum",
+      "enum": ["CUSTOM_GAME", "MATCHED_GAME", "TUTORIAL_GAME"]
+    },
+    "mapId": {
+      "title": "The Id of the map",
+      "type": "long"
+    },
+    "observers": {
+      "title": "The observer information",
+      "type": "array",
+      "items": {
+        "title": "Observer",
+        "type": "object",
+        "properties": {
+          "encryptionKey": {
+            "title": "Key used to decrypt the spectator grid game data for playback",
+            "type": "String"
+          }
+        }
+      }
+    },
+    "participants": {
+      "title": "The participant information",
+      "type": "array",
+      "items": {
+        "title": "Participant",
+        "type": "object",
+        "properties": {
+          "bot": {
+            "title": "Flag indicating whether or not this participant is a bot",
+            "type": "boolean"
+          },
+          "championId": {
+            "title": "The ID of the champion played by this participant",
+            "type": "long"
+          },
+          "masteries": {
+            "title": "THe masteries used by this participant",
+            "type": "array",
+            "items": {
+              "title": "Mastery",
+              "type": "object",
+              "properties": {
+                "masteryId": {
+                  "title": "The ID of the mastery",
+                  "type": "long"
+                },
+                "rank": {
+                  "title": "The number of points put into this mastery by the user",
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "profileIconId": {
+            "title": "The ID of the profile icon used by this participant",
+            "type": "long"
+          },
+          "runes": {
+            "title": "The runes used by this participant",
+            "type": "array",
+            "items": {
+              "title": "Rune",
+              "type": "object",
+              "properties": {
+                "count": {
+                  "title": "The count of this rune used by the participant",
+                  "type": "integer"
+                },
+                "runeId": {
+                  "title": "The ID of the rune",
+                  "type": "long"
+                }
+              }
+            }
+          },
+          "spell1Id": {
+            "title": "The ID of the first summoner spell used by this participant",
+            "type": "long"
+          },
+          "spell2Id": {
+            "title": "The ID of the second summoner spell used by this participant",
+            "type": "long"
+          },
+          "summonerId": {
+            "title": "The summoner ID of this participant",
+            "type": "long"
+          },
+          "summonerName": {
+            "title": "The summoner name of this participant",
+            "type": "string"
+          },
+          "teamId": {
+            "title": "The team ID of this participant, indicating the participants's team",
+            "type": "long"
+          }
+        }
+      }
+    },
+    "platformId": {
+      "title": "The ID of the platform on which the game is being played",
+      "long": "string"
+    }
+  }
+}

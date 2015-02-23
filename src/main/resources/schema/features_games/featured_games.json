@@ -1,0 +1,17 @@
+{
+  "title": "Featured Games",
+  "type": "object",
+  "properties": {
+    "clientRefreshInterval": {
+      "title": "The suggested interval to wait before requesting FeaturedGames again",
+      "type": "long"
+    },
+    "gamesList": {
+      "title": "The list of featured games",
+      "type": "array",
+      "items": {
+        "ref": "../current_game/current_game_info.json#"
+      }
+    }
+  }
+}
