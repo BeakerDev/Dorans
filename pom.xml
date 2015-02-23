@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -81,28 +81,28 @@
     <build>
         <plugins>
             <plugin>
-              <artifactId>maven-clean-plugin</artifactId>
-              <version>2.6.1</version>
-              <configuration>
-                <filesets>
-                  <fileset>
-                    <directory>${basedir}/src/main/java/gg/buff/dorans/objects</directory>
-                    <includes>
-                      <include>**/*</include>
-                    </includes>
-                    <followSymlinks>false</followSymlinks>
-                  </fileset>
-                </filesets>
-              </configuration>
-              <executions>
-                  <execution>
-                      <id>clean</id>
-                      <phase>clean</phase>
-                      <goals>
-                          <goal>clean</goal>
-                      </goals>
-                  </execution>
-              </executions>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>2.6.1</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${basedir}/src/main/java/gg/buff/dorans/objects</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!-- Set a compiler level -->
             <plugin>
@@ -136,7 +136,28 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
+                <artifactId>maven-java-formatter-plugin</artifactId>
+                <version>0.4</version>
+                <configuration>
+                    <compilerSource>1.8</compilerSource>
+                    <compilerCompliance>1.8</compilerCompliance>
+                    <compilerTargetPlatform>1.8</compilerTargetPlatform>
+                    <encoding>UTF-8</encoding>
+                    <configFile>${basedir}/beakerdev-formatting-standards.xml</configFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
-
     </build>
+
 </project>

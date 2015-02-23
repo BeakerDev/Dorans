@@ -35,7 +35,16 @@
     "gameMode": {
       "title": "The game mode",
       "type": "enum",
-      "enum": ["CLASSIC", "ODIN", "ARAM", "TUTORIAL", "ONEFORALL", "ASCENSION", "FIRSTBLOOD", "KINGPORO"]
+      "enum": [
+        "CLASSIC",
+        "ODIN",
+        "ARAM",
+        "TUTORIAL",
+        "ONEFORALL",
+        "ASCENSION",
+        "FIRSTBLOOD",
+        "KINGPORO"
+      ]
     },
     "gameQueueConfigId": {
       "title": "The queue type (queue types are documented on the Game Constants page)",
@@ -48,7 +57,11 @@
     "gameType": {
       "title": "The game type",
       "type": "enum",
-      "enum": ["CUSTOM_GAME", "MATCHED_GAME", "TUTORIAL_GAME"]
+      "enum": [
+        "CUSTOM_GAME",
+        "MATCHED_GAME",
+        "TUTORIAL_GAME"
+      ]
     },
     "mapId": {
       "title": "The Id of the map",
