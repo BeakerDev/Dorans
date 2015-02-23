@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
+import gg.buff.dorans.objects.current_game.CurrentGameInfo;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -34,7 +35,7 @@ public class FeaturedGames {
      * 
      */
     @Expose
-    private List<Object> gamesList = new ArrayList<Object>();
+    private List<CurrentGameInfo> gamesList = new ArrayList<CurrentGameInfo>();
 
     /**
      * The suggested interval to wait before requesting FeaturedGames again
@@ -68,7 +69,7 @@ public class FeaturedGames {
      * @return
      *     The gamesList
      */
-    public List<Object> getGamesList() {
+    public List<CurrentGameInfo> getGamesList() {
         return gamesList;
     }
 
@@ -80,7 +81,7 @@ public class FeaturedGames {
      * @param gamesList
      *     The gamesList
      */
-    public void setGamesList(List<Object> gamesList) {
+    public void setGamesList(List<CurrentGameInfo> gamesList) {
         this.gamesList = gamesList;
     }
 

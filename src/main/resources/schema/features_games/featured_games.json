@@ -10,8 +10,10 @@
     "gamesList": {
       "title": "The list of featured games",
       "type": "array",
+      "javaType": "List<CurrentGameInfo>",
       "items": {
-        "ref": "../current_game/current_game_info.json#"
+        "$ref": "../current_game/current_game_info.json#",
+        "javaType": "CurrentGameInfo"
       }
     }
   }
