@@ -1,31 +1,47 @@
 {
-  "title": "Champion",
   "type": "object",
+  "javaType": "gg.buff.dorans.objects.champion.ChampionList",
   "properties": {
-    "id": {
-      "title": "Champion ID. For static information correlating to champion IDs, please refer to the LoL Static Data API.",
+    "champions": {
+      "title": "champions",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/champion"
+      }
+    }
+  },
+  "definitions": {
+    "champion": {
+      "title": "Champion",
       "type": "object",
-      "javaType": "long"
-    },
-    "active": {
-      "title": "Indicates if the champion is active",
-      "type": "boolean"
-    },
-    "botEnabled": {
-      "title": "Bot enabled flag (for custom games).",
-      "type": "boolean"
-    },
-    "botMmEnabled": {
-      "title": "Bot Match Made enabled flag (for Co-op vs. AI games)",
-      "type": "boolean"
-    },
-    "freeToPlay": {
-      "title": "Indicates if the champion is free to play. Free to play champions are rotated periodically.",
-      "type": "boolean"
-    },
-    "rankedPlayEnabled": {
-      "title": "Ranked play enabled flag.",
-      "type": "boolean"
+      "javaType": "gg.buff.dorans.objects.champion.Champion",
+      "properties": {
+        "id": {
+          "title": "Champion ID. For static information correlating to champion IDs, please refer to the LoL Static Data API.",
+          "type": "object",
+          "javaType": "long"
+        },
+        "active": {
+          "title": "Indicates if the champion is active",
+          "type": "boolean"
+        },
+        "botEnabled": {
+          "title": "Bot enabled flag (for custom games).",
+          "type": "boolean"
+        },
+        "botMmEnabled": {
+          "title": "Bot Match Made enabled flag (for Co-op vs. AI games)",
+          "type": "boolean"
+        },
+        "freeToPlay": {
+          "title": "Indicates if the champion is free to play. Free to play champions are rotated periodically.",
+          "type": "boolean"
+        },
+        "rankedPlayEnabled": {
+          "title": "Ranked play enabled flag.",
+          "type": "boolean"
+        }
+      }
     }
   }
 }
