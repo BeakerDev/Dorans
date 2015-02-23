@@ -26,7 +26,7 @@ public class FeaturedGames {
      * 
      */
     @Expose
-    private Object clientRefreshInterval;
+    private long clientRefreshInterval;
     /**
      * The list of featured games
      * <p>
@@ -44,7 +44,7 @@ public class FeaturedGames {
      * @return
      *     The clientRefreshInterval
      */
-    public Object getClientRefreshInterval() {
+    public long getClientRefreshInterval() {
         return clientRefreshInterval;
     }
 
@@ -56,7 +56,7 @@ public class FeaturedGames {
      * @param clientRefreshInterval
      *     The clientRefreshInterval
      */
-    public void setClientRefreshInterval(Object clientRefreshInterval) {
+    public void setClientRefreshInterval(long clientRefreshInterval) {
         this.clientRefreshInterval = clientRefreshInterval;
     }
 

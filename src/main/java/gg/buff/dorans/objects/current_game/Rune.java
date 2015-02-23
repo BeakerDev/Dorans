@@ -32,7 +32,7 @@ public class Rune {
      * 
      */
     @Expose
-    private Object runeId;
+    private long runeId;
 
     /**
      * The count of this rune used by the participant
@@ -66,7 +66,7 @@ public class Rune {
      * @return
      *     The runeId
      */
-    public Object getRuneId() {
+    public long getRuneId() {
         return runeId;
     }
 
@@ -78,7 +78,7 @@ public class Rune {
      * @param runeId
      *     The runeId
      */
-    public void setRuneId(Object runeId) {
+    public void setRuneId(long runeId) {
         this.runeId = runeId;
     }
 

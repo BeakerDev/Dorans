@@ -24,7 +24,7 @@ public class Mastery {
      * 
      */
     @Expose
-    private Object masteryId;
+    private long masteryId;
     /**
      * The number of points put into this mastery by the user
      * <p>
@@ -42,7 +42,7 @@ public class Mastery {
      * @return
      *     The masteryId
      */
-    public Object getMasteryId() {
+    public long getMasteryId() {
         return masteryId;
     }
 
@@ -54,7 +54,7 @@ public class Mastery {
      * @param masteryId
      *     The masteryId
      */
-    public void setMasteryId(Object masteryId) {
+    public void setMasteryId(long masteryId) {
         this.masteryId = masteryId;
     }
 

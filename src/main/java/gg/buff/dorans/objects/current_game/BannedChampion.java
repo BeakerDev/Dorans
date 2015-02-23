@@ -24,7 +24,7 @@ public class BannedChampion {
      * 
      */
     @Expose
-    private Object championId;
+    private long championId;
     /**
      * The turn during which the champion was banned
      * <p>
@@ -32,7 +32,7 @@ public class BannedChampion {
      * 
      */
     @Expose
-    private Object pickTurn;
+    private long pickTurn;
     /**
      * The ID of the team that banned the champion
      * <p>
@@ -40,7 +40,7 @@ public class BannedChampion {
      * 
      */
     @Expose
-    private Object teamId;
+    private long teamId;
 
     /**
      * The ID of the banned champion
@@ -50,7 +50,7 @@ public class BannedChampion {
      * @return
      *     The championId
      */
-    public Object getChampionId() {
+    public long getChampionId() {
         return championId;
     }
 
@@ -62,7 +62,7 @@ public class BannedChampion {
      * @param championId
      *     The championId
      */
-    public void setChampionId(Object championId) {
+    public void setChampionId(long championId) {
         this.championId = championId;
     }
 
@@ -74,7 +74,7 @@ public class BannedChampion {
      * @return
      *     The pickTurn
      */
-    public Object getPickTurn() {
+    public long getPickTurn() {
         return pickTurn;
     }
 
@@ -86,7 +86,7 @@ public class BannedChampion {
      * @param pickTurn
      *     The pickTurn
      */
-    public void setPickTurn(Object pickTurn) {
+    public void setPickTurn(long pickTurn) {
         this.pickTurn = pickTurn;
     }
 
@@ -98,7 +98,7 @@ public class BannedChampion {
      * @return
      *     The teamId
      */
-    public Object getTeamId() {
+    public long getTeamId() {
         return teamId;
     }
 
@@ -110,7 +110,7 @@ public class BannedChampion {
      * @param teamId
      *     The teamId
      */
-    public void setTeamId(Object teamId) {
+    public void setTeamId(long teamId) {
         this.teamId = teamId;
     }
 

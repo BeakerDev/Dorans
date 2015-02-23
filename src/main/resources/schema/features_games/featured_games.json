@@ -4,7 +4,8 @@
   "properties": {
     "clientRefreshInterval": {
       "title": "The suggested interval to wait before requesting FeaturedGames again",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "gamesList": {
       "title": "The list of featured games",

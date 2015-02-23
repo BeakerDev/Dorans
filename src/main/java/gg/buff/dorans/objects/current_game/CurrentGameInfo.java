@@ -37,7 +37,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object gameId;
+    private long gameId;
     /**
      * The amount of time in seconds that has passed since the game started
      * <p>
@@ -45,7 +45,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object gameLength;
+    private long gameLength;
     /**
      * The game mode
      * <p>
@@ -61,7 +61,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object gameQueueConfigId;
+    private long gameQueueConfigId;
     /**
      * The game start time represented in epoch milliseconds
      * <p>
@@ -69,7 +69,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object gameStartTime;
+    private long gameStartTime;
     /**
      * The game type
      * <p>
@@ -85,7 +85,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object mapId;
+    private long mapId;
     /**
      * The observer information
      * <p>
@@ -143,7 +143,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameId
      */
-    public Object getGameId() {
+    public long getGameId() {
         return gameId;
     }
 
@@ -155,7 +155,7 @@ public class CurrentGameInfo {
      * @param gameId
      *     The gameId
      */
-    public void setGameId(Object gameId) {
+    public void setGameId(long gameId) {
         this.gameId = gameId;
     }
 
@@ -167,7 +167,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameLength
      */
-    public Object getGameLength() {
+    public long getGameLength() {
         return gameLength;
     }
 
@@ -179,7 +179,7 @@ public class CurrentGameInfo {
      * @param gameLength
      *     The gameLength
      */
-    public void setGameLength(Object gameLength) {
+    public void setGameLength(long gameLength) {
         this.gameLength = gameLength;
     }
 
@@ -215,7 +215,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameQueueConfigId
      */
-    public Object getGameQueueConfigId() {
+    public long getGameQueueConfigId() {
         return gameQueueConfigId;
     }
 
@@ -227,7 +227,7 @@ public class CurrentGameInfo {
      * @param gameQueueConfigId
      *     The gameQueueConfigId
      */
-    public void setGameQueueConfigId(Object gameQueueConfigId) {
+    public void setGameQueueConfigId(long gameQueueConfigId) {
         this.gameQueueConfigId = gameQueueConfigId;
     }
 
@@ -239,7 +239,7 @@ public class CurrentGameInfo {
      * @return
      *     The gameStartTime
      */
-    public Object getGameStartTime() {
+    public long getGameStartTime() {
         return gameStartTime;
     }
 
@@ -251,7 +251,7 @@ public class CurrentGameInfo {
      * @param gameStartTime
      *     The gameStartTime
      */
-    public void setGameStartTime(Object gameStartTime) {
+    public void setGameStartTime(long gameStartTime) {
         this.gameStartTime = gameStartTime;
     }
 
@@ -287,7 +287,7 @@ public class CurrentGameInfo {
      * @return
      *     The mapId
      */
-    public Object getMapId() {
+    public long getMapId() {
         return mapId;
     }
 
@@ -299,7 +299,7 @@ public class CurrentGameInfo {
      * @param mapId
      *     The mapId
      */
-    public void setMapId(Object mapId) {
+    public void setMapId(long mapId) {
         this.mapId = mapId;
     }
 

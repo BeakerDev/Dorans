@@ -34,7 +34,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object championId;
+    private long championId;
     /**
      * THe masteries used by this participant
      * <p>
@@ -50,7 +50,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object profileIconId;
+    private long profileIconId;
     /**
      * The runes used by this participant
      * <p>
@@ -66,7 +66,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object spell1Id;
+    private long spell1Id;
     /**
      * The ID of the second summoner spell used by this participant
      * <p>
@@ -74,7 +74,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object spell2Id;
+    private long spell2Id;
     /**
      * The summoner ID of this participant
      * <p>
@@ -82,7 +82,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object summonerId;
+    private long summonerId;
     /**
      * The summoner name of this participant
      * <p>
@@ -98,7 +98,7 @@ public class Participant {
      * 
      */
     @Expose
-    private Object teamId;
+    private long teamId;
 
     /**
      * Flag indicating whether or not this participant is a bot
@@ -132,7 +132,7 @@ public class Participant {
      * @return
      *     The championId
      */
-    public Object getChampionId() {
+    public long getChampionId() {
         return championId;
     }
 
@@ -144,7 +144,7 @@ public class Participant {
      * @param championId
      *     The championId
      */
-    public void setChampionId(Object championId) {
+    public void setChampionId(long championId) {
         this.championId = championId;
     }
 
@@ -180,7 +180,7 @@ public class Participant {
      * @return
      *     The profileIconId
      */
-    public Object getProfileIconId() {
+    public long getProfileIconId() {
         return profileIconId;
     }
 
@@ -192,7 +192,7 @@ public class Participant {
      * @param profileIconId
      *     The profileIconId
      */
-    public void setProfileIconId(Object profileIconId) {
+    public void setProfileIconId(long profileIconId) {
         this.profileIconId = profileIconId;
     }
 
@@ -228,7 +228,7 @@ public class Participant {
      * @return
      *     The spell1Id
      */
-    public Object getSpell1Id() {
+    public long getSpell1Id() {
         return spell1Id;
     }
 
@@ -240,7 +240,7 @@ public class Participant {
      * @param spell1Id
      *     The spell1Id
      */
-    public void setSpell1Id(Object spell1Id) {
+    public void setSpell1Id(long spell1Id) {
         this.spell1Id = spell1Id;
     }
 
@@ -252,7 +252,7 @@ public class Participant {
      * @return
      *     The spell2Id
      */
-    public Object getSpell2Id() {
+    public long getSpell2Id() {
         return spell2Id;
     }
 
@@ -264,7 +264,7 @@ public class Participant {
      * @param spell2Id
      *     The spell2Id
      */
-    public void setSpell2Id(Object spell2Id) {
+    public void setSpell2Id(long spell2Id) {
         this.spell2Id = spell2Id;
     }
 
@@ -276,7 +276,7 @@ public class Participant {
      * @return
      *     The summonerId
      */
-    public Object getSummonerId() {
+    public long getSummonerId() {
         return summonerId;
     }
 
@@ -288,7 +288,7 @@ public class Participant {
      * @param summonerId
      *     The summonerId
      */
-    public void setSummonerId(Object summonerId) {
+    public void setSummonerId(long summonerId) {
         this.summonerId = summonerId;
     }
 
@@ -324,7 +324,7 @@ public class Participant {
      * @return
      *     The teamId
      */
-    public Object getTeamId() {
+    public long getTeamId() {
         return teamId;
     }
 
@@ -336,7 +336,7 @@ public class Participant {
      * @param teamId
      *     The teamId
      */
-    public void setTeamId(Object teamId) {
+    public void setTeamId(long teamId) {
         this.teamId = teamId;
     }
 

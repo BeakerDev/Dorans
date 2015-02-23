@@ -11,26 +11,31 @@
         "properties": {
           "championId": {
             "title": "The ID of the banned champion",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "pickTurn": {
             "title": "The turn during which the champion was banned",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "teamId": {
             "title": "The ID of the team that banned the champion",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           }
         }
       }
     },
     "gameId": {
       "title": "The ID of the game",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "gameLength": {
       "title": "The amount of time in seconds that has passed since the game started",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "gameMode": {
       "title": "The game mode",
@@ -48,11 +53,13 @@
     },
     "gameQueueConfigId": {
       "title": "The queue type (queue types are documented on the Game Constants page)",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "gameStartTime": {
       "title": "The game start time represented in epoch milliseconds",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "gameType": {
       "title": "The game type",
@@ -65,7 +72,8 @@
     },
     "mapId": {
       "title": "The Id of the map",
-      "type": "long"
+      "type": "object",
+      "javaType": "long"
     },
     "observers": {
       "title": "The observer information",
@@ -94,7 +102,8 @@
           },
           "championId": {
             "title": "The ID of the champion played by this participant",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "masteries": {
             "title": "THe masteries used by this participant",
@@ -105,7 +114,8 @@
               "properties": {
                 "masteryId": {
                   "title": "The ID of the mastery",
-                  "type": "long"
+                  "type": "object",
+                  "javaType": "long"
                 },
                 "rank": {
                   "title": "The number of points put into this mastery by the user",
@@ -116,7 +126,8 @@
           },
           "profileIconId": {
             "title": "The ID of the profile icon used by this participant",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "runes": {
             "title": "The runes used by this participant",
@@ -131,22 +142,26 @@
                 },
                 "runeId": {
                   "title": "The ID of the rune",
-                  "type": "long"
+                  "type": "object",
+                  "javaType": "long"
                 }
               }
             }
           },
           "spell1Id": {
             "title": "The ID of the first summoner spell used by this participant",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "spell2Id": {
             "title": "The ID of the second summoner spell used by this participant",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "summonerId": {
             "title": "The summoner ID of this participant",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           },
           "summonerName": {
             "title": "The summoner name of this participant",
@@ -154,7 +169,8 @@
           },
           "teamId": {
             "title": "The team ID of this participant, indicating the participants's team",
-            "type": "long"
+            "type": "object",
+            "javaType": "long"
           }
         }
       }
