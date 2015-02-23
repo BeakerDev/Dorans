@@ -109,7 +109,7 @@ public class CurrentGameInfo {
      * 
      */
     @Expose
-    private Object platformId;
+    private String platformId;
 
     /**
      * Banned champion information
@@ -359,7 +359,7 @@ public class CurrentGameInfo {
      * @return
      *     The platformId
      */
-    public Object getPlatformId() {
+    public String getPlatformId() {
         return platformId;
     }
 
@@ -371,7 +371,7 @@ public class CurrentGameInfo {
      * @param platformId
      *     The platformId
      */
-    public void setPlatformId(Object platformId) {
+    public void setPlatformId(String platformId) {
         this.platformId = platformId;
     }
 

@@ -177,7 +177,7 @@
     },
     "platformId": {
       "title": "The ID of the platform on which the game is being played",
-      "long": "string"
+      "type": "string"
     }
   }
 }
