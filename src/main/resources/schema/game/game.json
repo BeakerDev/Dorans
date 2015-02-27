@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.game.RecentGames",
+  "properties": {
+    "games": {
+      "title": "Collection of recent games played (max 10).",
+      "type": "array",
+      "items": {
+        "$ref": "raw-stats.json#"
+      }
+    },
+    "summonerId": {
+      "title": "Summoner ID.",
+      "type": "object",
+      "javaType": "long"
+    }
+  },
+  "definitions": {
+    "player": {
+      "title": "Player",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.game.Player",
+      "properties": {
+        "championId": {
+          "title": "Champion id associated with player.",
+          "type": "integer"
+        },
+        "summonerId": {
+          "title": "Summoner id associated with player.",
+          "type": "object",
+          "javaTpe": "long"
+        },
+        "teamId": {
+          "title": "Team id associated with player.",
+          "type": "integer"
+        }
+      }
+    },
+    "game": {
+      "title": "Game",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.game.Game",
+      "properties": {
+        "championId": {
+          "title": "Champion id associated with player.",
+          "type": "integer"
+        },
+        "createDate": {
+          "title": "Date that end game data was recorded, specified as epoch milliseconds.",
+          "type": "object",
+          "javaType": "long"
+        },
+        "fellowPlayers": {
+          "title": "Other players associated with the game",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/player"
+          }
+        },
+        "gameId": {
+          "title": "The GameID.",
+          "type": "object",
+          "javaType": "long"
+        },
+        "gameMode": {
+          "title": "Game mode.",
+          "type": "enum",
+          "enum": ["CLASSIC", "ODIN", "ARAM", "TUTORIAL", "ONEFORALL", "ASCENSION", "FIRSTBLOOD", "KINGPORO"]
+        },
+        "gameMode": {
+          "title": "Game mode.",
+          "type": "enum",
+          "enum": [
+            "CUSTOM_GAME",
+            "MATCHED_GAME",
+            "TUTORIAL_GAME"
+          ]
+        },
+        "invalid": {
+          "title": "Invalid flag",
+          "type": "boolean"
+        },
+        "level": {
+          "title": "level",
+          "type": "integer"
+        },
+        "mapId": {
+          "title": "Map ID",
+          "type": "integer"
+        },
+        "spell1": {
+          "title": "ID of first summoner spell.",
+          "type": "integer"
+        },
+        "spell2": {
+          "title": "ID of second summoner spell.",
+          "type": "integer"
+        },
+        "stats": {
+          "title": "Statistics associated with the game for this summoner",
+          "type": "object",
+          "javaType": "RawStats"
+        },
+        "subType": {
+          "title": "Game mode.",
+          "type": "enum",
+          "enum": ["NONE", "NORMAL", "BOT", "RANKED_SOLO_5x5", "RANKED_PREMADE_3x3", "RANKED_PREMADE_5x5", "ODIN_UNRANKED", "RANKED_TEAM_3x3", "RANKED_TEAM_5x5", "NORMAL_3x3", "BOT_3x3", "CAP_5x5", "ARAM_UNRANKED_5x5", "ONEFORALL_5x5", "FIRSTBLOOD_1x1", "FIRSTBLOOD_2x2", "SR_6x6", "URF", "URF_BOT", "NIGHTMARE_BOT", "ASCENSION", "HEXAKILL", "KING_PORO", "COUNTER_PICK"]
+        },
+        "teamId": {
+          "title": "Team ID associated with game. Team ID 100 is blue team. Team ID 200 is purple team.",
+          "type": "Team ID"
+        }
+      }
+    }
+  }
+}

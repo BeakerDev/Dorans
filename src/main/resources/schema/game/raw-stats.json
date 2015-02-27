@@ -1,0 +1,244 @@
+{
+  "title": "RawStats",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.game.RawStats",
+  "properties": {
+    "assists": {
+      "type": "integer"
+    },
+    "barracksKilled": {
+      "title": "Number of enemy inhibitors killed",
+      "type": "integer"
+    },
+    "championsKilled": {
+      "type": "integer"
+    },
+    "combatPlayerScore": {
+      "type": "integer"
+    },
+    "consumablesPurchased": {
+      "type": "integer"
+    },
+    "damageDealtPlayer": {
+      "type": "integer"
+    },
+    "doubleKills": {
+      "type": "integer"
+    },
+    "firstBlood": {
+      "type": "integer"
+    },
+    "gold": {
+      "type": "integer"
+    },
+    "goldEarned": {
+      "type": "integer"
+    },
+    "goldSpent": {
+      "type": "integer"
+    },
+    "item0": {
+      "type": "integer"
+    },
+    "item1": {
+      "type": "integer"
+    },
+    "item2": {
+      "type": "integer"
+    },
+    "item3": {
+      "type": "integer"
+    },
+    "item4": {
+      "type": "integer"
+    },
+    "item5": {
+      "type": "integer"
+    },
+    "item6": {
+      "type": "integer"
+    },
+    "itemPurchased": {
+      "type": "integer"
+    },
+    "killingSprees": {
+      "type": "integer"
+    },
+    "largestCriticalStrike": {
+      "type": "integer"
+    },
+    "largestKillingSpree": {
+      "type": "integer"
+    },
+    "largestMultiKill": {
+      "type": "integer"
+    },
+    "legendaryItemsCreated": {
+      "title": "Number of tier 3 items built.",
+      "type": "integer"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "magicDamageDealtPlayer": {
+      "type": "integer"
+    },
+    "magicDamageDealtToChampions": {
+      "type": "integer"
+    },
+    "magicDamageTaken": {
+      "type": "integer"
+    },
+    "minionsDenied": {
+      "type": "integer"
+    },
+    "minionsKilled": {
+      "type": "integer"
+    },
+    "neutralMinionsKilled": {
+      "type": "integer"
+    },
+    "neutralMinionsKilledEnemyJungle": {
+      "type": "integer"
+    },
+    "neutralMinionsKilledYourJungle": {
+      "type": "integer"
+    },
+    "nexusKilled": {
+      "title": "Flag specifying if the summoner got the killing blow on the nexus.",
+      "type": "boolean"
+    },
+    "level": {
+      "type": "nodeCapture"
+    },
+    "nodeCaptureAssist": {
+      "type": "integer"
+    },
+    "nodeNeutralize": {
+      "type": "integer"
+    },
+    "nodeNeutralizeAssist": {
+      "type": "integer"
+    },
+    "numDeaths": {
+      "type": "integer"
+    },
+    "numItemsBought": {
+      "type": "integer"
+    },
+    "objectivePlayerScore": {
+      "type": "integer"
+    },
+    "pentaKills": {
+      "type": "integer"
+    },
+    "physicalDamageDealtPlayer": {
+      "type": "integer"
+    },
+    "physicalDamageDealtToChampions": {
+      "type": "integer"
+    },
+    "physicalDamageTaken": {
+      "type": "integer"
+    },
+    "quadraKills": {
+      "type": "integer"
+    },
+    "sightWardsBought": {
+      "type": "integer"
+    },
+    "spell1Cast": {
+      "title": "Number of times first champion spell was cast.",
+      "type": "integer"
+    },
+    "spell2Cast": {
+      "title": "Number of times second champion spell was cast.",
+      "type": "integer"
+    },
+    "spell3Cast": {
+      "title": "Number of times third champion spell was cast.",
+      "type": "integer"
+    },
+    "spell4Cast": {
+      "title": "Number of times fourth champion spell was cast.",
+      "type": "integer"
+    },
+    "summonSpell1Cast": {
+      "title": "Number of times first summoner spell was cast.",
+      "type": "integer"
+    },
+    "summonSpell2Cast": {
+      "title": "Number of times second summoner spell was cast.",
+      "type": "integer"
+    },
+    "superMonsterKilled": {
+      "type": "integer"
+    },
+    "team": {
+      "type": "integer"
+    },
+    "teamObjective": {
+      "type": "integer"
+    },
+    "timePlayed": {
+      "type": "integer"
+    },
+    "totalDamageDealt": {
+      "type": "integer"
+    },
+    "totalDamageDealtToChampions": {
+      "type": "integer"
+    },
+    "totalDamageTaken": {
+      "type": "integer"
+    },
+    "totalHeal": {
+      "type": "integer"
+    },
+    "totalPlayerScore": {
+      "type": "integer"
+    },
+    "totalScoreRank": {
+      "type": "integer"
+    },
+    "totalTimeCrowdControlDealt": {
+      "type": "integer"
+    },
+    "totalUnitsHealed": {
+      "type": "integer"
+    },
+    "tripleKills": {
+      "type": "integer"
+    },
+    "trueDamageDealtPlayer": {
+      "type": "integer"
+    },
+    "trueDamageDealtToChampions": {
+      "type": "integer"
+    },
+    "trueDamageTaken": {
+      "type": "integer"
+    },
+    "turretsKilled": {
+      "type": "integer"
+    },
+    "unrealKills": {
+      "type": "integer"
+    },
+    "victoryPointTotal": {
+      "type": "integer"
+    },
+    "visionWardsBought": {
+      "type": "integer"
+    },
+    "wardKilled": {
+      "type": "integer"
+    },
+    "wardPlaced": {
+      "type": "integer"
+    },
+    "win": {
+      "type": "integer"
+    }
+  }
+}
