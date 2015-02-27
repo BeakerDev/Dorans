@@ -1,0 +1,122 @@
+{
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.league.League",
+  "properties": {
+    "entries": {
+      "title": "The requested league entries",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/leagueEntry"
+      }
+    },
+    "name": {
+      "title": "This name is an internal place-holder name only. Display and localization of names in the game client are handled client-side.",
+      "type": "string"
+    },
+    "participantId": {
+      "title": "Specifies the relevant participant that is a member of this league (i.e., a requested summoner ID, a requested team ID, or the ID of a team to which one of the requested summoners belongs). Only present when full league is requested so that participant's entry can be identified. Not present when individual entry is requested.",
+      "type": "string"
+    },
+    "queue": {
+      "title": "The league's queue type.",
+      "type": "enum",
+      "enum": [
+        "RANKED_SOLO_5x5",
+        "RANKED_TEAM_3x3",
+        "RANKED_TEAM_5x5"
+      ]
+    },
+    "tier": {
+      "title": "The league's tier",
+      "type": "enum",
+      "enum": [
+        "CHALLENGER",
+        "MASTER",
+        "DIAMOND",
+        "PLATINUM",
+        "GOLD",
+        "SILVER",
+        "BRONZE"
+      ]
+    }
+  },
+  "definitions": {
+    "leagueEntry": {
+      "title": "LeagueEntry",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.league.LeagueEntry",
+      "properties": {
+        "division": {
+          "title": "The league division of the participant.",
+          "type": "string"
+        },
+        "isFreshBlood": {
+          "title": "Specifies if the participant is fresh blood.",
+          "type": "boolean"
+        },
+        "isHotStreak": {
+          "title": "Specifies if the participant is on a hot streak.",
+          "type": "boolean"
+        },
+        "isInactive": {
+          "title": "Specifies if the participant is inactive.",
+          "type": "boolean"
+        },
+        "isVeteran": {
+          "title": "Specifies if the participant is inactive.",
+          "type": "boolean"
+        },
+        "leaguePoints": {
+          "title": "The league points of the participant.",
+          "type": "integer"
+        },
+        "losses": {
+          "title": "The number of losses for the participant.",
+          "type": "integer"
+        },
+        "miniSeries": {
+          "title": "Mini series data for the participant. Only present if the participant is currently in a mini series.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/miniSeries"
+          }
+        },
+        "playerOrTeamId": {
+          "title": "The ID of the participant (i.e., summoner or team) represented by this entry.",
+          "type": "string"
+        },
+        "playerOrTeamName": {
+          "title": "The name of the the participant (i.e., summoner or team) represented by this entry.",
+          "type": "string"
+        },
+        "wins": {
+          "title": "The number of wins for the participant.",
+          "type": "integer"
+        }
+      }
+    },
+    "miniSeries": {
+      "title": "MiniSeries",
+      "type": "object",
+      "javaType": "gg.buff.dorans.objects.league.MiniSeries",
+      "properties": {
+        "losses": {
+          "title": "Number of current losses in the mini series.",
+          "type": "integer"
+        },
+        "progress": {
+          "title": "String showing the current, sequential mini series progress where 'W' represents a win, 'L' represents a loss, and 'N' represents a game that hasn't been played yet.",
+          "type": "string"
+        },
+        "losses": {
+          "title": "Number of wins required for promotion.",
+          "type": "integer"
+        },
+        "wins": {
+          "title": "Number of current wins in the mini series.",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
