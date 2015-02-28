@@ -1,7 +1,7 @@
 {
-  "title": "MatchDetail",
+  "title": "MatchSummary",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match.MatchDetail",
+  "javaType": "gg.buff.dorans.objects.match_history.MatchSummary",
   "properties": {
     "mapId": {
       "title": "Match map ID",
@@ -53,14 +53,14 @@
       "title": "Participant identity information",
       "type": "array",
       "items": {
-        "$ref": "participant-identity.json"
+        "$ref": "../match/participant-identity.json"
       }
     },
     "participants": {
       "title": "Participant information",
       "type": "array",
       "items": {
-        "$ref": "participant.json"
+        "$ref": "../match/participant.json"
       }
     },
     "platformId": {
@@ -121,18 +121,6 @@
         "PRESEASON2015",
         "SEASON2015"
       ]
-    },
-    "teams": {
-      "title": "Team information",
-      "type": "array",
-      "items": {
-        "$ref": "team.json"
-      }
-    },
-    "timeline": {
-      "title": "Match timeline data (not included by default)",
-      "type": "object",
-      "$ref": "timeline.json"
     }
   }
 }

@@ -1,5 +1,5 @@
 
-package gg.buff.dorans.objects.match;
+package gg.buff.dorans.objects.match_history;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,19 +8,21 @@ import java.util.Map;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import gg.buff.dorans.objects.match.Participant;
+import gg.buff.dorans.objects.match.ParticipantIdentity;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 
 /**
- * MatchDetail
+ * MatchSummary
  * <p>
  * 
  * 
  */
 @Generated("org.jsonschema2pojo")
-public class MatchDetail {
+public class MatchSummary {
 
     /**
      * Match map ID
@@ -61,7 +63,7 @@ public class MatchDetail {
      * 
      */
     @Expose
-    private MatchDetail.MatchMode matchMode;
+    private MatchSummary.MatchMode matchMode;
     /**
      * Match version
      * <p>
@@ -101,7 +103,7 @@ public class MatchDetail {
      * 
      */
     @Expose
-    private MatchDetail.QueueType queueType;
+    private MatchSummary.QueueType queueType;
     /**
      * Region where the match was played
      * <p>
@@ -117,23 +119,7 @@ public class MatchDetail {
      * 
      */
     @Expose
-    private MatchDetail.Season season;
-    /**
-     * Team information
-     * <p>
-     * 
-     * 
-     */
-    @Expose
-    private List<Team> teams = new ArrayList<Team>();
-    /**
-     * Timeline
-     * <p>
-     * 
-     * 
-     */
-    @Expose
-    private Timeline timeline;
+    private MatchSummary.Season season;
 
     /**
      * Match map ID
@@ -239,7 +225,7 @@ public class MatchDetail {
      * @return
      *     The matchMode
      */
-    public MatchDetail.MatchMode getMatchMode() {
+    public MatchSummary.MatchMode getMatchMode() {
         return matchMode;
     }
 
@@ -251,7 +237,7 @@ public class MatchDetail {
      * @param matchMode
      *     The matchMode
      */
-    public void setMatchMode(MatchDetail.MatchMode matchMode) {
+    public void setMatchMode(MatchSummary.MatchMode matchMode) {
         this.matchMode = matchMode;
     }
 
@@ -359,7 +345,7 @@ public class MatchDetail {
      * @return
      *     The queueType
      */
-    public MatchDetail.QueueType getQueueType() {
+    public MatchSummary.QueueType getQueueType() {
         return queueType;
     }
 
@@ -371,7 +357,7 @@ public class MatchDetail {
      * @param queueType
      *     The queueType
      */
-    public void setQueueType(MatchDetail.QueueType queueType) {
+    public void setQueueType(MatchSummary.QueueType queueType) {
         this.queueType = queueType;
     }
 
@@ -407,7 +393,7 @@ public class MatchDetail {
      * @return
      *     The season
      */
-    public MatchDetail.Season getSeason() {
+    public MatchSummary.Season getSeason() {
         return season;
     }
 
@@ -419,56 +405,8 @@ public class MatchDetail {
      * @param season
      *     The season
      */
-    public void setSeason(MatchDetail.Season season) {
+    public void setSeason(MatchSummary.Season season) {
         this.season = season;
-    }
-
-    /**
-     * Team information
-     * <p>
-     * 
-     * 
-     * @return
-     *     The teams
-     */
-    public List<Team> getTeams() {
-        return teams;
-    }
-
-    /**
-     * Team information
-     * <p>
-     * 
-     * 
-     * @param teams
-     *     The teams
-     */
-    public void setTeams(List<Team> teams) {
-        this.teams = teams;
-    }
-
-    /**
-     * Timeline
-     * <p>
-     * 
-     * 
-     * @return
-     *     The timeline
-     */
-    public Timeline getTimeline() {
-        return timeline;
-    }
-
-    /**
-     * Timeline
-     * <p>
-     * 
-     * 
-     * @param timeline
-     *     The timeline
-     */
-    public void setTimeline(Timeline timeline) {
-        this.timeline = timeline;
     }
 
     @Override
@@ -478,7 +416,7 @@ public class MatchDetail {
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(mapId).append(matchCreation).append(matchDuration).append(matchId).append(matchMode).append(matchVersion).append(participantIdentities).append(participants).append(platformId).append(queueType).append(region).append(season).append(teams).append(timeline).toHashCode();
+        return new HashCodeBuilder().append(mapId).append(matchCreation).append(matchDuration).append(matchId).append(matchMode).append(matchVersion).append(participantIdentities).append(participants).append(platformId).append(queueType).append(region).append(season).toHashCode();
     }
 
     @Override
@@ -486,11 +424,11 @@ public class MatchDetail {
         if (other == this) {
             return true;
         }
-        if ((other instanceof MatchDetail) == false) {
+        if ((other instanceof MatchSummary) == false) {
             return false;
         }
-        MatchDetail rhs = ((MatchDetail) other);
-        return new EqualsBuilder().append(mapId, rhs.mapId).append(matchCreation, rhs.matchCreation).append(matchDuration, rhs.matchDuration).append(matchId, rhs.matchId).append(matchMode, rhs.matchMode).append(matchVersion, rhs.matchVersion).append(participantIdentities, rhs.participantIdentities).append(participants, rhs.participants).append(platformId, rhs.platformId).append(queueType, rhs.queueType).append(region, rhs.region).append(season, rhs.season).append(teams, rhs.teams).append(timeline, rhs.timeline).isEquals();
+        MatchSummary rhs = ((MatchSummary) other);
+        return new EqualsBuilder().append(mapId, rhs.mapId).append(matchCreation, rhs.matchCreation).append(matchDuration, rhs.matchDuration).append(matchId, rhs.matchId).append(matchMode, rhs.matchMode).append(matchVersion, rhs.matchVersion).append(participantIdentities, rhs.participantIdentities).append(participants, rhs.participants).append(platformId, rhs.platformId).append(queueType, rhs.queueType).append(region, rhs.region).append(season, rhs.season).isEquals();
     }
 
     @Generated("org.jsonschema2pojo")
@@ -503,10 +441,10 @@ public class MatchDetail {
         @SerializedName("TUTORIAL_GAME")
         TUTORIAL_GAME("TUTORIAL_GAME");
         private final String value;
-        private static Map<String, MatchDetail.MatchMode> constants = new HashMap<String, MatchDetail.MatchMode>();
+        private static Map<String, MatchSummary.MatchMode> constants = new HashMap<String, MatchSummary.MatchMode>();
 
         static {
-            for (MatchDetail.MatchMode c: values()) {
+            for (MatchSummary.MatchMode c: values()) {
                 constants.put(c.value, c);
             }
         }
@@ -520,8 +458,8 @@ public class MatchDetail {
             return this.value;
         }
 
-        public static MatchDetail.MatchMode fromValue(String value) {
-            MatchDetail.MatchMode constant = constants.get(value);
+        public static MatchSummary.MatchMode fromValue(String value) {
+            MatchSummary.MatchMode constant = constants.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {
@@ -601,10 +539,10 @@ public class MatchDetail {
         @SerializedName("COUNTER_PICK")
         COUNTER_PICK("COUNTER_PICK");
         private final String value;
-        private static Map<String, MatchDetail.QueueType> constants = new HashMap<String, MatchDetail.QueueType>();
+        private static Map<String, MatchSummary.QueueType> constants = new HashMap<String, MatchSummary.QueueType>();
 
         static {
-            for (MatchDetail.QueueType c: values()) {
+            for (MatchSummary.QueueType c: values()) {
                 constants.put(c.value, c);
             }
         }
@@ -618,8 +556,8 @@ public class MatchDetail {
             return this.value;
         }
 
-        public static MatchDetail.QueueType fromValue(String value) {
-            MatchDetail.QueueType constant = constants.get(value);
+        public static MatchSummary.QueueType fromValue(String value) {
+            MatchSummary.QueueType constant = constants.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {
@@ -645,10 +583,10 @@ public class MatchDetail {
         @SerializedName("SEASON2015")
         SEASON_2015("SEASON2015");
         private final String value;
-        private static Map<String, MatchDetail.Season> constants = new HashMap<String, MatchDetail.Season>();
+        private static Map<String, MatchSummary.Season> constants = new HashMap<String, MatchSummary.Season>();
 
         static {
-            for (MatchDetail.Season c: values()) {
+            for (MatchSummary.Season c: values()) {
                 constants.put(c.value, c);
             }
         }
@@ -662,8 +600,8 @@ public class MatchDetail {
             return this.value;
         }
 
-        public static MatchDetail.Season fromValue(String value) {
-            MatchDetail.Season constant = constants.get(value);
+        public static MatchSummary.Season fromValue(String value) {
+            MatchSummary.Season constant = constants.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {
