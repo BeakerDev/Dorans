@@ -1,0 +1,311 @@
+{
+  "title": "ParticipantStats",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.ParticipantStats",
+  "properties": {
+    "assists": {
+      "title": "Number of assists",
+      "type": "object",
+      "javaType": "long"
+    },
+    "champLevel": {
+      "title": "Champion level achieved",
+      "type": "object",
+      "javaType": "long"
+    },
+    "combatPlayerScore": {
+      "title": "If game was a dominion game, player's combat score, otherwise 0",
+      "type": "object",
+      "javaType": "long"
+    },
+    "deaths": {
+      "title": "Number of deaths",
+      "type": "object",
+      "javaType": "long"
+    },
+    "doubleKills": {
+      "title": "Number of double kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "firstBloodAssist": {
+      "title": "Flag indicating if participant got an assist on first blood",
+      "type": "boolean"
+    },
+    "firstBloodKill": {
+      "title": "Flag indicating if participant got first blood",
+      "type": "boolean"
+    },
+    "firstInhibitorAssist": {
+      "title": "Flag indicating if participant got an assist on the first inhibitor",
+      "type": "boolean"
+    },
+    "firstInhibitorKill": {
+      "title": "Flag indicating if participant destroyed the first inhibitor",
+      "type": "boolean"
+    },
+    "firstTowerAssist": {
+      "title": "Flag indicating if participant got an assist on the first tower",
+      "type": "boolean"
+    },
+    "firstTowerKill": {
+      "title": "Flag indicating if participant destroyed the first tower",
+      "type": "boolean"
+    },
+    "goldEarned": {
+      "title": "Gold earned",
+      "type": "object",
+      "javaType": "long"
+    },
+    "goldSpent": {
+      "title": "Gold spent",
+      "type": "object",
+      "javaType": "long"
+    },
+    "inhibitorKills": {
+      "title": "Number of inhibitor kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item0": {
+      "title": "First item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item1": {
+      "title": "Second item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item2": {
+      "title": "Third item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item3": {
+      "title": "Fourth item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item4": {
+      "title": "Fifth item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item5": {
+      "title": "Sixth item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "item6": {
+      "title": "Seventh item ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "killingSprees": {
+      "title": "Number of killing sprees",
+      "type": "object",
+      "javaType": "long"
+    },
+    "kills": {
+      "title": "Number of kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "largestCriticalStrike": {
+      "title": "Largest critical strike",
+      "type": "object",
+      "javaType": "long"
+    },
+    "largestKillingSpree": {
+      "title": "Largest killing spree",
+      "type": "object",
+      "javaType": "long"
+    },
+    "largestMultiKill": {
+      "title": "Largest multi kill",
+      "type": "object",
+      "javaType": "long"
+    },
+    "magicDamageDealt": {
+      "title": "Magical damage dealt",
+      "type": "object",
+      "javaType": "long"
+    },
+    "magicDamageDealtToChampions": {
+      "title": "Magical damage dealt to champions",
+      "type": "object",
+      "javaType": "long"
+    },
+    "magicDamageTaken": {
+      "title": "Magic damage taken",
+      "type": "object",
+      "javaType": "long"
+    },
+    "minionsKilled": {
+      "title": "Minions killed",
+      "type": "object",
+      "javaType": "long"
+    },
+    "neutralMinionsKilled": {
+      "title": "Neutral minions killed",
+      "type": "object",
+      "javaType": "long"
+    },
+    "neutralMinionsKilledEnemyJungle": {
+      "title": "Neutral jungle minions killed in the enemy team's jungle",
+      "type": "object",
+      "javaType": "long"
+    },
+    "neutralMinionsKilledTeamJungle": {
+      "title": "Neutral jungle minions killed in your team's jungle",
+      "type": "object",
+      "javaType": "long"
+    },
+    "nodeCapture": {
+      "title": "If game was a dominion game, number of node captures",
+      "type": "object",
+      "javaType": "long"
+    },
+    "nodeCaptureAssist": {
+      "title": "If game was a dominion game, number of node capture assists",
+      "type": "object",
+      "javaType": "long"
+    },
+    "nodeNeutralize": {
+      "title": "If game was a dominion game, number of node neutralizations,",
+      "type": "object",
+      "javaType": "long"
+    },
+    "nodeNeutralizeAssist": {
+      "title": "If game was a dominion game, number of node neutralization assists",
+      "type": "object",
+      "javaType": "long"
+    },
+    "objectivePlayerScore": {
+      "title": "If game was a dominion game, player's objectives score, otherwise 0",
+      "type": "object",
+      "javaType": "long"
+    },
+    "pentaKills": {
+      "title": "Number of penta kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "physicalDamageDealt": {
+      "title": "Physical damage dealt",
+      "type": "object",
+      "javaType": "long"
+    },
+    "physicalDamageDealtToChampions": {
+      "title": "Physical damage dealt to champions",
+      "type": "object",
+      "javaType": "long"
+    },
+    "physicalDamageTaken": {
+      "title": "Physical damage taken",
+      "type": "object",
+      "javaType": "long"
+    },
+    "quadraKills": {
+      "title": "Number of quadra kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "sightWardsBoughtInGame": {
+      "title": "Sight wards purchased",
+      "type": "object",
+      "javaType": "long"
+    },
+    "teamObjective": {
+      "title": "If game was a dominion game, number of completed team objectives (i.e., quests)",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalDamageDealt": {
+      "title": "Total damage dealt",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalDamageDealtToChampions": {
+      "title": "Total damage dealt to champions",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalDamageTaken": {
+      "title": "Total damage taken",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalHeal": {
+      "title": "Total heal amount",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalPlayerScore": {
+      "title": "If game was a dominion game, player's total score, otherwise 0",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalScoreRank": {
+      "title": "If game was a dominion game, team rank of the player's total score (e.g., 1-5)",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalTimeCrowdControlDealt": {
+      "title": "Total dealt crowd control time",
+      "type": "object",
+      "javaType": "long"
+    },
+    "totalUnitsHealed": {
+      "title": "Total units healed",
+      "type": "object",
+      "javaType": "long"
+    },
+    "towerKills": {
+      "title": "Number of tower kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "tripleKills": {
+      "title": "Number of triple kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "trueDamageDealt": {
+      "title": "True damage dealt",
+      "type": "object",
+      "javaType": "long"
+    },
+    "trueDamageDealtToChampions": {
+      "title": "True damage dealt to champions",
+      "type": "object",
+      "javaType": "long"
+    },
+    "trueDamageTaken": {
+      "title": "True damage taken",
+      "type": "object",
+      "javaType": "long"
+    },
+    "unrealKills": {
+      "title": "Number of unreal kills",
+      "type": "object",
+      "javaType": "long"
+    },
+    "visionWardsBoughtInGame": {
+      "title": "Vision wards purchased",
+      "type": "object",
+      "javaType": "long"
+    },
+    "wardsKilled": {
+      "title": "Number of wards killed",
+      "type": "object",
+      "javaType": "long"
+    },
+    "wardsPlaced": {
+      "title": "Number of wards placed",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "ParticipantFrame",
+  "description": "This object contains participant frame information",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.ParticipantFrame",
+  "properties": {
+    "currentGold": {
+      "title": "Participant's current gold",
+      "type": "integer"
+    },
+    "dominionScore": {
+      "title": "Dominion score of the participant",
+      "type": "integer"
+    },
+    "jungleMinionsKilled": {
+      "title": "Number of jungle minions killed by participant",
+      "type": "integer"
+    },
+    "level": {
+      "title": "The participant's current level",
+      "type": "integer"
+    },
+    "minionsKilled": {
+      "title": "Number of minions killed by participant",
+      "type": "integer"
+    },
+    "participantId": {
+      "title": "Participant ID",
+      "type": "integer"
+    },
+    "position": {
+      "title": "Participant's position",
+      "type": "object",
+      "$ref": "position.json"
+    },
+    "teamScore": {
+      "title": "Team score of the participant",
+      "type": "integer"
+    },
+    "totalGold": {
+      "title": "Participant's total gold",
+      "type": "integer"
+    },
+    "currentGold": {
+      "title": "Experience earned by participant",
+      "type": "integer"
+    }
+  }
+}

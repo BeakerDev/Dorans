@@ -1,0 +1,145 @@
+{
+  "title": "Event",
+  "description": "This object contains game event information. Note that not all legal type values documented below are valid for all games. Event data evolves over time and certain values may be relevant only for older or newer games.",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Event",
+  "properties": {
+    "ascendedType": {
+      "title": "The ascended type of the event. Only present if relevant. Note that CLEAR_ASCENDED refers to when a participants kills the ascended player.",
+      "type": "enum",
+      "enum": [
+        "CHAMPION_ASCENDED",
+        "CLEAR_ASCENDED",
+        "MINION_ASCENDED"
+      ]
+    },
+    "assistingParticipantIds": {
+      "title": "The assisting participant IDs of the event. Only present if relevant.",
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "buildingType": {
+      "title": "The building type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "INHIBITOR_BUILDING",
+        "TOWER_BUILDING"
+      ]
+    },
+    "creatorId": {
+      "title": "The creator ID of the event. Only present if relevant.",
+      "type": "integer"
+    },
+    "eventType": {
+      "title": "Event type. (Legal values: ASCENDED_EVENT, BUILDING_KILL, CAPTURE_POINT, CHAMPION_KILL, ELITE_MONSTER_KILL, ITEM_DESTROYED, ITEM_PURCHASED, ITEM_SOLD, ITEM_UNDO, PORO_KING_SUMMON, SKILL_LEVEL_UP, WARD_KILL, WARD_PLACED)",
+      "type": "string"
+    },
+    "itemAfter": {
+      "title": "The ending item ID of the event. Only present if relevant.",
+      "type": "integer"
+    },
+    "itemBefore": {
+      "title": "The starting item ID of the event. Only present if relevant.",
+      "type": "integer"
+    },
+    "itemId": {
+      "title": "The item ID of the event. Onl;y present if relevant.",
+      "type": "integer"
+    },
+    "killerId": {
+      "title": "The killer ID of the event. Only present if relevant. Killer ID 0 indicates a minion.",
+      "type": "integer"
+    },
+    "laneType": {
+      "title": "The lane type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "BOT_LANE",
+        "MID_LANE",
+        "TOP_LANE"
+      ]
+    },
+    "levelUpType": {
+      "title": "The level up type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "EVOLVE",
+        "NORMAL"
+      ]
+    },
+    "monsterType": {
+      "title": "The monster type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "BARON_NASHOR",
+        "BLUE_GOLEM",
+        "DRAGON",
+        "RED_LIZARD",
+        "VILEMAW"
+      ]
+    },
+    "participantId": {
+      "title": "The participant ID of the event. Only present if relevant.",
+      "type": "integer"
+    },
+    "pointCaptured": {
+      "title": "The point captured in the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "POINT_A",
+        "POINT_B",
+        "POINT_C",
+        "POINT_D",
+        "POINT_E"
+      ]
+    },
+    "position": {
+      "title": "The position of the event. Only present if relevant.",
+      "type": "object",
+      "$ref": "position.json"
+    },
+    "skillSlot": {
+      "title": "The skill slot of the event. Only present if relevant. Killer ID 0 indicates a minion.",
+      "type": "integer"
+    },
+    "teamId": {
+      "title": "The team ID of the event. Only present if relevant. Killer ID 0 indicates a minion.",
+      "type": "integer"
+    },
+    "timestamp": {
+      "title": "Represents how many milliseconds into the game the event occurred.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "towerType": {
+      "title": "The tower type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "BASE_TURRET",
+        "FOUNTAIN_TURRET",
+        "INNER_TURRET",
+        "NEXUS_TURRET",
+        "OUTER_TURRET",
+        "UNDEFINED_TURRET"
+      ]
+    },
+    "victimId": {
+      "title": "The victim ID of the event. Only present if relevant.",
+      "type": "integer"
+    },
+    "wardType": {
+      "title": "The ward type of the event. Only present if relevant.",
+      "type": "enum",
+      "enum": [
+        "SIGHT_WARD",
+        "TEEMO_MUSHROOM",
+        "UNDEFINED",
+        "VISION_WARD",
+        "YELLOW_TRINKET",
+        "YELLOW_TRINKET_UPGRADE"
+      ]
+    }
+  }
+}

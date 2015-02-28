@@ -1,0 +1,67 @@
+{
+  "title": "Team",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Team",
+  "properties": {
+    "bans": {
+      "title": "If game was draft mode, contains banned champion data, otherwise null",
+      "type": "array",
+      "items": {
+        "$ref": "banned-champion.json"
+      }
+    },
+    "baronKills": {
+      "title": "Number of times the team killed baron",
+      "type": "integer"
+    },
+    "dominionVictoryScore": {
+      "title": "If game was a dominion game, specifies the points the team had at game end, otherwise null",
+      "type": "object",
+      "javaType": "long"
+    },
+    "dragonKills": {
+      "title": "Number of times the team killed dragon",
+      "type": "integer"
+    },
+    "firstBaron": {
+      "title": "Flag indicating whether or not the team got the first baron kill",
+      "type": "boolean"
+    },
+    "firstBlood": {
+      "title": "Flag indicating whether or not the team got first blood",
+      "type": "boolean"
+    },
+    "firstDragon": {
+      "title": "Flag indicating whether or not the team got the first dragon kill",
+      "type": "boolean"
+    },
+    "firstInhibitor": {
+      "title": "Flag indicating whether or not the team destroyed the first inhibitor",
+      "type": "boolean"
+    },
+    "firstTower": {
+      "title": "Flag indicating whether or not the team destroyed the first tower",
+      "type": "boolean"
+    },
+    "inhibitorKills": {
+      "title": "Number of inhibitors the team destroyed",
+      "type": "integer"
+    },
+    "teamId": {
+      "title": "Team ID",
+      "type": "integer"
+    },
+    "towerKills": {
+      "title": "Number of towers the team destroyed",
+      "type": "integer"
+    },
+    "vilemawKills": {
+      "title": "Number of times the team killed vilemaw",
+      "type": "integer"
+    },
+    "winner": {
+      "title": "Flag indicating whether or not the team won",
+      "type": "boolean"
+    }
+  }
+}

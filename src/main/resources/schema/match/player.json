@@ -1,0 +1,25 @@
+{
+  "title": "Player",
+  "description": "This object contains match player information",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Player",
+  "properties": {
+    "matchHistoryUri": {
+      "title": "Match history URI",
+      "type": "string"
+    },
+    "profileIcon": {
+      "title": "Profile icon ID",
+      "type": "integer"
+    },
+    "summonerId": {
+      "title": "Summoner ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "summonerName": {
+      "title": "Summoner name",
+      "type": "string"
+    }
+  }
+}

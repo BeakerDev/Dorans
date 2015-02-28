@@ -1,0 +1,30 @@
+{
+  "title": "ParticipantTimelineData",
+  "description": "The object contains timeline data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.ParticipantTimelineData",
+  "properties": {
+    "tenToTwenty": {
+      "tenToTwenty": {
+        "title": "Value per minute from 10 min to 20 min",
+        "type": "object",
+        "javaType": "double"
+      },
+      "thirtyToEnd": {
+        "title": "Value per minute from 30 min to the end of the game",
+        "type": "object",
+        "javaType": "double"
+      },
+      "twentyToThirty": {
+        "title": "Value per minute from 20 min to 30 min",
+        "type": "object",
+        "javaType": "double"
+      },
+      "zeroToTen": {
+        "title": "Value per minute from the beginning of the game to 10 min",
+        "type": "object",
+        "javaType": "double"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Mastery",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Mastery",
+  "properties": {
+    "masteryId": {
+      "title": "Mastery ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "rank": {
+      "title": "Mastery rank",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

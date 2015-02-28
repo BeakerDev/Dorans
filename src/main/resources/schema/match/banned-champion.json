@@ -1,0 +1,16 @@
+{
+  "title": "BannedChampion",
+  "description": "This object contains information about banned champions",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.BannedChampion",
+  "properties": {
+    "championId": {
+      "title": "Banned champion ID",
+      "type": "integer"
+    },
+    "pickTurn": {
+      "title": "Turn during which the champion was banned",
+      "type": "integer"
+    }
+  }
+}

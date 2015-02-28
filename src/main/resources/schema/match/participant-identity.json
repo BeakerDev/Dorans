@@ -1,0 +1,16 @@
+{
+  "title": "ParticipantIdentity",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.ParticipantIdentity",
+  "properties": {
+    "participantId": {
+      "title": "Participant ID",
+      "type": "integer"
+    },
+    "player": {
+      "title": "Player information",
+      "type": "object",
+      "$ref": "player.json"
+    }
+  }
+}

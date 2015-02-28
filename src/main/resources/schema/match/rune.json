@@ -1,0 +1,17 @@
+{
+  "title": "Rune",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Rune",
+  "properties": {
+    "rank": {
+      "title": "Rune rank",
+      "type": "object",
+      "javaType": "long"
+    },
+    "runeId": {
+      "title": "Rune ID",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

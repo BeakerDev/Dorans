@@ -1,0 +1,161 @@
+{
+  "title": "Frame",
+  "description": "This object contains game frame information",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Frame",
+  "properties": {
+    "ancientGolemAssistsPerMinCounts": {
+      "title": "Ancient golem assist per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "ancientGolemKillsPerMinCounts": {
+      "title": "Ancient golem kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "assistedLaneDeathsPerMinDeltas": {
+      "title": "Assisted lane deaths per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "assistedLaneKillsPerMinDeltas": {
+      "title": "Assisted lane kills per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "baronAssistsPerMinCounts": {
+      "title": "Baron assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "baronKillsPerMinCounts": {
+      "title": "Baron kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "creepsPerMinDeltas": {
+      "title": "Creeps per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "csDiffPerMinDeltas": {
+      "title": "Creep score difference per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "damageTakenDiffPerMinDeltas": {
+      "title": "Damage taken difference per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "damageTakenPerMinDeltas": {
+      "title": "Damage taken per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "dragonAssistsPerMinCounts": {
+      "title": "Dragon assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "dragonKillsPerMinCounts": {
+      "title": "Dragon kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "elderLizardAssistsPerMinCounts": {
+      "title": "Elder lizard assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "elderLizardKillsPerMinCounts": {
+      "title": "Elder lizard kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "goldPerMinDeltas": {
+      "title": "Gold per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "inhibitorAssistsPerMinCounts": {
+      "title": "Inhibitor assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "inhibitorKillsPerMinCounts": {
+      "title": "Inhibitor kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "lane": {
+      "title": "Participant's lane",
+      "type": "enum",
+      "enum": [
+        "MID",
+        "MIDDLE",
+        "TOP",
+        "JUNGLE",
+        "BOT",
+        "BOTTOM"
+      ]
+    },
+    "role": {
+      "title": "Participant's role ",
+      "type": "enum",
+      "enum": [
+        "DUO",
+        "NONE",
+        "SOLO",
+        "DUO_CARRY",
+        "DUO_SUPPORT"
+      ]
+    },
+    "": {
+      "title": "Inhibitor kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "towerAssistsPerMinCounts": {
+      "title": "Tower assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "towerKillsPerMinCounts": {
+      "title": "Tower kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "towerKillsPerMinDeltas": {
+      "title": "Tower kills per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "vilemawAssistsPerMinCounts": {
+      "title": "Vilemaw assists per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "vilemawKillsPerMinCounts": {
+      "title": "Vilemaw kills per minute timeline counts",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "wardsPerMinDeltas": {
+      "title": "Wards placed per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "xpDiffPerMinDeltas": {
+      "title": "Experience difference per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    },
+    "xpPerMinDeltas": {
+      "title": "Experience per minute timeline data",
+      "type": "object",
+      "$ref": "participant-timeline-data.json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Timeline",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Timeline",
+  "properties": {
+    "frameInterval": {
+      "title": "Mastery rank",
+      "type": "object",
+      "javaType": "long"
+    },
+    "frames": {
+      "title": "Mastery rank",
+      "type": "array",
+      "items": {
+        "$ref": "frame.json"
+      }
+    }
+  }
+}

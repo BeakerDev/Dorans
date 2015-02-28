@@ -1,0 +1,65 @@
+{
+  "title": "Participant",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.Participant",
+  "properties": {
+    "championId": {
+      "title": "Champion ID",
+      "type": "integer"
+    },
+    "highestAchievedSeasonTier": {
+      "title": "Highest ranked tier achieved for the previous season, if any, otherwise null. Used to display border in game loading screen",
+      "type": "enum",
+      "enum": [
+        "CHALLENGER",
+        "MASTER",
+        "DIAMOND",
+        "PLATINUM",
+        "GOLD",
+        "SILVER",
+        "BRONZE",
+        "UNRANKED"
+      ]
+    },
+    "masteries": {
+      "title": "List of mastery information",
+      "type": "array",
+      "items": {
+        "$ref": "mastery.json"
+      }
+    },
+    "participantId": {
+      "title": "Participant ID",
+      "type": "integer"
+    },
+    "runes": {
+      "title": "List of rune information",
+      "type": "array",
+      "items": {
+        "$ref": "rune.json"
+      }
+    },
+    "spell1Id": {
+      "title": "First summoner spell ID",
+      "type": "integer"
+    },
+    "spell2Id": {
+      "title": "Second summoner spell ID",
+      "type": "integer"
+    },
+    "stats": {
+      "title": "Participant statistics",
+      "type": "object",
+      "$ref": "participant-stats.json"
+    },
+    "spell2Id": {
+      "teamId": "Team ID",
+      "type": "integer"
+    },
+    "timeline": {
+      "title": "Timeline data. Delta fields refer to values for the specified period (e.g., the gold per minute over the first 10 minutes of the game versus the second 20 minutes of the game. Diffs fields refer to the deltas versus the calculated lane opponent(s).",
+      "type": "object",
+      "$ref": "participant-timeline.json"
+    }
+  }
+}
