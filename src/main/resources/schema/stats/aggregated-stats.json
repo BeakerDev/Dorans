@@ -1,0 +1,199 @@
+{
+  "title": "AggregatedStats",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.stats.AggregatedStats",
+  "properties": {
+    "averageAssists": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageChampionsKilled": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageCombatPlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageNodeCapture": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageNodeCaptureAssist": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageNodeNeutralize": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageNodeNeutralizeAssist": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageNumDeaths": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageObjectivePlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageTeamObjective": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "averageTotalPlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "botGamesPlayed": {
+      "type": "integer"
+    },
+    "killingSpree": {
+      "type": "integer"
+    },
+    "maxAssists": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxChampionsKilled": {
+      "type": "integer"
+    },
+    "maxCombatPlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxLargestCriticalStrike": {
+      "type": "integer"
+    },
+    "maxLargestKillingSpree": {
+      "type": "integer"
+    },
+    "maxNodeCapture": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxNodeCaptureAssist": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxNodeNeutralize": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxNodeNeutralizeAssist": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxNumDeaths": {
+      "title": "Only returned for ranked statistics",
+      "type": "integer"
+    },
+    "maxObjectivePlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxTeamObjective": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "maxTimePlayed": {
+      "type": "integer"
+    },
+    "maxTimeSpentLiving": {
+      "type": "integer"
+    },
+    "maxTotalPlayerScore": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "mostChampionKillsPerSession": {
+      "type": "integer"
+    },
+    "mostSpellsCast": {
+      "type": "integer"
+    },
+    "normalGamesPlayed": {
+      "type": "integer"
+    },
+    "rankedPremadeGamesPlayed": {
+      "type": "integer"
+    },
+    "rankedSoloGamesPlayed": {
+      "type": "integer"
+    },
+    "totalAssists": {
+      "type": "integer"
+    },
+    "totalChampionKills": {
+      "type": "integer"
+    },
+    "totalDamageDealt": {
+      "type": "integer"
+    },
+    "totalDamageTaken": {
+      "type": "integer"
+    },
+    "totalDeathsPerSession": {
+      "title": "Only returned for ranked statistics",
+      "type": "integer"
+    },
+    "totalDoubleKills": {
+      "type": "integer"
+    },
+    "totalFirstBlood": {
+      "type": "integer"
+    },
+    "totalGoldEarned": {
+      "type": "integer"
+    },
+    "totalHeal": {
+      "type": "integer"
+    },
+    "totalMagicDamageDealt": {
+      "type": "integer"
+    },
+    "totalMinionKills": {
+      "type": "integer"
+    },
+    "totalNeutralMinionsKilled": {
+      "type": "integer"
+    },
+    "totalNodeCapture": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "totalNodeNeutralize": {
+      "title": "Dominion only",
+      "type": "integer"
+    },
+    "totalPentaKills": {
+      "type": "integer"
+    },
+    "totalPhysicalDamageDealt": {
+      "type": "integer"
+    },
+    "totalQuadraKills": {
+      "type": "integer"
+    },
+    "totalSessionsLost": {
+      "type": "integer"
+    },
+    "totalSessionsPlayed": {
+      "type": "integer"
+    },
+    "totalSessionsWon": {
+      "type": "integer"
+    },
+    "totalTripleKills": {
+      "type": "integer"
+    },
+    "totalTurretsKilled": {
+      "type": "integer"
+    },
+    "totalUnrealKills": {
+      "type": "integer"
+    }
+  }
+}

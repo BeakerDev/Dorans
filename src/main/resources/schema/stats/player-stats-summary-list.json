@@ -1,0 +1,19 @@
+{
+  "title": "PlayerStatsSummaryList",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.stats.PlayerStatsSummaryList",
+  "properties": {
+    "rank": {
+      "title": "Collection of player stats summaries associated with the summoner",
+      "type": "array",
+      "items": {
+        "$ref": "player-stats-summary-list.json"
+      }
+    },
+    "summonerId": {
+      "title": "Summoner ID",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

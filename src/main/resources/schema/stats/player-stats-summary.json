@@ -1,0 +1,54 @@
+{
+  "title": "PlayerStatsSummary",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.stats.PlayerStatsSummary",
+  "properties": {
+    "rank": {
+      "aggregatedStats": "Aggregated stats",
+      "type": "object",
+      "$ref": "aggregated-stats.json"
+    },
+    "losses": {
+      "title": "Number of losses for this queue type. Returned for ranked queue types only",
+      "type": "integer"
+    },
+    "modifyDate": {
+      "title": "Date stats were last modified specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "playerStatSummaryType": {
+      "title": "Player stats summary type",
+      "type": "enum",
+      "enum": [
+        "AramUnranked5x5",
+        "CoopVsAI",
+        "CoopVsAI3x3",
+        "OdinUnranked",
+        "RankedPremade3x3",
+        "RankedPremade5x5",
+        "RankedSolo5x5",
+        "RankedTeam3x3",
+        "RankedTeam5x5",
+        "Unranked",
+        "Unranked3x3",
+        "OneForAll5x5",
+        "FirstBlood1x1",
+        "FirstBlood2x2",
+        "SummonersRift6x6",
+        "CAP5x5",
+        "URF",
+        "URFBots",
+        "NightmareBot",
+        "Ascension",
+        "Hexakill",
+        "KingPoro",
+        "CounterPick"
+      ]
+    },
+    "wins": {
+      "title": "Number of wins for this queue type.",
+      "type": "integer"
+    }
+  }
+}
