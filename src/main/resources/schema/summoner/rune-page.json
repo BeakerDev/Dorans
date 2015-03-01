@@ -1,7 +1,7 @@
 {
   "title": "RunePage",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.summoner.RunePage",
+  "javaType": "gg.buff.dorans.objects.generated.summoner.RunePage",
   "properties": {
     "current": {
       "title": "Indicates if the page is the current page.",

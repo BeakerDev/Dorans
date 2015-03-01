@@ -2,7 +2,7 @@
   "title": "Frame",
   "description": "This object contains game frame information",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match.Frame",
+  "javaType": "gg.buff.dorans.objects.generated.generated.match.Frame",
   "properties": {
     "events": {
       "title": "List of events for this frame",
@@ -11,7 +11,7 @@
     "participants": {
       "title": "Map of each participant ID to the participant's information for the frame.",
       "type": "object",
-      "javaType": "java.util.Map<String, gg.buff.dorans.objects.match.ParticipantFrame>"
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.generated.match.ParticipantFrame>"
     },
     "timestamp": {
       "title": "Represents how many milliseconds into the game the frame occurred.",

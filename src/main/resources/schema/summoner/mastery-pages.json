@@ -1,7 +1,7 @@
 {
   "title": "MasteryPages",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.summoner.MasteryPages",
+  "javaType": "gg.buff.dorans.objects.generated.summoner.MasteryPages",
   "properties": {
     "pages": {
       "title": "Collection of mastery pages associated with the summoner.",

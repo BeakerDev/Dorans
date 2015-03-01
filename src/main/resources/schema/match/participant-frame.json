@@ -2,7 +2,7 @@
   "title": "ParticipantFrame",
   "description": "This object contains participant frame information",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match.ParticipantFrame",
+  "javaType": "gg.buff.dorans.objects.generated.generated.match.ParticipantFrame",
   "properties": {
     "currentGold": {
       "title": "Participant's current gold",

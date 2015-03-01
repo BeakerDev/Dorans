@@ -2,7 +2,7 @@
   "title": "Position",
   "description": "This object contains the participant frame position information",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match.Position",
+  "javaType": "gg.buff.dorans.objects.generated.generated.match.Position",
   "properties": {
     "x": {
       "type": "integer"

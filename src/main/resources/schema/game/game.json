@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.game.RecentGames",
+  "javaType": "gg.buff.dorans.objects.generated.game.RecentGames",
   "properties": {
     "games": {
       "title": "Collection of recent games played (max 10).",
@@ -19,7 +19,7 @@
     "player": {
       "title": "Player",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.game.Player",
+      "javaType": "gg.buff.dorans.objects.generated.game.Player",
       "properties": {
         "championId": {
           "title": "Champion id associated with player.",
@@ -39,7 +39,7 @@
     "game": {
       "title": "Game",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.game.Game",
+      "javaType": "gg.buff.dorans.objects.generated.game.Game",
       "properties": {
         "championId": {
           "title": "Champion id associated with player.",

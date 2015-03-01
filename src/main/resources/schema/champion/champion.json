@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.champion.ChampionList",
+  "javaType": "gg.buff.dorans.objects.generated.champion.ChampionList",
   "properties": {
     "champions": {
       "title": "champions",
@@ -14,7 +14,7 @@
     "champion": {
       "title": "Champion",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.champion.Champion",
+      "javaType": "gg.buff.dorans.objects.generated.champion.Champion",
       "properties": {
         "id": {
           "title": "Champion ID. For static information correlating to champion IDs, please refer to the LoL Static Data API.",

@@ -1,7 +1,7 @@
 {
   "title": "MatchSummary",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match_history.MatchSummary",
+  "javaType": "gg.buff.dorans.objects.generated.match_history.MatchSummary",
   "properties": {
     "mapId": {
       "title": "Match map ID",

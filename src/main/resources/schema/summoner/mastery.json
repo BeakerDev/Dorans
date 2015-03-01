@@ -1,7 +1,7 @@
 {
   "title": "Mastery",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.summoner.Mastery",
+  "javaType": "gg.buff.dorans.objects.generated.summoner.Mastery",
   "properties": {
     "id": {
       "title": "Mastery ID. For static information correlating to masteries, please refer to the LoL Static Data API.",

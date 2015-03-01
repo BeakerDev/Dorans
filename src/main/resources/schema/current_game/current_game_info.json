@@ -1,7 +1,7 @@
 {
   "title": "Current Game Info",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.current_game.CurrentGame",
+  "javaType": "gg.buff.dorans.objects.generated.current_game.CurrentGame",
   "properties": {
     "bannedChampions": {
       "title": "Banned champion information",
@@ -81,7 +81,7 @@
     "banned-champion": {
       "title": "BannedChampion",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.current_game.BannedChampion",
+      "javaType": "gg.buff.dorans.objects.generated.current_game.BannedChampion",
       "properties": {
         "championId": {
           "title": "The ID of the banned champion",
@@ -103,7 +103,7 @@
     "observer": {
       "title": "Observer",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.current_game.Observer",
+      "javaType": "gg.buff.dorans.objects.generated.current_game.Observer",
       "properties": {
         "encryptionKey": {
           "title": "Key used to decrypt the spectator grid game data for playback",
@@ -114,7 +114,7 @@
     "participant": {
       "title": "Participant",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.current_game.Participant",
+      "javaType": "gg.buff.dorans.objects.generated.current_game.Participant",
       "properties": {
         "bot": {
           "title": "Flag indicating whether or not this participant is a bot",
@@ -173,7 +173,7 @@
     "mastery": {
       "title": "Mastery",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.current_game.Mastery",
+      "javaType": "gg.buff.dorans.objects.generated.current_game.Mastery",
       "properties": {
         "masteryId": {
           "title": "The ID of the mastery",
@@ -189,7 +189,7 @@
     "rune": {
       "title": "Rune",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.current_game.Rune",
+      "javaType": "gg.buff.dorans.objects.generated.current_game.Rune",
       "properties": {
         "count": {
           "title": "The count of this rune used by the participant",

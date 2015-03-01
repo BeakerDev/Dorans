@@ -1,7 +1,7 @@
 {
   "title": "AggregatedStats",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.stats.AggregatedStats",
+  "javaType": "gg.buff.dorans.objects.generated.stats.AggregatedStats",
   "properties": {
     "averageAssists": {
       "title": "Dominion only",

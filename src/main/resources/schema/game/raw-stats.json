@@ -1,7 +1,7 @@
 {
   "title": "RawStats",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.game.RawStats",
+  "javaType": "gg.buff.dorans.objects.generated.game.RawStats",
   "properties": {
     "assists": {
       "type": "integer"

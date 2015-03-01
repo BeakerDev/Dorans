@@ -1,7 +1,7 @@
 {
   "title": "PlayerStatsSummary",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.stats.PlayerStatsSummary",
+  "javaType": "gg.buff.dorans.objects.generated.stats.PlayerStatsSummary",
   "properties": {
     "rank": {
       "aggregatedStats": "Aggregated stats",

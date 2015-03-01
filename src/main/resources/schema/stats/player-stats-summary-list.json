@@ -1,7 +1,7 @@
 {
   "title": "PlayerStatsSummaryList",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.stats.PlayerStatsSummaryList",
+  "javaType": "gg.buff.dorans.objects.generated.stats.PlayerStatsSummaryList",
   "properties": {
     "rank": {
       "title": "Collection of player stats summaries associated with the summoner",

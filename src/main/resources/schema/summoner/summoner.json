@@ -1,7 +1,7 @@
 {
   "title": "summoner",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.summoner.Summoner",
+  "javaType": "gg.buff.dorans.objects.generated.summoner.Summoner",
   "properties": {
     "id": {
       "id": "Summoner ID.",

@@ -2,7 +2,7 @@
   "title": "Frame",
   "description": "This object contains game frame information",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.match.Frame",
+  "javaType": "gg.buff.dorans.objects.generated.generated.match.Frame",
   "properties": {
     "ancientGolemAssistsPerMinCounts": {
       "title": "Ancient golem assist per minute timeline counts",

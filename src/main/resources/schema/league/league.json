@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.league.League",
+  "javaType": "gg.buff.dorans.objects.generated.league.League",
   "properties": {
     "entries": {
       "title": "The requested league entries",
@@ -44,7 +44,7 @@
     "leagueEntry": {
       "title": "LeagueEntry",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.league.LeagueEntry",
+      "javaType": "gg.buff.dorans.objects.generated.league.LeagueEntry",
       "properties": {
         "division": {
           "title": "The league division of the participant.",
@@ -98,7 +98,7 @@
     "miniSeries": {
       "title": "MiniSeries",
       "type": "object",
-      "javaType": "gg.buff.dorans.objects.league.MiniSeries",
+      "javaType": "gg.buff.dorans.objects.generated.league.MiniSeries",
       "properties": {
         "losses": {
           "title": "Number of current losses in the mini series.",
