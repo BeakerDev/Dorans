@@ -1,0 +1,27 @@
+{
+  "title": "MasteryPage",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.summoner.MasteryPage",
+  "properties": {
+    "current": {
+      "title": "Indicates if the mastery page is the current mastery page",
+      "type": "boolean"
+    },
+    "id": {
+      "title": "Mastery Page ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "masteries": {
+      "title": "Collection of masteries associated with the mastery page.",
+      "type": "arrays",
+      "items": {
+        "$ref": "mastery.json"
+      }
+    },
+    "name": {
+      "title": "Mastery page name",
+      "type": "string"
+    }
+  }
+}

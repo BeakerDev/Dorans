@@ -1,0 +1,30 @@
+{
+  "title": "summoner",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.summoner.Summoner",
+  "properties": {
+    "id": {
+      "id": "Summoner ID.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "name": {
+      "title": "Summoner Name",
+      "type": "string"
+    },
+    "profileIconId": {
+      "title": "ID of the summoner icon associated with the summoner.",
+      "type": "integer"
+    },
+    "revisionDate": {
+      "id": "Date summoner was last modified specified as epoch milliseconds. The following events will update this timestamp: profile icon change, playing the tutorial or advanced tutorial, finishing a game, summoner name change",
+      "type": "object",
+      "javaType": "long"
+    },
+    "summonerLevel": {
+      "id": "Summoner level associated with the summoner.",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

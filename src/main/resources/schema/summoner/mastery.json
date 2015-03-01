@@ -1,0 +1,17 @@
+{
+  "title": "Mastery",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.summoner.Mastery",
+  "properties": {
+    "id": {
+      "title": "Mastery ID. For static information correlating to masteries, please refer to the LoL Static Data API.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "rank": {
+      "title": "Mastery rank (i.e., the number of points put into this mastery).",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

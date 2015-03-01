@@ -1,0 +1,15 @@
+{
+  "title": "RuneSlot",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.summoner.RuneSlot",
+  "properties": {
+    "runeId": {
+      "title": "Rune ID associated with the rune slot. For static information correlating to rune IDs, please refer to the LoL Static Data API.",
+      "type": "integer"
+    },
+    "runeSlotId": {
+      "title": "Rune slot ID.",
+      "type": "integer"
+    }
+  }
+}

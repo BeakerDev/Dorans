@@ -1,0 +1,19 @@
+{
+  "title": "RunePages",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.summoner.RunePages",
+  "properties": {
+    "pages": {
+      "title": "Collection of rune pages associated with the summoner.",
+      "type": "array",
+      "items": {
+        "$ref": "rune-page.json"
+      }
+    },
+    "summonerId": {
+      "title": "Summoner ID.",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

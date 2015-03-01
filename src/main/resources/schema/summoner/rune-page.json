@@ -1,0 +1,27 @@
+{
+  "title": "RunePage",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.match.RunePage",
+  "properties": {
+    "current": {
+      "title": "Indicates if the page is the current page.",
+      "type": "boolean"
+    },
+    "id": {
+      "title": "Rune page ID",
+      "type": "object",
+      "javaType": "long"
+    },
+    "name": {
+      "title": "Rune page name",
+      "type": "string"
+    },
+    "slots": {
+      "title": "Collection of rune slots associated with the rune page",
+      "type": "array",
+      "item": {
+        "$ref": "rune-slot.json"
+      }
+    }
+  }
+}
