@@ -1,4 +1,4 @@
-package gg.buff.dorans.objects.match;
+package gg.buff.dorans.objects.summoner;
 
 import java.util.ArrayList;
 import java.util.List;
