@@ -1,0 +1,25 @@
+{
+  "title": "Shard",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.Shard",
+  "properties": {
+    "hostname": {
+      "type": "string"
+    },
+    "locales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "region_tag": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

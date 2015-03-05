@@ -1,0 +1,16 @@
+{
+  "title": "Translation",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.Translation",
+  "properties": {
+    "content": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

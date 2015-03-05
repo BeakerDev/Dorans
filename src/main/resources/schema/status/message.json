@@ -1,0 +1,37 @@
+{
+  "title": "Message",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.Message",
+  "properties": {
+    "author": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "id": {
+      "type": "object",
+      "javaType": "long"
+    },
+    "severity": {
+      "type": "enum",
+      "enum": [
+        "Info",
+        "Alert",
+        "Error"
+      ]
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "translation.json"
+      }
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

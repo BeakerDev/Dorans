@@ -1,0 +1,31 @@
+{
+  "title": "ShardStatus",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.ShardStatus",
+  "properties": {
+    "hostname": {
+      "type": "string"
+    },
+    "locales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "region_tag": {
+      "type": "string"
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "$ref": "service.json"
+      }
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

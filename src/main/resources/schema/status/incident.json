@@ -1,0 +1,23 @@
+{
+  "title": "Incident",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.Incident",
+  "properties": {
+    "active": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "id": {
+      "type": "object",
+      "javaType": "long"
+    },
+    "updates": {
+      "type": "array",
+      "items": {
+        "$ref": "message.json"
+      }
+    }
+  }
+}

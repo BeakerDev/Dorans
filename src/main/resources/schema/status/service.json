@@ -1,0 +1,28 @@
+{
+  "title": "Service",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.status.Service",
+  "properties": {
+    "incidents": {
+      "type": "array",
+      "items": {
+        "$ref": "incident.json"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "status": {
+      "type": "ernum",
+      "enum": [
+        "Online",
+        "Alert",
+        "Offline",
+        "Deploying"
+      ]
+    }
+  }
+}
