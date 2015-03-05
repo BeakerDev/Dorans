@@ -1,0 +1,19 @@
+{
+  "title": "TeamStatDetail",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.team.TeamStatDetail",
+  "properties": {
+    "averageGamesPlayed": {
+      "type": "integer"
+    },
+    "losses": {
+      "type": "integer"
+    },
+    "teamStatType": {
+      "type": "string"
+    },
+    "wins": {
+      "type": "integer"
+    }
+  }
+}

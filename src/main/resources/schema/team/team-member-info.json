@@ -1,0 +1,24 @@
+{
+  "title": "TeamMemberInfo",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.team.TeamMemberInfo",
+  "properties": {
+    "inviteDate": {
+      "title": "Date that team member was invited to team specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "joinDate": {
+      "title": "Rune slot ID.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "playerId": {
+      "type": "object",
+      "javaType": "long"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

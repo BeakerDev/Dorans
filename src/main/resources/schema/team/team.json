@@ -1,0 +1,58 @@
+{
+  "title": "Roster",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.team.Roster",
+  "properties": {
+    "createDate": {
+      "title": "Date that team was created specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "fullId": {
+      "type": "string"
+    },
+    "lastGameDate": {
+      "title": "Date that last game played by team ended specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "lastJoinDate": {
+      "title": "Date that last member joined specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "lastJoinedRankedTeamQueueDate": {
+      "title": "Date that team last joined the ranked team queue specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "matchHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "match-history-summary.json"
+      }
+    },
+    "modifyDate": {
+      "title": "Date that team was last modified specified as epoch milliseconds.",
+      "type": "object",
+      "javaType": "long"
+    },
+    "name": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "teamStatDetails": {
+      "type": "array",
+      "items": {
+        "$ref": "team-stat-detail.json"
+      }
+    },
+    "thirdLastJoinDate": {
+      "title": "Date that third to last member joined specified as epoch milliseconds",
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}

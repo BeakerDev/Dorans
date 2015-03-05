@@ -1,0 +1,43 @@
+{
+  "title": "MatchHistorySummary",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.team.MatchHistorySummary",
+  "properties": {
+    "assists": {
+      "type": "integer"
+    },
+    "date": {
+      "title": "Date that match was completed specified as epoch milliseconds",
+      "type": "object",
+      "javaType": "long"
+    },
+    "deaths": {
+      "type": "integer"
+    },
+    "gameId": {
+      "type": "object",
+      "javaType": "long"
+    },
+    "gameMode": {
+      "type": "string"
+    },
+    "invalid": {
+      "type": "boolean"
+    },
+    "kills": {
+      "type": "integer"
+    },
+    "mapId": {
+      "type": "integer"
+    },
+    "opposingTeamKills": {
+      "type": "integer"
+    },
+    "opposingTeamName": {
+      "type": "string"
+    },
+    "win": {
+      "type": "boolean"
+    }
+  }
+}

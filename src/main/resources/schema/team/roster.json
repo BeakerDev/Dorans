@@ -1,0 +1,17 @@
+{
+  "title": "Roster",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.team.Roster",
+  "properties": {
+    "memberList": {
+      "type": "array",
+      "items": {
+        "$ref": "team-member-info.json"
+      }
+    },
+    "ownerId": {
+      "type": "object",
+      "javaType": "long"
+    }
+  }
+}
