@@ -1,0 +1,27 @@
+{
+  "title": "SpellVars",
+  "description": "This object contains spell vars data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.SpellVars",
+  "properties": {
+    "coeff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "javaType": "double"
+      }
+    },
+    "dyn": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "ranksWith": {
+      "type": "string"
+    }
+  }
+}

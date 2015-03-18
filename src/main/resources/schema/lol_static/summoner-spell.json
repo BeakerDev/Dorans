@@ -1,0 +1,104 @@
+{
+  "title": "SummonerSpell",
+  "description": "This object contains summoner spell data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.SummonerSpell",
+  "properties": {
+    "cooldown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "javaType": "double"
+      }
+    },
+    "cooldownBurn": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "costBurn": {
+      "type": "string"
+    },
+    "costType": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "effect": {
+      "title": "This field is a List of List of Double",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "javaType": "double"
+        }
+      }
+    },
+    "effectBurn": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "key": {
+      "type": "string"
+    },
+    "levelTip": {
+      "type": "object",
+      "$ref": "level-tip.json"
+    },
+    "maxrank": {
+      "type": "integer"
+    },
+    "modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "range": {
+      "title": "This field is either a List of Integer or the String 'self' for spells that target one's own champion",
+      "type": "object"
+    },
+    "rangeBurn": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string"
+    },
+    "sanitizedDescription": {
+      "type": "string"
+    },
+    "sanitizedTooltip": {
+      "type": "string"
+    },
+    "summonerLevel": {
+      "type": "integer"
+    },
+    "tooltip": {
+      "type": "string"
+    },
+    "vars": {
+      "type": "array",
+      "items": {
+        "$ref": "spell-vars.json"
+      }
+    }
+  }
+}

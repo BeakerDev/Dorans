@@ -1,0 +1,20 @@
+{
+  "title": "LevelTip",
+  "description": "This object contains champion level tip data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.LevelTip",
+  "properties": {
+    "effect": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "label": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

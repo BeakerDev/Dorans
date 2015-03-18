@@ -1,0 +1,29 @@
+{
+  "title": "Image",
+  "description": "This object contains spell vars data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Image",
+  "properties": {
+    "full": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "h": {
+      "type": "integer"
+    },
+    "sprite": {
+      "type": "string"
+    },
+    "w": {
+      "type": "integer"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    }
+  }
+}
