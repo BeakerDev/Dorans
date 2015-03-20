@@ -15,7 +15,11 @@
     },
     "masteryTree": {
       "type": "enum",
-      "enum": ["Defense", "Offense", "Utility"]
+      "enum": [
+        "Defense",
+        "Offense",
+        "Utility"
+      ]
     },
     "name": {
       "type": "string"
