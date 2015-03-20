@@ -1,0 +1,17 @@
+{
+  "title": "ItemTree",
+  "description": "This object contains item tree data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.ItemTree",
+  "properties": {
+    "header": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Rune",
+  "description": "This object contains rune data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Rune",
+  "properties": {
+    "colloq": {
+      "type": "string"
+    },
+    "consumeOnFull": {
+      "type": "boolean"
+    },
+    "consumed": {
+      "type": "boolean"
+    },
+    "depth": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "from": {
+      "type": "arrays",
+      "items": {
+        "type": "string"
+      }
+    },
+    "group": {
+      "type": "string"
+    },
+    "hideFromAll": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "inStore": {
+      "type": "boolean"
+    },
+    "into": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maps": {
+      "type": "object",
+      "javaType": "Map<String, Boolean>"
+    },
+    "name": {
+      "type": "string"
+    },
+    "plaintext": {
+      "type": "string"
+    },
+    "requiredChampion": {
+      "type": "string"
+    },
+    "rune": {
+      "type": "object",
+      "$ref": "metadata.json"
+    },
+    "sanitizedDescription": {
+      "type": "string"
+    },
+    "specialRecipe": {
+      "type": "integer"
+    },
+    "stacks": {
+      "type": "integer"
+    },
+    "stats": {
+      "type": "object",
+      "$ref": "basic-data-stats.json"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

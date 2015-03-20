@@ -1,0 +1,17 @@
+{
+  "title": "MetaData",
+  "description": "This object contains meta data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MetaData",
+  "properties": {
+    "isRune": {
+      "type": "boolean"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

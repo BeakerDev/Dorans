@@ -1,0 +1,14 @@
+{
+  "title": "Group",
+  "description": "This object contains item group data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Group",
+  "properties": {
+    "MaxGroupOwnable": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}

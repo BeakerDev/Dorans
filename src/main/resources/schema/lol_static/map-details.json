@@ -1,0 +1,26 @@
+{
+  "title": "MapDetails",
+  "description": "This object contains map details data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MapDetails",
+  "properties": {
+    "image": {
+      "type": "object",
+      "javaType": "image.json"
+    },
+    "mapId": {
+      "type": "object",
+      "javaType": "long"
+    },
+    "mapName": {
+      "type": "string"
+    },
+    "unpurchasableItemList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "javaType": "long"
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "title": "BasicData",
+  "description": "This object contains basic data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.BasicData",
+  "properties": {
+    "colloq": {
+      "type": "string"
+    },
+    "consumeOnFull": {
+      "type": "boolean"
+    },
+    "consumed": {
+      "type": "boolean"
+    },
+    "depth": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "from": {
+      "type": "arrays",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gold": {
+      "title": "Data Dragon includes the gold field for basic data, which is shared by both rune and item. However, only items have a gold field on them, representing their gold cost in the store. Since runes are not sold in the store, they have no gold cost.",
+      "type": "object",
+      "$ref": "gold.json"
+    },
+    "group": {
+      "type": "string"
+    },
+    "hideFromAll": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "inStore": {
+      "type": "boolean"
+    },
+    "into": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maps": {
+      "type": "object",
+      "javaType": "Map<String, Boolean>"
+    },
+    "name": {
+      "type": "string"
+    },
+    "plaintext": {
+      "type": "string"
+    },
+    "requiredChampion": {
+      "type": "string"
+    },
+    "rune": {
+      "type": "object",
+      "$ref": "metadata.json"
+    },
+    "sanitizedDescription": {
+      "type": "string"
+    },
+    "specialRecipe": {
+      "type": "integer"
+    },
+    "stacks": {
+      "type": "integer"
+    },
+    "stats": {
+      "type": "object",
+      "$ref": "basic-data-stats.json"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

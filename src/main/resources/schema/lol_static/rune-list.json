@@ -1,0 +1,22 @@
+{
+  "title": "RuneList",
+  "description": "This object contains rune list data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.RuneList",
+  "properties": {
+    "basic": {
+      "type": "object",
+      "$ref": "basic-data.json"
+    },
+    "data": {
+      "type": "object",
+      "javaType": "Map<String, gg.buff.dorans.object.generated.Rune>"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

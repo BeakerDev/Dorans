@@ -1,0 +1,14 @@
+{
+  "title": "MasteryTreeItem",
+  "description": "This object contains mastery tree item data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MasteryTreeItem",
+  "properties": {
+    "masteryId": {
+      "type": "integer"
+    },
+    "prereq": {
+      "type": "string"
+    }
+  }
+}

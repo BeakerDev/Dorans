@@ -1,0 +1,20 @@
+{
+  "title": "Gold",
+  "description": "This object contains item gold data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Gold",
+  "properties": {
+    "base": {
+      "type": "integer"
+    },
+    "purchasable": {
+      "type": "boolean"
+    },
+    "sell": {
+      "type": "integer"
+    },
+    "total": {
+      "type": "integer"
+    }
+  }
+}

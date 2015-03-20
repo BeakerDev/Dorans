@@ -1,0 +1,22 @@
+{
+  "title": "MasteryList",
+  "description": "This object contains meta data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MasteryList",
+  "properties": {
+    "data": {
+      "type": "object",
+      "javaType": "Map<String, gg.buff.objects.generated.lol_static.Mastery>"
+    },
+    "tree": {
+      "type": "object",
+      "$ref": "mastery-tree.json"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

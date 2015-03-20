@@ -1,0 +1,26 @@
+{
+  "title": "MasteryTree",
+  "description": "This object contains mastery tree data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MasteryTree",
+  "properties": {
+    "Defense": {
+      "type": "array",
+      "items": {
+        "$ref": "mastery-list.json"
+      }
+    },
+    "Offense": {
+      "type": "array",
+      "items": {
+        "$ref": "mastery-list.json"
+      }
+    },
+    "Utility": {
+      "type": "array",
+      "items": {
+        "$ref": "mastery-list.json"
+      }
+    }
+  }
+}

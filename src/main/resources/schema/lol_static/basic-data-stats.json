@@ -1,0 +1,260 @@
+{
+  "title": "BasicDataStats",
+  "description": "This object contains basic data stats",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.BasicDataStats",
+  "properties": {
+    "FlatArmorMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatAttackSpeedMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatBlockMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatCritChanceMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatCritDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatEXPBonus": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatEnergyPoolMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatEnergyRegenMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatHPPoolMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatHPRegenMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatMPPoolMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatMPRegenMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatMagicDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatMovementSpeedMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatPhysicalDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "FlatSpellBlockMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentArmorMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentAttackSpeedMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentBlockMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentCritChanceMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentCritDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentDodgeMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentEXPBonus": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentHPPoolMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentHPRegenMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentLifeStealMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentMPPoolMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentMPRegenMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentMagicDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentMovementSpeedMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentPhysicalDamageMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "PercentSpellBlockMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatArmorModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatArmorPenetrationMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatArmorPenetrationModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatCritChanceModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatCritDamageModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatDodgeMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatDodgeModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatEnergyModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatEnergyRegenModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatGoldPer10Mod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatHPModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatHPRegenModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMPModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMPRegenModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMagicDamageModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMagicPenetrationMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMagicPenetrationModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatMovementSpeedModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatPhysicalDamageModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatSpellBlockModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatTimeDeadMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rFlatTimeDeadModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentArmorPenetrationMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentArmorPenetrationModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentAttackSpeedModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentCooldownMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentCooldownModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentMagicPenetrationMod": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentMagicPenetrationModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentMovementSpeedModPerLevel": {
+      "type": "object",
+      "javaType": "double"
+    },
+    "rPercentTimeDeadMod": {
+      "type": "object",
+      "javaType": "double"
+    }
+  }
+}

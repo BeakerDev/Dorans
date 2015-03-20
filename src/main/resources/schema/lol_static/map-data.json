@@ -1,0 +1,18 @@
+{
+  "title": "MapData",
+  "description": "This object contains map data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.MapData",
+  "properties": {
+    "data": {
+      "type": "object",
+      "javaType": "Map<String, gg.buff.dorans.objects.generated.lol_static.MapDetails"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}
