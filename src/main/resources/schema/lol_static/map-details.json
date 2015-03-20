@@ -6,7 +6,7 @@
   "properties": {
     "image": {
       "type": "object",
-      "javaType": "image.json"
+      "$ref": "image.json"
     },
     "mapId": {
       "type": "object",

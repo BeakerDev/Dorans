@@ -1,5 +1,6 @@
 package gg.buff.dorans.objects.generated.lol_static;
 
+import java.util.Map;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;

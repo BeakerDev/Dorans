@@ -1,5 +1,6 @@
 package gg.buff.dorans.objects.generated.lol_static;
 
+import java.util.Map;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -19,37 +20,37 @@ public class Realm {
 	 * <p>
 	 */
 	@Expose
-	private String cdn;
+	private java.lang.String cdn;
 	/**
 	 * Latest changed version of Dragon Magic's css file
 	 * <p>
 	 */
 	@Expose
-	private String css;
+	private java.lang.String css;
 	/**
 	 * Latest changed version of Dragon Magic
 	 * <p>
 	 */
 	@Expose
-	private String dd;
+	private java.lang.String dd;
 	/**
 	 * Default language for this realm
 	 * <p>
 	 */
 	@Expose
-	private String l;
+	private java.lang.String l;
 	/**
 	 * Legacy script mode for IE6 or older
 	 * <p>
 	 */
 	@Expose
-	private String lg;
+	private java.lang.String lg;
 	/**
 	 * Latest changed version for each data type listed
 	 * <p>
 	 */
 	@Expose
-	private Map n;
+	private Map<String, String> n;
 	/**
 	 * Special behavior number identifying the largest profileicon id that can
 	 * be used under 500. Any profileicon that is requested between this number
@@ -64,13 +65,13 @@ public class Realm {
 	 * <p>
 	 */
 	@Expose
-	private String store;
+	private java.lang.String store;
 	/**
 	 * Current version of this file for this realm
 	 * <p>
 	 */
 	@Expose
-	private String v;
+	private java.lang.String v;
 
 	/**
 	 * The base CDN url
@@ -78,7 +79,7 @@ public class Realm {
 	 * 
 	 * @return The cdn
 	 */
-	public String getCdn() {
+	public java.lang.String getCdn() {
 		return cdn;
 	}
 
@@ -89,7 +90,7 @@ public class Realm {
 	 * @param cdn
 	 *            The cdn
 	 */
-	public void setCdn(String cdn) {
+	public void setCdn(java.lang.String cdn) {
 		this.cdn = cdn;
 	}
 
@@ -99,7 +100,7 @@ public class Realm {
 	 * 
 	 * @return The css
 	 */
-	public String getCss() {
+	public java.lang.String getCss() {
 		return css;
 	}
 
@@ -110,7 +111,7 @@ public class Realm {
 	 * @param css
 	 *            The css
 	 */
-	public void setCss(String css) {
+	public void setCss(java.lang.String css) {
 		this.css = css;
 	}
 
@@ -120,7 +121,7 @@ public class Realm {
 	 * 
 	 * @return The dd
 	 */
-	public String getDd() {
+	public java.lang.String getDd() {
 		return dd;
 	}
 
@@ -131,7 +132,7 @@ public class Realm {
 	 * @param dd
 	 *            The dd
 	 */
-	public void setDd(String dd) {
+	public void setDd(java.lang.String dd) {
 		this.dd = dd;
 	}
 
@@ -141,7 +142,7 @@ public class Realm {
 	 * 
 	 * @return The l
 	 */
-	public String getL() {
+	public java.lang.String getL() {
 		return l;
 	}
 
@@ -152,7 +153,7 @@ public class Realm {
 	 * @param l
 	 *            The l
 	 */
-	public void setL(String l) {
+	public void setL(java.lang.String l) {
 		this.l = l;
 	}
 
@@ -162,7 +163,7 @@ public class Realm {
 	 * 
 	 * @return The lg
 	 */
-	public String getLg() {
+	public java.lang.String getLg() {
 		return lg;
 	}
 
@@ -173,7 +174,7 @@ public class Realm {
 	 * @param lg
 	 *            The lg
 	 */
-	public void setLg(String lg) {
+	public void setLg(java.lang.String lg) {
 		this.lg = lg;
 	}
 
@@ -183,7 +184,7 @@ public class Realm {
 	 * 
 	 * @return The n
 	 */
-	public Map getN() {
+	public Map<String, String> getN() {
 		return n;
 	}
 
@@ -194,7 +195,7 @@ public class Realm {
 	 * @param n
 	 *            The n
 	 */
-	public void setN(Map n) {
+	public void setN(Map<String, String> n) {
 		this.n = n;
 	}
 
@@ -230,7 +231,7 @@ public class Realm {
 	 * 
 	 * @return The store
 	 */
-	public String getStore() {
+	public java.lang.String getStore() {
 		return store;
 	}
 
@@ -242,7 +243,7 @@ public class Realm {
 	 * @param store
 	 *            The store
 	 */
-	public void setStore(String store) {
+	public void setStore(java.lang.String store) {
 		this.store = store;
 	}
 
@@ -252,7 +253,7 @@ public class Realm {
 	 * 
 	 * @return The v
 	 */
-	public String getV() {
+	public java.lang.String getV() {
 		return v;
 	}
 
@@ -263,12 +264,12 @@ public class Realm {
 	 * @param v
 	 *            The v
 	 */
-	public void setV(String v) {
+	public void setV(java.lang.String v) {
 		this.v = v;
 	}
 
 	@Override
-	public String toString() {
+	public java.lang.String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

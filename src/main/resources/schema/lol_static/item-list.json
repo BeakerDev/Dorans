@@ -10,7 +10,7 @@
     },
     "data": {
       "type": "object",
-      "javaType": "Map<String, gg.buff.dorans.objects.generated.lol_static.Item>"
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.lol_static.Item>"
     },
     "groups": {
       "type": "array",
@@ -20,7 +20,7 @@
     },
     "tree": {
       "type": "object",
-      "javaType": "item-tree.json"
+      "$ref": "item-tree.json"
     },
     "type": {
       "type": "string"

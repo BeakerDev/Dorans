@@ -10,7 +10,7 @@
     },
     "data": {
       "type": "object",
-      "javaType": "Map<String, gg.buff.dorans.object.generated.Rune>"
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.lol_static.Rune>"
     },
     "type": {
       "type": "string"

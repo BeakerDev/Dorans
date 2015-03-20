@@ -6,7 +6,7 @@
   "properties": {
     "data": {
       "type": "object",
-      "javaType": "Map<String, String>"
+      "javaType": "java.util.Map<String, String>"
     },
     "type": {
       "type": "string"

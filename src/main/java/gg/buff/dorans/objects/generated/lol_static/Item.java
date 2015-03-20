@@ -2,6 +2,7 @@ package gg.buff.dorans.objects.generated.lol_static;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -17,7 +18,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class Item {
 
 	@Expose
-	private String colloq;
+	private java.lang.String colloq;
 	@Expose
 	private boolean consumeOnFull;
 	@Expose
@@ -25,9 +26,9 @@ public class Item {
 	@Expose
 	private int depth;
 	@Expose
-	private String description;
+	private java.lang.String description;
 	@Expose
-	private Map effect;
+	private Map<String, String> effect;
 	@Expose
 	private Object from;
 	/**
@@ -38,7 +39,7 @@ public class Item {
 	@Expose
 	private Gold gold;
 	@Expose
-	private String group;
+	private java.lang.String group;
 	@Expose
 	private boolean hideFromAll;
 	@Expose
@@ -53,15 +54,15 @@ public class Item {
 	@Expose
 	private boolean inStore;
 	@Expose
-	private List<String> into = new ArrayList<String>();
+	private List<java.lang.String> into = new ArrayList<java.lang.String>();
 	@Expose
-	private Map maps;
+	private Map<String, Boolean> maps;
 	@Expose
-	private String name;
+	private java.lang.String name;
 	@Expose
-	private String plaintext;
+	private java.lang.String plaintext;
 	@Expose
-	private String requiredChampion;
+	private java.lang.String requiredChampion;
 	/**
 	 * MetaData
 	 * <p>
@@ -70,7 +71,7 @@ public class Item {
 	@Expose
 	private MetaData rune;
 	@Expose
-	private String sanitizedDescription;
+	private java.lang.String sanitizedDescription;
 	@Expose
 	private int specialRecipe;
 	@Expose
@@ -83,12 +84,12 @@ public class Item {
 	@Expose
 	private BasicDataStats stats;
 	@Expose
-	private List<String> tags = new ArrayList<String>();
+	private List<java.lang.String> tags = new ArrayList<java.lang.String>();
 
 	/**
 	 * @return The colloq
 	 */
-	public String getColloq() {
+	public java.lang.String getColloq() {
 		return colloq;
 	}
 
@@ -96,7 +97,7 @@ public class Item {
 	 * @param colloq
 	 *            The colloq
 	 */
-	public void setColloq(String colloq) {
+	public void setColloq(java.lang.String colloq) {
 		this.colloq = colloq;
 	}
 
@@ -148,7 +149,7 @@ public class Item {
 	/**
 	 * @return The description
 	 */
-	public String getDescription() {
+	public java.lang.String getDescription() {
 		return description;
 	}
 
@@ -156,14 +157,14 @@ public class Item {
 	 * @param description
 	 *            The description
 	 */
-	public void setDescription(String description) {
+	public void setDescription(java.lang.String description) {
 		this.description = description;
 	}
 
 	/**
 	 * @return The effect
 	 */
-	public Map getEffect() {
+	public Map<String, String> getEffect() {
 		return effect;
 	}
 
@@ -171,7 +172,7 @@ public class Item {
 	 * @param effect
 	 *            The effect
 	 */
-	public void setEffect(Map effect) {
+	public void setEffect(Map<String, String> effect) {
 		this.effect = effect;
 	}
 
@@ -216,7 +217,7 @@ public class Item {
 	/**
 	 * @return The group
 	 */
-	public String getGroup() {
+	public java.lang.String getGroup() {
 		return group;
 	}
 
@@ -224,7 +225,7 @@ public class Item {
 	 * @param group
 	 *            The group
 	 */
-	public void setGroup(String group) {
+	public void setGroup(java.lang.String group) {
 		this.group = group;
 	}
 
@@ -299,7 +300,7 @@ public class Item {
 	/**
 	 * @return The into
 	 */
-	public List<String> getInto() {
+	public List<java.lang.String> getInto() {
 		return into;
 	}
 
@@ -307,14 +308,14 @@ public class Item {
 	 * @param into
 	 *            The into
 	 */
-	public void setInto(List<String> into) {
+	public void setInto(List<java.lang.String> into) {
 		this.into = into;
 	}
 
 	/**
 	 * @return The maps
 	 */
-	public Map getMaps() {
+	public Map<String, Boolean> getMaps() {
 		return maps;
 	}
 
@@ -322,14 +323,14 @@ public class Item {
 	 * @param maps
 	 *            The maps
 	 */
-	public void setMaps(Map maps) {
+	public void setMaps(Map<String, Boolean> maps) {
 		this.maps = maps;
 	}
 
 	/**
 	 * @return The name
 	 */
-	public String getName() {
+	public java.lang.String getName() {
 		return name;
 	}
 
@@ -337,14 +338,14 @@ public class Item {
 	 * @param name
 	 *            The name
 	 */
-	public void setName(String name) {
+	public void setName(java.lang.String name) {
 		this.name = name;
 	}
 
 	/**
 	 * @return The plaintext
 	 */
-	public String getPlaintext() {
+	public java.lang.String getPlaintext() {
 		return plaintext;
 	}
 
@@ -352,14 +353,14 @@ public class Item {
 	 * @param plaintext
 	 *            The plaintext
 	 */
-	public void setPlaintext(String plaintext) {
+	public void setPlaintext(java.lang.String plaintext) {
 		this.plaintext = plaintext;
 	}
 
 	/**
 	 * @return The requiredChampion
 	 */
-	public String getRequiredChampion() {
+	public java.lang.String getRequiredChampion() {
 		return requiredChampion;
 	}
 
@@ -367,7 +368,7 @@ public class Item {
 	 * @param requiredChampion
 	 *            The requiredChampion
 	 */
-	public void setRequiredChampion(String requiredChampion) {
+	public void setRequiredChampion(java.lang.String requiredChampion) {
 		this.requiredChampion = requiredChampion;
 	}
 
@@ -397,7 +398,7 @@ public class Item {
 	/**
 	 * @return The sanitizedDescription
 	 */
-	public String getSanitizedDescription() {
+	public java.lang.String getSanitizedDescription() {
 		return sanitizedDescription;
 	}
 
@@ -405,7 +406,7 @@ public class Item {
 	 * @param sanitizedDescription
 	 *            The sanitizedDescription
 	 */
-	public void setSanitizedDescription(String sanitizedDescription) {
+	public void setSanitizedDescription(java.lang.String sanitizedDescription) {
 		this.sanitizedDescription = sanitizedDescription;
 	}
 
@@ -465,7 +466,7 @@ public class Item {
 	/**
 	 * @return The tags
 	 */
-	public List<String> getTags() {
+	public List<java.lang.String> getTags() {
 		return tags;
 	}
 
@@ -473,12 +474,12 @@ public class Item {
 	 * @param tags
 	 *            The tags
 	 */
-	public void setTags(List<String> tags) {
+	public void setTags(List<java.lang.String> tags) {
 		this.tags = tags;
 	}
 
 	@Override
-	public String toString() {
+	public java.lang.String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

@@ -21,7 +21,7 @@
     },
     "effect": {
       "type": "object",
-      "javaType": "Map<String, String>"
+      "javaType": "java.util.Map<String, String>"
     },
     "from": {
       "type": "arrays",
@@ -58,7 +58,7 @@
     },
     "maps": {
       "type": "object",
-      "javaType": "Map<String, Boolean>"
+      "javaType": "java.util.Map<String, Boolean>"
     },
     "name": {
       "type": "string"

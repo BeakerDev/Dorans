@@ -54,7 +54,7 @@
     },
     "maps": {
       "type": "object",
-      "javaType": "Map<String, Boolean>"
+      "javaType": "java.util.Map<String, Boolean>"
     },
     "name": {
       "type": "string"

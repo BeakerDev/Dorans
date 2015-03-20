@@ -6,7 +6,7 @@
   "properties": {
     "data": {
       "type": "object",
-      "javaType": "Map<String, gg.buff.objects.generated.lol_static.Mastery>"
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.lol_static.Mastery>"
     },
     "tree": {
       "type": "object",

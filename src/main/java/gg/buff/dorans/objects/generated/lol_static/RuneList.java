@@ -1,6 +1,8 @@
 package gg.buff.dorans.objects.generated.lol_static;
 
+import java.util.Map;
 import javax.annotation.Generated;
+import gg.buff.dorans.objects.generated.lol_static.Rune;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -22,11 +24,11 @@ public class RuneList {
 	@Expose
 	private BasicData basic;
 	@Expose
-	private Map data;
+	private Map<String, Rune> data;
 	@Expose
-	private String type;
+	private java.lang.String type;
 	@Expose
-	private String version;
+	private java.lang.String version;
 
 	/**
 	 * BasicData
@@ -54,7 +56,7 @@ public class RuneList {
 	/**
 	 * @return The data
 	 */
-	public Map getData() {
+	public Map<String, Rune> getData() {
 		return data;
 	}
 
@@ -62,14 +64,14 @@ public class RuneList {
 	 * @param data
 	 *            The data
 	 */
-	public void setData(Map data) {
+	public void setData(Map<String, Rune> data) {
 		this.data = data;
 	}
 
 	/**
 	 * @return The type
 	 */
-	public String getType() {
+	public java.lang.String getType() {
 		return type;
 	}
 
@@ -77,14 +79,14 @@ public class RuneList {
 	 * @param type
 	 *            The type
 	 */
-	public void setType(String type) {
+	public void setType(java.lang.String type) {
 		this.type = type;
 	}
 
 	/**
 	 * @return The version
 	 */
-	public String getVersion() {
+	public java.lang.String getVersion() {
 		return version;
 	}
 
@@ -92,12 +94,12 @@ public class RuneList {
 	 * @param version
 	 *            The version
 	 */
-	public void setVersion(String version) {
+	public void setVersion(java.lang.String version) {
 		this.version = version;
 	}
 
 	@Override
-	public String toString() {
+	public java.lang.String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

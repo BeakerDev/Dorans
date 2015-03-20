@@ -1,5 +1,6 @@
 package gg.buff.dorans.objects.generated.lol_static;
 
+import java.util.Map;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -15,16 +16,16 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class LanguageStrings {
 
 	@Expose
-	private Map data;
+	private Map<String, String> data;
 	@Expose
-	private String type;
+	private java.lang.String type;
 	@Expose
-	private String version;
+	private java.lang.String version;
 
 	/**
 	 * @return The data
 	 */
-	public Map getData() {
+	public Map<String, String> getData() {
 		return data;
 	}
 
@@ -32,14 +33,14 @@ public class LanguageStrings {
 	 * @param data
 	 *            The data
 	 */
-	public void setData(Map data) {
+	public void setData(Map<String, String> data) {
 		this.data = data;
 	}
 
 	/**
 	 * @return The type
 	 */
-	public String getType() {
+	public java.lang.String getType() {
 		return type;
 	}
 
@@ -47,14 +48,14 @@ public class LanguageStrings {
 	 * @param type
 	 *            The type
 	 */
-	public void setType(String type) {
+	public void setType(java.lang.String type) {
 		this.type = type;
 	}
 
 	/**
 	 * @return The version
 	 */
-	public String getVersion() {
+	public java.lang.String getVersion() {
 		return version;
 	}
 
@@ -62,12 +63,12 @@ public class LanguageStrings {
 	 * @param version
 	 *            The version
 	 */
-	public void setVersion(String version) {
+	public void setVersion(java.lang.String version) {
 		this.version = version;
 	}
 
 	@Override
-	public String toString() {
+	public java.lang.String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

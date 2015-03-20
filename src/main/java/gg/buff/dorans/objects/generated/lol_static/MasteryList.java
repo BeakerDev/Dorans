@@ -1,6 +1,8 @@
 package gg.buff.dorans.objects.generated.lol_static;
 
+import java.util.Map;
 import javax.annotation.Generated;
+import gg.buff.dorans.objects.generated.lol_static.Mastery;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -15,7 +17,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 public class MasteryList {
 
 	@Expose
-	private Map data;
+	private Map<String, Mastery> data;
 	/**
 	 * MasteryTree
 	 * <p>
@@ -24,14 +26,14 @@ public class MasteryList {
 	@Expose
 	private MasteryTree tree;
 	@Expose
-	private String type;
+	private java.lang.String type;
 	@Expose
-	private String version;
+	private java.lang.String version;
 
 	/**
 	 * @return The data
 	 */
-	public Map getData() {
+	public Map<String, Mastery> getData() {
 		return data;
 	}
 
@@ -39,7 +41,7 @@ public class MasteryList {
 	 * @param data
 	 *            The data
 	 */
-	public void setData(Map data) {
+	public void setData(Map<String, Mastery> data) {
 		this.data = data;
 	}
 
@@ -69,7 +71,7 @@ public class MasteryList {
 	/**
 	 * @return The type
 	 */
-	public String getType() {
+	public java.lang.String getType() {
 		return type;
 	}
 
@@ -77,14 +79,14 @@ public class MasteryList {
 	 * @param type
 	 *            The type
 	 */
-	public void setType(String type) {
+	public void setType(java.lang.String type) {
 		this.type = type;
 	}
 
 	/**
 	 * @return The version
 	 */
-	public String getVersion() {
+	public java.lang.String getVersion() {
 		return version;
 	}
 
@@ -92,12 +94,12 @@ public class MasteryList {
 	 * @param version
 	 *            The version
 	 */
-	public void setVersion(String version) {
+	public void setVersion(java.lang.String version) {
 		this.version = version;
 	}
 
 	@Override
-	public String toString() {
+	public java.lang.String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
 

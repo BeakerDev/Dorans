@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
-import image.json;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -17,8 +16,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 @Generated("org.jsonschema2pojo")
 public class MapDetails {
 
+	/**
+	 * Image
+	 * <p>
+	 * This object contains spell vars data
+	 */
 	@Expose
-	private json image;
+	private Image image;
 	@Expose
 	private long mapId;
 	@Expose
@@ -27,17 +31,25 @@ public class MapDetails {
 	private List<Long> unpurchasableItemList = new ArrayList<Long>();
 
 	/**
+	 * Image
+	 * <p>
+	 * This object contains spell vars data
+	 * 
 	 * @return The image
 	 */
-	public json getImage() {
+	public Image getImage() {
 		return image;
 	}
 
 	/**
+	 * Image
+	 * <p>
+	 * This object contains spell vars data
+	 * 
 	 * @param image
 	 *            The image
 	 */
-	public void setImage(json image) {
+	public void setImage(Image image) {
 		this.image = image;
 	}
 

@@ -27,7 +27,7 @@
     "n": {
       "title": "Latest changed version for each data type listed",
       "type": "object",
-      "javaType": "Map<String, String>"
+      "javaType": "java.util.Map<String, String>"
     },
     "profileiconmax": {
       "title": "Special behavior number identifying the largest profileicon id that can be used under 500. Any profileicon that is requested between this number and 500 should be mapped to 0.",
