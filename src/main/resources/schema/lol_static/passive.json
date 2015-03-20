@@ -1,0 +1,21 @@
+{
+  "title": "Passive",
+  "description": "This object contains champion passive data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Passive",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sanitizedDescription": {
+      "type": "string"
+    }
+  }
+}

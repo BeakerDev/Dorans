@@ -1,0 +1,14 @@
+{
+  "title": "BlockItem",
+  "description": "This object champion recommended block item data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.BlockItem",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "integer"
+    }
+  }
+}

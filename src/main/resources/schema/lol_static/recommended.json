@@ -1,0 +1,32 @@
+{
+  "title": "Recommended",
+  "description": "This object contains champion recommended data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Recommended",
+  "properties": {
+    "blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "block.json"
+      }
+    },
+    "champion": {
+      "type": "string"
+    },
+    "map": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

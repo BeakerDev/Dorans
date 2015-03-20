@@ -1,0 +1,68 @@
+{
+  "title": "Stats",
+  "description": "This object contains champion stats data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Stats",
+  "properties": {
+    "armor": {
+      "type": "double"
+    },
+    "armorperlevel": {
+      "type": "double"
+    },
+    "attackdamage": {
+      "type": "double"
+    },
+    "attackdamageperlevel": {
+      "type": "double"
+    },
+    "attackrange": {
+      "type": "double"
+    },
+    "attackspeedoffset": {
+      "type": "double"
+    },
+    "attackspeedperlevel": {
+      "type": "double"
+    },
+    "crit": {
+      "type": "double"
+    },
+    "critperlevel": {
+      "type": "double"
+    },
+    "hp": {
+      "type": "double"
+    },
+    "hpperlevel": {
+      "type": "double"
+    },
+    "hpregen": {
+      "type": "double"
+    },
+    "hpregenperlevel": {
+      "type": "double"
+    },
+    "movespeed": {
+      "type": "double"
+    },
+    "mp": {
+      "type": "double"
+    },
+    "mpperlevel": {
+      "type": "double"
+    },
+    "mpregen": {
+      "type": "double"
+    },
+    "mpregenperlevel": {
+      "type": "double"
+    },
+    "spellblock": {
+      "type": "double"
+    },
+    "spellblockperlevel": {
+      "type": "double"
+    }
+  }
+}

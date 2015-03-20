@@ -1,0 +1,17 @@
+{
+  "title": "Skin",
+  "description": "This object contains champion skin data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Skin",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "num": {
+      "type": "integer"
+    }
+  }
+}

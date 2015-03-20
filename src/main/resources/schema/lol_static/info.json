@@ -1,0 +1,20 @@
+{
+  "title": "Info",
+  "description": "This object contains champion info data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Info",
+  "properties": {
+    "attack": {
+      "type": "integer"
+    },
+    "defense": {
+      "type": "integer"
+    },
+    "difficulty": {
+      "type": "integer"
+    },
+    "magic": {
+      "type": "integer"
+    }
+  }
+}

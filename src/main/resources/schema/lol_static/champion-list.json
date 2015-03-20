@@ -1,0 +1,25 @@
+{
+  "title": "ChampionList",
+  "description": "This object contains champion list data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.ChampionList",
+  "properties": {
+    "data": {
+      "type": "object",
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.lol_static.Champion>"
+    },
+    "format": {
+      "type": "string"
+    },
+    "keys": {
+      "type": "object",
+      "javaType": "java.util.Map<String, String>"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

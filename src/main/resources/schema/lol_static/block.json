@@ -1,0 +1,20 @@
+{
+  "title": "Block",
+  "description": "This object recommended block data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Block",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "block-item.json"
+      }
+    },
+    "recMath": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

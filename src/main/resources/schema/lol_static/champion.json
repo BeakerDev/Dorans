@@ -1,0 +1,81 @@
+{
+  "title": "Champion",
+  "description": "This object contains champion data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.Champion",
+  "properties": {
+    "allytips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blurb": {
+      "type": "string"
+    },
+    "enemytips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "info": {
+      "type": "object",
+      "$ref": "info.json"
+    },
+    "key": {
+      "type": "string"
+    },
+    "lore": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "partype": {
+      "type": "string"
+    },
+    "passive": {
+      "type": "object",
+      "$ref": "passive.json"
+    },
+    "recommended": {
+      "type": "array",
+      "items": {
+        "$ref": "recommended.json"
+      }
+    },
+    "skins": {
+      "type": "array",
+      "items": {
+        "$ref": "skin.json"
+      }
+    },
+    "spells": {
+      "type": "array",
+      "items": {
+        "$ref": "champion-spell.json"
+      }
+    },
+    "stats": {
+      "type": "object",
+      "$ref": "stats.json"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

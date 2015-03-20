@@ -9,15 +9,17 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
- * SummonerSpell
+ * ChampionSpell
  * <p>
- * This object contains summoner spell data
+ * This object contains champion spell data
  */
 @Generated("org.jsonschema2pojo")
-public class SummonerSpell {
+public class ChampionSpell {
 
 	@Expose
-	private List<Double> cooldown = new ArrayList<Double>();
+	private List<Image> altimages = new ArrayList<Image>();
+	@Expose
+	private List<Object> cooldown = new ArrayList<Object>();
 	@Expose
 	private String cooldownBurn;
 	@Expose
@@ -36,8 +38,6 @@ public class SummonerSpell {
 	private List<List<Double>> effect = new ArrayList<List<Double>>();
 	@Expose
 	private List<String> effectBurn = new ArrayList<String>();
-	@Expose
-	private int id;
 	/**
 	 * Image
 	 * <p>
@@ -57,8 +57,6 @@ public class SummonerSpell {
 	@Expose
 	private int maxrank;
 	@Expose
-	private List<String> modes = new ArrayList<String>();
-	@Expose
 	private String name;
 	/**
 	 * This field is either a List of Integer or the String 'self' for spells
@@ -66,7 +64,7 @@ public class SummonerSpell {
 	 * <p>
 	 */
 	@Expose
-	private Range_ range;
+	private Range range;
 	@Expose
 	private String rangeBurn;
 	@Expose
@@ -76,16 +74,29 @@ public class SummonerSpell {
 	@Expose
 	private String sanitizedTooltip;
 	@Expose
-	private int summonerLevel;
-	@Expose
 	private String tooltip;
 	@Expose
 	private List<SpellVars> vars = new ArrayList<SpellVars>();
 
 	/**
+	 * @return The altimages
+	 */
+	public List<Image> getAltimages() {
+		return altimages;
+	}
+
+	/**
+	 * @param altimages
+	 *            The altimages
+	 */
+	public void setAltimages(List<Image> altimages) {
+		this.altimages = altimages;
+	}
+
+	/**
 	 * @return The cooldown
 	 */
-	public List<Double> getCooldown() {
+	public List<Object> getCooldown() {
 		return cooldown;
 	}
 
@@ -93,7 +104,7 @@ public class SummonerSpell {
 	 * @param cooldown
 	 *            The cooldown
 	 */
-	public void setCooldown(List<Double> cooldown) {
+	public void setCooldown(List<Object> cooldown) {
 		this.cooldown = cooldown;
 	}
 
@@ -209,21 +220,6 @@ public class SummonerSpell {
 	}
 
 	/**
-	 * @return The id
-	 */
-	public int getId() {
-		return id;
-	}
-
-	/**
-	 * @param id
-	 *            The id
-	 */
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	/**
 	 * Image
 	 * <p>
 	 * This object contains spell vars data
@@ -300,21 +296,6 @@ public class SummonerSpell {
 	}
 
 	/**
-	 * @return The modes
-	 */
-	public List<String> getModes() {
-		return modes;
-	}
-
-	/**
-	 * @param modes
-	 *            The modes
-	 */
-	public void setModes(List<String> modes) {
-		this.modes = modes;
-	}
-
-	/**
 	 * @return The name
 	 */
 	public String getName() {
@@ -336,7 +317,7 @@ public class SummonerSpell {
 	 * 
 	 * @return The range
 	 */
-	public Range_ getRange() {
+	public Range getRange() {
 		return range;
 	}
 
@@ -348,7 +329,7 @@ public class SummonerSpell {
 	 * @param range
 	 *            The range
 	 */
-	public void setRange(Range_ range) {
+	public void setRange(Range range) {
 		this.range = range;
 	}
 
@@ -413,21 +394,6 @@ public class SummonerSpell {
 	}
 
 	/**
-	 * @return The summonerLevel
-	 */
-	public int getSummonerLevel() {
-		return summonerLevel;
-	}
-
-	/**
-	 * @param summonerLevel
-	 *            The summonerLevel
-	 */
-	public void setSummonerLevel(int summonerLevel) {
-		this.summonerLevel = summonerLevel;
-	}
-
-	/**
 	 * @return The tooltip
 	 */
 	public String getTooltip() {
@@ -464,7 +430,7 @@ public class SummonerSpell {
 
 	@Override
 	public int hashCode() {
-		return new HashCodeBuilder().append(cooldown).append(cooldownBurn).append(cost).append(costBurn).append(costType).append(description).append(effect).append(effectBurn).append(id).append(image).append(key).append(levelTip).append(maxrank).append(modes).append(name).append(range).append(rangeBurn).append(resource).append(sanitizedDescription).append(sanitizedTooltip).append(summonerLevel).append(tooltip).append(vars).toHashCode();
+		return new HashCodeBuilder().append(altimages).append(cooldown).append(cooldownBurn).append(cost).append(costBurn).append(costType).append(description).append(effect).append(effectBurn).append(image).append(key).append(levelTip).append(maxrank).append(name).append(range).append(rangeBurn).append(resource).append(sanitizedDescription).append(sanitizedTooltip).append(tooltip).append(vars).toHashCode();
 	}
 
 	@Override
@@ -472,11 +438,11 @@ public class SummonerSpell {
 		if (other == this) {
 			return true;
 		}
-		if ((other instanceof SummonerSpell) == false) {
+		if ((other instanceof ChampionSpell) == false) {
 			return false;
 		}
-		SummonerSpell rhs = ((SummonerSpell) other);
-		return new EqualsBuilder().append(cooldown, rhs.cooldown).append(cooldownBurn, rhs.cooldownBurn).append(cost, rhs.cost).append(costBurn, rhs.costBurn).append(costType, rhs.costType).append(description, rhs.description).append(effect, rhs.effect).append(effectBurn, rhs.effectBurn).append(id, rhs.id).append(image, rhs.image).append(key, rhs.key).append(levelTip, rhs.levelTip).append(maxrank, rhs.maxrank).append(modes, rhs.modes).append(name, rhs.name).append(range, rhs.range).append(rangeBurn, rhs.rangeBurn).append(resource, rhs.resource).append(sanitizedDescription, rhs.sanitizedDescription).append(sanitizedTooltip, rhs.sanitizedTooltip).append(summonerLevel, rhs.summonerLevel).append(tooltip, rhs.tooltip).append(vars, rhs.vars).isEquals();
+		ChampionSpell rhs = ((ChampionSpell) other);
+		return new EqualsBuilder().append(altimages, rhs.altimages).append(cooldown, rhs.cooldown).append(cooldownBurn, rhs.cooldownBurn).append(cost, rhs.cost).append(costBurn, rhs.costBurn).append(costType, rhs.costType).append(description, rhs.description).append(effect, rhs.effect).append(effectBurn, rhs.effectBurn).append(image, rhs.image).append(key, rhs.key).append(levelTip, rhs.levelTip).append(maxrank, rhs.maxrank).append(name, rhs.name).append(range, rhs.range).append(rangeBurn, rhs.rangeBurn).append(resource, rhs.resource).append(sanitizedDescription, rhs.sanitizedDescription).append(sanitizedTooltip, rhs.sanitizedTooltip).append(tooltip, rhs.tooltip).append(vars, rhs.vars).isEquals();
 	}
 
 }

@@ -1,0 +1,97 @@
+{
+  "title": "ChampionSpell",
+  "description": "This object contains champion spell data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.ChampionSpell",
+  "properties": {
+    "altimages": {
+      "type": "array",
+      "items": {
+        "$ref": "image.json"
+      }
+    },
+    "cooldown": {
+      "type": "array",
+      "items": {
+        "type": "double"
+      }
+    },
+    "cooldownBurn": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "costBurn": {
+      "type": "string"
+    },
+    "costType": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "effect": {
+      "title": "This field is a List of List of Double",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "javaType": "double"
+        }
+      }
+    },
+    "effectBurn": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image": {
+      "type": "object",
+      "$ref": "image.json"
+    },
+    "key": {
+      "type": "string"
+    },
+    "levelTip": {
+      "type": "object",
+      "$ref": "level-tip.json"
+    },
+    "maxrank": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "range": {
+      "title": "This field is either a List of Integer or the String 'self' for spells that target one's own champion",
+      "type": "object"
+    },
+    "rangeBurn": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string"
+    },
+    "sanitizedDescription": {
+      "type": "string"
+    },
+    "sanitizedTooltip": {
+      "type": "string"
+    },
+    "tooltip": {
+      "type": "string"
+    },
+    "vars": {
+      "type": "array",
+      "items": {
+        "$ref": "spell-vars.json"
+      }
+    }
+  }
+}
