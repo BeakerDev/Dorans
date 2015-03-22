@@ -4,6 +4,7 @@ import com.google.gson.reflect.TypeToken;
 import gg.buff.dorans.annotations.RateLimitted;
 import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.exceptions.InvalidParameterException;
+import gg.buff.dorans.objects.generated.summoner.MasteryPages;
 import gg.buff.dorans.objects.generated.summoner.Summoner;
 import gg.buff.dorans.query.QueryUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -18,6 +19,10 @@ public class SummonerApi {
 	private final Dorans parent;
 
 	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>() {
+	}.getType();
+	private final Type typeMapLongSummoner = new TypeToken<Map<Long, Summoner>>() {
+	}.getType();
+	private final Type typeMapStringMasteryPages = new TypeToken<Map<String, MasteryPages>>() {
 	}.getType();
 
 	protected SummonerApi(Dorans parent) {
@@ -106,7 +111,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerIds array of summoner ids
-	 * @return raw json map of standardized summoner ids to their summoner objects
+	 * @return raw json map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -132,12 +137,12 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerIds array of summoner ids
-	 * @return map of standardized summoner ids to their summoner objects
+	 * @return map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
-	public Map<String, Summoner> getSummonersById(long[] summonerIds) throws DoransException {
-		return parent.getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapStringSummoner);
+	public Map<Long, Summoner> getSummonersById(long[] summonerIds) throws DoransException {
+		return parent.getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapLongSummoner);
 	}
 
 	/**
@@ -147,7 +152,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerId summoner id
-	 * @return raw json map of standardized summoner id to its summoner object
+	 * @return raw json map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
