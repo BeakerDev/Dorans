@@ -106,7 +106,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerIds array of summoner ids
-	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @return raw json map of standardized summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -132,7 +132,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerIds array of summoner ids
-	 * @return map of standardized summoner names to their summoner objects
+	 * @return map of standardized summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -147,7 +147,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summonerId summoner id
-	 * @return raw json map of standardized summoner name to its summoner object
+	 * @return raw json map of standardized summoner id to its summoner object
 	 * @throws DoransException
 	 */
 	@RateLimitted
