@@ -5,13 +5,13 @@ public enum Region {
     EUW("EUW1", "https://euw.api.pvp.net/"),
     EUNE("EUN1", "https://eune.api.pvp.net/"),
     KR("KR", "https://kr.api.pvp.net/"),
-    BR("BR1", "htpp://br.api.pvp.net/"),
-    LAS("LA2", "htpp://las.api.pvp.net/"),
-    LAN("LA1", "htpp://lan.api.pvp.net/"),
-    OCE("OC1", "htpp://oce.api.pvp.net/"),
-    TR("TR1", "htpp://tr.api.pvp.net/"),
-    RU("RU", "htpp://ru.api.pvp.net/"),
-    GLOBAL("", "htpp://global.api.pvp.net/");
+    BR("BR1", "https://br.api.pvp.net/"),
+    LAS("LA2", "https://las.api.pvp.net/"),
+    LAN("LA1", "https://lan.api.pvp.net/"),
+    OCE("OC1", "https://oce.api.pvp.net/"),
+    TR("TR1", "https://tr.api.pvp.net/"),
+    RU("RU", "https://ru.api.pvp.net/"),
+    GLOBAL("", "https://global.api.pvp.net/");
 
     private final String platformId;
 	private final String endpoint;
