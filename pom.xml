@@ -155,6 +155,9 @@
                     <encoding>UTF-8</encoding>
                     <configFile>${basedir}/beakerdev-formatting-standards.xml</configFile>
                     <overrideConfigCompilerVersion>true</overrideConfigCompilerVersion>
+                    <directories>
+                        <directory>${project.build.sourceDirectory}/gg/buff/dorans/objects/generated</directory>
+                    </directories>
                 </configuration>
                 <dependencies>
                     <dependency>

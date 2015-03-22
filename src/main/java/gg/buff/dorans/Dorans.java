@@ -11,7 +11,7 @@ public class Dorans {
 	private final SummonerApi summoner = new SummonerApi(this);
 
 	public Dorans() {
-		query =  new QueryManager();
+		query = new QueryManager();
 	}
 
 	public Dorans(String apiKey) {

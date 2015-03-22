@@ -16,7 +16,8 @@ public class SummonerApi {
 	private static final String VERSION = "v1.4";
 	private final Dorans parent;
 
-	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>(){}.getType();
+	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>() {
+	}.getType();
 
 	public SummonerApi(Dorans parent) {
 		this.parent = parent;
@@ -40,7 +41,7 @@ public class SummonerApi {
 	}
 
 	public Map<String, Summoner> getSummonersByName(List<String> summoners) throws DoransException {
-		return  parent.getGson().fromJson(getSummonersByNameRaw(summoners), typeMapStringSummoner);
+		return parent.getGson().fromJson(getSummonersByNameRaw(summoners), typeMapStringSummoner);
 	}
 
 	public String getSummonerByNameRaw(String summoner) throws DoransException {

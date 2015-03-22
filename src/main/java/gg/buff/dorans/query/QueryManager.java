@@ -14,10 +14,11 @@ import gg.buff.dorans.exceptions.UnknownException;
 import gg.buff.dorans.objects.Region;
 import org.apache.commons.lang3.StringUtils;
 
-import static gg.buff.dorans.query.QueryConstants.*;
-
 import java.io.IOException;
 import java.util.Map;
+
+import static gg.buff.dorans.query.QueryConstants.APIKEY;
+import static gg.buff.dorans.query.QueryConstants.SEPARATOR;
 
 public class QueryManager {
 	private final OkHttpClient client;
@@ -42,9 +43,7 @@ public class QueryManager {
 	}
 
 	public String query(String path, Map<String, String> parameters) throws DoransException {
-		Request request = new Request.Builder()
-				.url(new StringBuilder().append(region.getResourceUrl()).append(region.name().toLowerCase()).append(SEPARATOR).append(path).append(APIKEY).append(apiKey).append(buildParameters(parameters)).toString())
-				.build();
+		Request request = new Request.Builder().url(new StringBuilder().append(region.getResourceUrl()).append(region.name().toLowerCase()).append(SEPARATOR).append(path).append(APIKEY).append(apiKey).append(buildParameters(parameters)).toString()).build();
 
 		return execute(request);
 	}
