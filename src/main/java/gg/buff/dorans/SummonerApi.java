@@ -4,6 +4,7 @@ import com.google.gson.reflect.TypeToken;
 import gg.buff.dorans.annotations.RateLimitted;
 import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.exceptions.InvalidParameterException;
+import gg.buff.dorans.objects.generated.summoner.MasteryPage;
 import gg.buff.dorans.objects.generated.summoner.MasteryPages;
 import gg.buff.dorans.objects.generated.summoner.Summoner;
 import gg.buff.dorans.query.QueryUtils;
@@ -22,7 +23,7 @@ public class SummonerApi {
 	}.getType();
 	private final Type typeMapLongSummoner = new TypeToken<Map<Long, Summoner>>() {
 	}.getType();
-	private final Type typeMapStringMasteryPages = new TypeToken<Map<String, MasteryPages>>() {
+	private final Type typeMapLongMasteryPages = new TypeToken<Map<Long, MasteryPages>>() {
 	}.getType();
 
 	protected SummonerApi(Dorans parent) {
@@ -105,23 +106,20 @@ public class SummonerApi {
 	}
 
 	/**
-	 * The response object contains the summoner objects mapped by the standardized summoner name,
-	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
-	 * name when checking if the returned object contains the data for a given summoner. This API will
-	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerIds array of summoner ids
+	 * @param summonerIds list of summoner ids
 	 * @return raw json map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
-	public String getSummonersByIdRaw(long[] summonerIds) throws DoransException {
+	public String getSummonersByIdRaw(List<Long> summonerIds) throws DoransException {
 		String summonerList;
-		if (summonerIds.length == 0) {
+		if (summonerIds.size() == 0) {
 			throw new InvalidParameterException("Zero summoners is not allowed");
-		} else if (summonerIds.length == 1) {
-			summonerList = Long.toString(summonerIds[0]);
-		} else if (summonerIds.length > 40) {
+		} else if (summonerIds.size() == 1) {
+			summonerList = Long.toString(summonerIds.get(0));
+		} else if (summonerIds.size() > 40) {
 			throw new InvalidParameterException("Method limited to 40 summoner names per query");
 		} else {
 			summonerList = StringUtils.join(summonerIds, ",");
@@ -131,51 +129,97 @@ public class SummonerApi {
 	}
 
 	/**
-	 * The response object contains the summoner objects mapped by the standardized summoner name,
-	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
-	 * name when checking if the returned object contains the data for a given summoner. This API will
-	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerIds array of summoner ids
+	 * @param summonerIds list of summoner ids
 	 * @return map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
-	public Map<Long, Summoner> getSummonersById(long[] summonerIds) throws DoransException {
+	public Map<Long, Summoner> getSummonersById(List<Long> summonerIds) throws DoransException {
 		return parent.getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapLongSummoner);
 	}
 
 	/**
-	 * The response object contains the summoner objects mapped by the standardized summoner name,
-	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
-	 * name when checking if the returned object contains the data for a given summoner. This API will
-	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 * Method to get Summoner objects from their IDs
 	 *
 	 * @param summonerId summoner id
 	 * @return raw json map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
-	public String getSummonerByIdRaw(long summonerId) throws DoransException {
-		long[] ids = new long[1];
-		ids[0] = summonerId;
-		return getSummonersByIdRaw(ids);
+	public String getSummonerByIdRaw(Long summonerId) throws DoransException {
+		return getSummonersByIdRaw(Collections.singletonList(summonerId));
 	}
 
 	/**
-	 * The response object contains the summoner objects mapped by the standardized summoner name,
-	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
-	 * name when checking if the returned object contains the data for a given summoner. This API will
-	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 * Method to get Summoner objects from their IDs
 	 *
 	 * @param summonerId summoner id
 	 * @return summoner object
 	 * @throws DoransException
 	 */
 	@RateLimitted
-	public Summoner getSummonerById(long summonerId) throws DoransException {
-		long[] ids = new long[1];
-		ids[0] = summonerId;
-		return getSummonersById(ids).entrySet().iterator().next().getValue();
+	public Summoner getSummonerById(Long summonerId) throws DoransException {
+		return getSummonersById(Collections.singletonList(summonerId)).entrySet().iterator().next().getValue();
+	}
+
+	/**
+	 * Method to get summoners mastery pages from their IDs
+	 *
+	 * @param summonerIds list of summoner ids
+	 * @return raw json map of summoner id to mastery pages
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getMasteryPagesRaw(List<Long> summonerIds) throws DoransException {
+		String summonerList;
+		if (summonerIds.size() == 0) {
+			throw new InvalidParameterException("Zero summoners is not allowed");
+		} else if (summonerIds.size() == 1) {
+			summonerList = Long.toString(summonerIds.get(0));
+		} else if (summonerIds.size() > 40) {
+			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+		} else {
+			summonerList = StringUtils.join(summonerIds, ",");
+		}
+
+		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+	}
+
+	/**
+	 * Method to get summoners mastery pages from their IDs
+	 *
+	 * @param summonerIds list of summoner ids
+	 * @return map of summoner id to mastery pages
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public Map<Long, MasteryPage> getMasteryPages(List<Long> summonerIds) throws DoransException {
+		return parent.getGson().fromJson(getMasteryPagesRaw(summonerIds), typeMapLongMasteryPages);
+	}
+
+	/**
+	 * Method to get summoners mastery pages from their IDs
+	 *
+	 * @param summonerId summoner id
+	 * @return raw json map of summoner id to mastery pages
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getMasteryPagesRaw(Long summonerId) throws DoransException {
+		return getMasteryPagesRaw(Collections.singletonList(summonerId));
+	}
+
+	/**
+	 * Method to get summoners mastery pages from their IDs
+	 *
+	 * @param summonerId summoner id
+	 * @return mastery pages
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public MasteryPage getMasteryPages(Long summonerId) throws DoransException {
+		return getMasteryPages(Collections.singletonList(summonerId)).entrySet().iterator().next().getValue();
 	}
 }
