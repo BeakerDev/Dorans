@@ -22,6 +22,7 @@
         <build.date>${maven.build.timestamp}</build.date>
 
         <version.gson>2.2.4</version.gson>
+        <version.okhttp>2.3.0</version.okhttp>
 
         <version.commons.lang>3.3.2</version.commons.lang>
     </properties>
@@ -60,6 +61,13 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${version.gson}</version>
+        </dependency>
+
+        <!-- Square OkHttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${version.okhttp}</version>
         </dependency>
 
         <!-- Apache Commons Dependencies -->
