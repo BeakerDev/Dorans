@@ -1,6 +1,7 @@
 package gg.buff.dorans;
 
 import com.google.gson.reflect.TypeToken;
+import gg.buff.dorans.annotations.RateLimitted;
 import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.exceptions.InvalidParameterException;
 import gg.buff.dorans.objects.generated.summoner.Summoner;
@@ -19,10 +20,21 @@ public class SummonerApi {
 	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>() {
 	}.getType();
 
-	public SummonerApi(Dorans parent) {
+	protected SummonerApi(Dorans parent) {
 		this.parent = parent;
 	}
 
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summoners list of summoner names
+	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
 	public String getSummonersByNameRaw(List<String> summoners) throws DoransException {
 		List<String> standardizedSummonders = QueryUtils.standardizeSummonerName(summoners);
 
@@ -37,17 +49,51 @@ public class SummonerApi {
 			summonerList = StringUtils.join(standardizedSummonders, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder().append(VERSION).append("/summoner/by-name/").append(summonerList).toString());
+		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/by-name/").append(summonerList).toString());
 	}
 
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summoners list of summoner names
+	 * @return map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
 	public Map<String, Summoner> getSummonersByName(List<String> summoners) throws DoransException {
 		return parent.getGson().fromJson(getSummonersByNameRaw(summoners), typeMapStringSummoner);
 	}
 
+
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summoner summoner name
+	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
 	public String getSummonerByNameRaw(String summoner) throws DoransException {
 		return getSummonersByNameRaw(Collections.singletonList(summoner));
 	}
 
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summoner summoner name
+	 * @return map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
 	public Summoner getSummonerByName(String summoner) throws DoransException {
 		Map<String, Summoner> result = getSummonersByName(Collections.singletonList(summoner));
 		return result.entrySet().iterator().next().getValue();
