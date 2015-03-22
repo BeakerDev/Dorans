@@ -36,8 +36,8 @@ public class SummonerApi {
 	 * name when checking if the returned object contains the data for a given summoner. This API will
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
-	 * @param summoners list of summoner names
-	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @param summoners {@link java.util.List} of summoner names as a {@link java.lang.String}
+	 * @return raw json map of standardized summoner names to their summoner objects as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -64,8 +64,9 @@ public class SummonerApi {
 	 * name when checking if the returned object contains the data for a given summoner. This API will
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
-	 * @param summoners list of summoner names
-	 * @return map of standardized summoner names to their summoner objects
+	 * @param summoners {@link java.util.List} of summoner names as a {@link java.lang.String}
+	 * @return {@link java.util.Map} of standardized summoner names as a {@link java.lang.String} linked
+	 * to their {@link gg.buff.dorans.objects.generated.summoner.Summoner}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -80,8 +81,8 @@ public class SummonerApi {
 	 * name when checking if the returned object contains the data for a given summoner. This API will
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
-	 * @param summoner summoner name
-	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @param summoner summoner name as a {@link java.lang.String}
+	 * @return raw json map of standardized summoner names to their summoner objects as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -95,8 +96,8 @@ public class SummonerApi {
 	 * name when checking if the returned object contains the data for a given summoner. This API will
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
-	 * @param summoner summoner name
-	 * @return summoner objects
+	 * @param summoner summoner name as a {@link java.lang.String}
+	 * @return {@link gg.buff.dorans.objects.generated.summoner.Summoner}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -108,8 +109,8 @@ public class SummonerApi {
 	/**
 	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerIds list of summoner ids
-	 * @return raw json map of summoner ids to their summoner objects
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner ids to their summoner objects as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -131,7 +132,7 @@ public class SummonerApi {
 	/**
 	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerIds list of summoner ids
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
 	 * @return map of summoner ids to their summoner objects
 	 * @throws DoransException
 	 */
@@ -143,8 +144,8 @@ public class SummonerApi {
 	/**
 	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerId summoner id
-	 * @return raw json map of summoner ids to their summoner objects
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return raw json map of summoner ids to their summoner objects as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -155,8 +156,8 @@ public class SummonerApi {
 	/**
 	 * Method to get Summoner objects from their IDs
 	 *
-	 * @param summonerId summoner id
-	 * @return summoner object
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return {@link gg.buff.dorans.objects.generated.summoner.Summoner}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -167,8 +168,8 @@ public class SummonerApi {
 	/**
 	 * Method to get summoners mastery pages from their IDs
 	 *
-	 * @param summonerIds list of summoner ids
-	 * @return raw json map of summoner id to mastery pages
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner id to mastery pages as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -190,8 +191,9 @@ public class SummonerApi {
 	/**
 	 * Method to get summoners mastery pages from their IDs
 	 *
-	 * @param summonerIds list of summoner ids
-	 * @return map of summoner id to mastery pages
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return {@link java.util.Map} of summoner id as {@link java.lang.Long} to mastery pages 
+	 * as {@link gg.buff.dorans.objects.generated.summoner.MasteryPages}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -202,8 +204,8 @@ public class SummonerApi {
 	/**
 	 * Method to get summoners mastery pages from their IDs
 	 *
-	 * @param summonerId summoner id
-	 * @return raw json map of summoner id to mastery pages
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return raw json map of summoner id to mastery pages as a {@link java.lang.String}
 	 * @throws DoransException
 	 */
 	@RateLimitted
@@ -214,8 +216,8 @@ public class SummonerApi {
 	/**
 	 * Method to get summoners mastery pages from their IDs
 	 *
-	 * @param summonerId summoner id
-	 * @return mastery pages
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return {@link gg.buff.dorans.objects.generated.summoner.MasteryPages}
 	 * @throws DoransException
 	 */
 	@RateLimitted
