@@ -98,4 +98,79 @@ public class SummonerApi {
 		Map<String, Summoner> result = getSummonersByName(Collections.singletonList(summoner));
 		return result.entrySet().iterator().next().getValue();
 	}
+
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summonerIds array of summoner ids
+	 * @return raw json map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getSummonersByIdRaw(long[] summonerIds) throws DoransException {
+		String summonerList;
+		if (summonerIds.length == 0) {
+			throw new InvalidParameterException("Zero summoners is not allowed");
+		} else if (summonerIds.length == 1) {
+			summonerList = Long.toString(summonerIds[0]);
+		} else if (summonerIds.length > 40) {
+			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+		} else {
+			summonerList = StringUtils.join(summonerIds, ",");
+		}
+
+		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).toString());
+	}
+
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summonerIds array of summoner ids
+	 * @return map of standardized summoner names to their summoner objects
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public Map<String, Summoner> getSummonersById(long[] summonerIds) throws DoransException {
+		return parent.getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapStringSummoner);
+	}
+
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summonerId summoner id
+	 * @return raw json map of standardized summoner name to its summoner object
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getSummonerByIdRaw(long summonerId) throws DoransException {
+		long[] ids = new long[1];
+		ids[0] = summonerId;
+		return getSummonersByIdRaw(ids);
+	}
+
+	/**
+	 * The response object contains the summoner objects mapped by the standardized summoner name,
+	 * which is the summoner name in all lower case and with spaces removed. Use this version of the
+	 * name when checking if the returned object contains the data for a given summoner. This API will
+	 * also accept standardized summoner names as valid parameters, although they are not required.
+	 *
+	 * @param summonerId summoner id
+	 * @return summoner object
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public Summoner getSummonerById(long summonerId) throws DoransException {
+		long[] ids = new long[1];
+		ids[0] = summonerId;
+		return getSummonersById(ids).entrySet().iterator().next().getValue();
+	}
 }
