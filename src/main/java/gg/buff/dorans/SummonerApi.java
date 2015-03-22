@@ -90,7 +90,7 @@ public class SummonerApi {
 	 * also accept standardized summoner names as valid parameters, although they are not required.
 	 *
 	 * @param summoner summoner name
-	 * @return map of standardized summoner names to their summoner objects
+	 * @return summoner objects
 	 * @throws DoransException
 	 */
 	@RateLimitted
