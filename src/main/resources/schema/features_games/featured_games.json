@@ -1,7 +1,7 @@
 {
   "title": "Featured Games",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.feature_games.FeatureGames",
+  "javaType": "gg.buff.dorans.objects.generated.feature_games.FeaturedGames",
   "properties": {
     "clientRefreshInterval": {
       "title": "The suggested interval to wait before requesting FeaturedGames again",

@@ -11,6 +11,7 @@ public class Dorans {
 	private final SummonerApi summoner = new SummonerApi(this);
 	private final ChampionApi champion = new ChampionApi(this);
 	private final CurrentGameApi currentGame = new CurrentGameApi(this);
+	private final FeaturedGamesApi featuredGames = new FeaturedGamesApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -40,6 +41,9 @@ public class Dorans {
 
 	public CurrentGameApi currentGame() {
 		return currentGame;
+	}
+	public FeaturedGamesApi featuredGames() {
+		return featuredGames;
 	}
 
 	public Region getRegion() {

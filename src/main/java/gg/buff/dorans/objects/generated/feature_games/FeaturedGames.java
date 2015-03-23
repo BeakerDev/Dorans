@@ -14,7 +14,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * <p>
  */
 @Generated("org.jsonschema2pojo")
-public class FeatureGames {
+public class FeaturedGames {
 
 	/**
 	 * The suggested interval to wait before requesting FeaturedGames again
@@ -86,10 +86,10 @@ public class FeatureGames {
 		if (other == this) {
 			return true;
 		}
-		if ((other instanceof FeatureGames) == false) {
+		if ((other instanceof FeaturedGames) == false) {
 			return false;
 		}
-		FeatureGames rhs = ((FeatureGames) other);
+		FeaturedGames rhs = ((FeaturedGames) other);
 		return new EqualsBuilder().append(clientRefreshInterval, rhs.clientRefreshInterval).append(gamesList, rhs.gamesList).isEquals();
 	}
 
