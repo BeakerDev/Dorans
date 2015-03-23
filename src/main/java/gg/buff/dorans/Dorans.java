@@ -9,6 +9,7 @@ public class Dorans {
 	private final Gson gson = new Gson();
 
 	private final SummonerApi summoner = new SummonerApi(this);
+	private final ChampionApi champion = new ChampionApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -30,6 +31,10 @@ public class Dorans {
 
 	public SummonerApi summoner() {
 		return summoner;
+	}
+
+	public ChampionApi champion() {
+		return champion;
 	}
 
 	protected QueryManager getQuery() {
