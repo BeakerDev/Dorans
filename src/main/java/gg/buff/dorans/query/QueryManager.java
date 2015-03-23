@@ -48,6 +48,12 @@ public class QueryManager {
 		return execute(request);
 	}
 
+	public String observerQuery(String path) throws DoransException {
+		Request request = new Request.Builder().url(new StringBuilder().append(region.getObserverUrl()).append(path).append(APIKEY).append(apiKey).toString()).build();
+
+		return execute(request);
+	}
+
 	private String execute(Request request) throws DoransException {
 		Response response;
 		try {

@@ -10,6 +10,7 @@ public class Dorans {
 
 	private final SummonerApi summoner = new SummonerApi(this);
 	private final ChampionApi champion = new ChampionApi(this);
+	private final CurrentGameApi currentGame = new CurrentGameApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -35,6 +36,18 @@ public class Dorans {
 
 	public ChampionApi champion() {
 		return champion;
+	}
+
+	public CurrentGameApi currentGame() {
+		return currentGame;
+	}
+
+	public Region getRegion() {
+		return query.getRegion();
+	}
+
+	public void setRegion(Region region) {
+		query.setRegion(region);
 	}
 
 	protected QueryManager getQuery() {
