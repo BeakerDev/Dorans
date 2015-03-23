@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ChampionApi {
-	private static final String VERSION = "v1.4";
+	private static final String VERSION = "v1.2";
 	private final Dorans parent;
 	private final Map<String, String> freeToPlayMap = new HashMap<>();
 
