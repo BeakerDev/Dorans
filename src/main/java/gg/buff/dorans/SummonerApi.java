@@ -16,9 +16,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class SummonerApi {
+public class SummonerApi extends CommonApi {
 	private static final String VERSION = "v1.4";
-	private final Dorans parent;
 
 	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>() {
 	}.getType();
@@ -32,7 +31,7 @@ public class SummonerApi {
 	}.getType();
 
 	protected SummonerApi(Dorans parent) {
-		this.parent = parent;
+		super(parent);
 	}
 
 	/**
@@ -60,7 +59,7 @@ public class SummonerApi {
 			summonerList = StringUtils.join(standardizedSummonders, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/by-name/").append(summonerList).toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/by-name/").append(summonerList).toString());
 	}
 
 	/**
@@ -76,7 +75,7 @@ public class SummonerApi {
 	 */
 	@RateLimitted
 	public Map<String, Summoner> getSummonersByName(List<String> summoners) throws DoransException {
-		return parent.getGson().fromJson(getSummonersByNameRaw(summoners), typeMapStringSummoner);
+		return getParent().getGson().fromJson(getSummonersByNameRaw(summoners), typeMapStringSummoner);
 	}
 
 
@@ -131,7 +130,7 @@ public class SummonerApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).toString());
 	}
 
 	/**
@@ -143,7 +142,7 @@ public class SummonerApi {
 	 */
 	@RateLimitted
 	public Map<Long, Summoner> getSummonersById(List<Long> summonerIds) throws DoransException {
-		return parent.getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapLongSummoner);
+		return getParent().getGson().fromJson(getSummonersByIdRaw(summonerIds), typeMapLongSummoner);
 	}
 
 	/**
@@ -190,7 +189,7 @@ public class SummonerApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
 	}
 
 	/**
@@ -203,7 +202,7 @@ public class SummonerApi {
 	 */
 	@RateLimitted
 	public Map<Long, MasteryPage> getMasteryPages(List<Long> summonerIds) throws DoransException {
-		return parent.getGson().fromJson(getMasteryPagesRaw(summonerIds), typeMapLongMasteryPages);
+		return getParent().getGson().fromJson(getMasteryPagesRaw(summonerIds), typeMapLongMasteryPages);
 	}
 
 	/**
@@ -250,7 +249,7 @@ public class SummonerApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/names").toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/names").toString());
 	}
 
 	/**
@@ -262,7 +261,7 @@ public class SummonerApi {
 	 */
 	@RateLimitted
 	public Map<Long, String> getSummonerNames(List<Long> summonerIds) throws DoransException {
-		return parent.getGson().fromJson(getSummonerNamesRaw(summonerIds), typeMapLongString);
+		return getParent().getGson().fromJson(getSummonerNamesRaw(summonerIds), typeMapLongString);
 	}
 
 	/**
@@ -309,7 +308,7 @@ public class SummonerApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
 	}
 
 	/**
@@ -322,7 +321,7 @@ public class SummonerApi {
 	 */
 	@RateLimitted
 	public Map<Long, RunePages> getRunePages(List<Long> summonerIds) throws DoransException {
-		return parent.getGson().fromJson(getRunePagesRaw(summonerIds), typeMapLongRunePages);
+		return getParent().getGson().fromJson(getRunePagesRaw(summonerIds), typeMapLongRunePages);
 	}
 
 	/**

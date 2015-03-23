@@ -4,12 +4,11 @@ import gg.buff.dorans.annotations.RateLimitted;
 import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.objects.generated.feature_games.FeaturedGames;
 
-public class FeaturedGamesApi {
+public class FeaturedGamesApi extends CommonApi {
 	private static final String VERSION = "v1.0";
-	private final Dorans parent;
 
 	public FeaturedGamesApi(Dorans parent) {
-		this.parent = parent;
+		super(parent);
 	}
 
 	/**
@@ -20,7 +19,7 @@ public class FeaturedGamesApi {
 	 */
 	@RateLimitted
 	public String getFeaturedGamesRaw() throws DoransException {
-		return parent.getQuery().observerQuery("featured");
+		return getParent().getQuery().observerQuery("featured");
 	}
 
 	/**
@@ -31,6 +30,6 @@ public class FeaturedGamesApi {
 	 */
 	@RateLimitted
 	public FeaturedGames getFeaturedGames() throws DoransException {
-		return parent.getGson().fromJson(getFeaturedGamesRaw(), FeaturedGames.class);
+		return getParent().getGson().fromJson(getFeaturedGamesRaw(), FeaturedGames.class);
 	}
 }

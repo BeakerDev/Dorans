@@ -8,13 +8,12 @@ import gg.buff.dorans.objects.generated.champion.ChampionList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChampionApi {
+public class ChampionApi extends CommonApi {
 	private static final String VERSION = "v1.2";
-	private final Dorans parent;
 	private final Map<String, String> freeToPlayMap = new HashMap<>();
 
 	public ChampionApi(Dorans parent) {
-		this.parent = parent;
+		super(parent);
 		freeToPlayMap.put("freeToPlay", Boolean.toString(true));
 	}
 
@@ -26,7 +25,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public String getChampionsRaw() throws DoransException {
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/champion").toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion").toString());
 	}
 
 	/**
@@ -37,7 +36,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public ChampionList getChampions() throws DoransException {
-		return parent.getGson().fromJson(getChampionsRaw(), ChampionList.class);
+		return getParent().getGson().fromJson(getChampionsRaw(), ChampionList.class);
 	}
 
 	/**
@@ -48,7 +47,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public String getFreeToPlayChampionsRaw() throws DoransException {
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/champion").toString(), freeToPlayMap);
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion").toString(), freeToPlayMap);
 	}
 
 	/**
@@ -59,7 +58,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public ChampionList getFreeToPlayChampions() throws DoransException {
-		return parent.getGson().fromJson(getFreeToPlayChampionsRaw(), ChampionList.class);
+		return getParent().getGson().fromJson(getFreeToPlayChampionsRaw(), ChampionList.class);
 	}
 
 	/**
@@ -71,7 +70,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public String getChampionRaw(Long championId) throws DoransException {
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/champion/").append(championId).toString());
+		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion/").append(championId).toString());
 	}
 
 	/**
@@ -83,7 +82,7 @@ public class ChampionApi {
 	 */
 	@RateLimitted
 	public Champion getChampion(Long championId) throws DoransException {
-		return parent.getGson().fromJson(getChampionRaw(championId), Champion.class);
+		return getParent().getGson().fromJson(getChampionRaw(championId), Champion.class);
 	}
 
 }
