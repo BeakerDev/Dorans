@@ -6,6 +6,7 @@ import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.exceptions.InvalidParameterException;
 import gg.buff.dorans.objects.generated.summoner.MasteryPage;
 import gg.buff.dorans.objects.generated.summoner.MasteryPages;
+import gg.buff.dorans.objects.generated.summoner.RunePages;
 import gg.buff.dorans.objects.generated.summoner.Summoner;
 import gg.buff.dorans.query.QueryUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -24,6 +25,10 @@ public class SummonerApi {
 	private final Type typeMapLongSummoner = new TypeToken<Map<Long, Summoner>>() {
 	}.getType();
 	private final Type typeMapLongMasteryPages = new TypeToken<Map<Long, MasteryPages>>() {
+	}.getType();
+	private final Type typeMapLongString = new TypeToken<Map<Long, String>>() {
+	}.getType();
+	private final Type typeMapLongRunePages = new TypeToken<Map<Long, RunePages>>() {
 	}.getType();
 
 	protected SummonerApi(Dorans parent) {
@@ -223,5 +228,124 @@ public class SummonerApi {
 	@RateLimitted
 	public MasteryPage getMasteryPages(Long summonerId) throws DoransException {
 		return getMasteryPages(Collections.singletonList(summonerId)).entrySet().iterator().next().getValue();
+	}
+
+	/**
+	 * Method to get a summoners name from their summoner ID
+	 *
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner id to summoner name as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getSummonerNamesRaw(List<Long> summonerIds) throws DoransException {
+		String summonerList;
+		if (summonerIds.size() == 0) {
+			throw new InvalidParameterException("Zero summoners is not allowed");
+		} else if (summonerIds.size() == 1) {
+			summonerList = Long.toString(summonerIds.get(0));
+		} else if (summonerIds.size() > 40) {
+			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+		} else {
+			summonerList = StringUtils.join(summonerIds, ",");
+		}
+
+		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/names").toString());
+	}
+
+	/**
+	 * Method to get a summoners name from their summoner ID
+	 *
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner id to summoner name as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public Map<Long, String> getSummonerNames(List<Long> summonerIds) throws DoransException {
+		return parent.getGson().fromJson(getSummonerNamesRaw(summonerIds), typeMapLongString);
+	}
+
+	/**
+	 * Method to get a summoners name from their summoner ID
+	 *
+	 * @param summonerId summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner id to summoner name as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getSummonerNameRaw(Long summonerId) throws DoransException {
+		return getSummonerNamesRaw(Collections.singletonList(summonerId));
+	}
+
+	/**
+	 * Method to get a summoners name from their summoner ID
+	 *
+	 * @param summonerId summoner ids as {@link java.lang.Long}
+	 * @return summoner name as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getSummonerName(Long summonerId) throws DoransException {
+		return getSummonerNames(Collections.singletonList(summonerId)).entrySet().iterator().next().getValue();
+	}
+
+	/**
+	 * Method to get summoners rune pages from their IDs
+	 *
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return raw json map of summoner id to rune pages as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getRunePagesRaw(List<Long> summonerIds) throws DoransException {
+		String summonerList;
+		if (summonerIds.size() == 0) {
+			throw new InvalidParameterException("Zero summoners is not allowed");
+		} else if (summonerIds.size() == 1) {
+			summonerList = Long.toString(summonerIds.get(0));
+		} else if (summonerIds.size() > 40) {
+			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+		} else {
+			summonerList = StringUtils.join(summonerIds, ",");
+		}
+
+		return parent.getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+	}
+
+	/**
+	 * Method to get summoners rune pages from their IDs
+	 *
+	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
+	 * @return {@link java.util.Map} of summoner id as {@link java.lang.Long} to rune pages
+	 * as {@link gg.buff.dorans.objects.generated.summoner.RunePages}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public Map<Long, RunePages> getRunePages(List<Long> summonerIds) throws DoransException {
+		return parent.getGson().fromJson(getRunePagesRaw(summonerIds), typeMapLongRunePages);
+	}
+
+	/**
+	 * Method to get summoners rune pages from their IDs
+	 *
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return raw json map of summoner id to rune pages as a {@link java.lang.String}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public String getRunePagesRaw(Long summonerId) throws DoransException {
+		return getRunePagesRaw(Collections.singletonList(summonerId));
+	}
+
+	/**
+	 * Method to get summoners rune pages from their IDs
+	 *
+	 * @param summonerId summoner id as {@link java.lang.Long}
+	 * @return {@link gg.buff.dorans.objects.generated.summoner.RunePages}
+	 * @throws DoransException
+	 */
+	@RateLimitted
+	public RunePages getRunePages(Long summonerId) throws DoransException {
+		return getRunePages(Collections.singletonList(summonerId)).entrySet().iterator().next().getValue();
 	}
 }
