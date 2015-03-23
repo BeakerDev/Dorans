@@ -9,11 +9,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ChampionApi extends CommonApi {
-	private static final String VERSION = "v1.2";
 	private final Map<String, String> freeToPlayMap = new HashMap<>();
 
 	public ChampionApi(Dorans parent) {
-		super(parent);
+		super(parent, "v1.2");
 		freeToPlayMap.put("freeToPlay", Boolean.toString(true));
 	}
 
@@ -25,7 +24,7 @@ public class ChampionApi extends CommonApi {
 	 */
 	@RateLimitted
 	public String getChampionsRaw() throws DoransException {
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion").toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/champion").toString());
 	}
 
 	/**
@@ -47,7 +46,7 @@ public class ChampionApi extends CommonApi {
 	 */
 	@RateLimitted
 	public String getFreeToPlayChampionsRaw() throws DoransException {
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion").toString(), freeToPlayMap);
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/champion").toString(), freeToPlayMap);
 	}
 
 	/**
@@ -70,7 +69,7 @@ public class ChampionApi extends CommonApi {
 	 */
 	@RateLimitted
 	public String getChampionRaw(Long championId) throws DoransException {
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/champion/").append(championId).toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/champion/").append(championId).toString());
 	}
 
 	/**

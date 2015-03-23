@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 public class SummonerApi extends CommonApi {
-	private static final String VERSION = "v1.4";
 
 	private final Type typeMapStringSummoner = new TypeToken<Map<String, Summoner>>() {
 	}.getType();
@@ -31,7 +30,7 @@ public class SummonerApi extends CommonApi {
 	}.getType();
 
 	protected SummonerApi(Dorans parent) {
-		super(parent);
+		super(parent, "v1.4");
 	}
 
 	/**
@@ -59,7 +58,7 @@ public class SummonerApi extends CommonApi {
 			summonerList = StringUtils.join(standardizedSummonders, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/by-name/").append(summonerList).toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/summoner/by-name/").append(summonerList).toString());
 	}
 
 	/**
@@ -130,7 +129,7 @@ public class SummonerApi extends CommonApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/summoner/").append(summonerList).toString());
 	}
 
 	/**
@@ -189,7 +188,7 @@ public class SummonerApi extends CommonApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/summoner/").append(summonerList).append("/masteries").toString());
 	}
 
 	/**
@@ -249,7 +248,7 @@ public class SummonerApi extends CommonApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/names").toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/summoner/").append(summonerList).append("/names").toString());
 	}
 
 	/**
@@ -308,7 +307,7 @@ public class SummonerApi extends CommonApi {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(VERSION).append("/summoner/").append(summonerList).append("/masteries").toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/summoner/").append(summonerList).append("/masteries").toString());
 	}
 
 	/**

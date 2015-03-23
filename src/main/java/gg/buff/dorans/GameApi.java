@@ -4,12 +4,10 @@ import gg.buff.dorans.annotations.RateLimitted;
 import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.objects.generated.game.RecentGames;
 
-public class GameApi {
-	private static final String VERSION = "v1.3";
-	private final Dorans parent;
+public class GameApi extends CommonApi {
 
 	public GameApi(Dorans parent) {
-		this.parent = parent;
+		super(parent, "v1.3");
 	}
 
 	/**
@@ -21,7 +19,7 @@ public class GameApi {
 	 */
 	@RateLimitted
 	public String getRecentGamesRaw(Long summonerId) throws DoransException {
-		return parent.getQuery().query(new StringBuilder(VERSION).append("/game/by-summoner/").append(summonerId).append("/recent").toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/game/by-summoner/").append(summonerId).append("/recent").toString());
 	}
 
 	/**
@@ -33,6 +31,6 @@ public class GameApi {
 	 */
 	@RateLimitted
 	public RecentGames getRecentGames(Long summonerId) throws DoransException {
-		return parent.getGson().fromJson(getRecentGamesRaw(summonerId), RecentGames.class);
+		return getParent().getGson().fromJson(getRecentGamesRaw(summonerId), RecentGames.class);
 	}
 }

@@ -5,10 +5,9 @@ import gg.buff.dorans.exceptions.DoransException;
 import gg.buff.dorans.objects.generated.feature_games.FeaturedGames;
 
 public class FeaturedGamesApi extends CommonApi {
-	private static final String VERSION = "v1.0";
 
 	public FeaturedGamesApi(Dorans parent) {
-		super(parent);
+		super(parent, "v1.0");
 	}
 
 	/**

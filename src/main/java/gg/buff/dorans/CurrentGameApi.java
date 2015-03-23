@@ -6,10 +6,9 @@ import gg.buff.dorans.objects.generated.current_game.CurrentGame;
 import gg.buff.dorans.query.QueryConstants;
 
 public class CurrentGameApi extends CommonApi {
-	private static final String VERSION = "v1.0";
 
 	public CurrentGameApi(Dorans parent) {
-		super(parent);
+		super(parent, "v1.0");
 	}
 
 	/**
