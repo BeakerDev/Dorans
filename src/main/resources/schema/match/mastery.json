@@ -1,7 +1,7 @@
 {
   "title": "Mastery",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Mastery",
+  "javaType": "gg.buff.dorans.objects.generated.match.Mastery",
   "properties": {
     "masteryId": {
       "title": "Mastery ID",

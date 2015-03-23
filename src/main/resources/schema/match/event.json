@@ -2,7 +2,7 @@
   "title": "Event",
   "description": "This object contains game event information. Note that not all legal type values documented below are valid for all games. Event data evolves over time and certain values may be relevant only for older or newer games.",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Event",
+  "javaType": "gg.buff.dorans.objects.generated.match.Event",
   "properties": {
     "ascendedType": {
       "title": "The ascended type of the event. Only present if relevant. Note that CLEAR_ASCENDED refers to when a participants kills the ascended player.",

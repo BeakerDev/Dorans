@@ -2,7 +2,7 @@
   "title": "Player",
   "description": "This object contains match player information",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Player",
+  "javaType": "gg.buff.dorans.objects.generated.match.Player",
   "properties": {
     "matchHistoryUri": {
       "title": "Match history URI",

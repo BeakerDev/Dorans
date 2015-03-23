@@ -1,4 +1,4 @@
-package gg.buff.dorans.objects.generated.generated.match;
+package gg.buff.dorans.objects.generated.match;
 
 import java.util.ArrayList;
 import java.util.HashMap;

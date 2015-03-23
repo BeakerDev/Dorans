@@ -1,4 +1,4 @@
-package gg.buff.dorans.objects.generated.generated.match;
+package gg.buff.dorans.objects.generated.match;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;

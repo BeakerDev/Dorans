@@ -1,8 +1,8 @@
-package gg.buff.dorans.objects.generated.generated.match;
+package gg.buff.dorans.objects.generated.match;
 
 import java.util.Map;
 import javax.annotation.Generated;
-import gg.buff.dorans.objects.generated.generated.match.ParticipantFrame;
+import gg.buff.dorans.objects.generated.match.ParticipantFrame;
 import com.google.gson.annotations.Expose;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

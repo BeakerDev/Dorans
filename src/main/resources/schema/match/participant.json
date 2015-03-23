@@ -1,7 +1,7 @@
 {
   "title": "Participant",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Participant",
+  "javaType": "gg.buff.dorans.objects.generated.match.Participant",
   "properties": {
     "championId": {
       "title": "Champion ID",

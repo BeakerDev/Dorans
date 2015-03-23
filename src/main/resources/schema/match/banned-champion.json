@@ -2,7 +2,7 @@
   "title": "BannedChampion",
   "description": "This object contains information about banned champions",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.BannedChampion",
+  "javaType": "gg.buff.dorans.objects.generated.match.BannedChampion",
   "properties": {
     "championId": {
       "title": "Banned champion ID",

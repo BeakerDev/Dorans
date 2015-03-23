@@ -1,7 +1,7 @@
 {
   "title": "Team",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Team",
+  "javaType": "gg.buff.dorans.objects.generated.match.Team",
   "properties": {
     "bans": {
       "title": "If game was draft mode, contains banned champion data, otherwise null",

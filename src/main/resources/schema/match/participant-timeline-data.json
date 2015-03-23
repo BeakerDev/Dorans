@@ -2,7 +2,7 @@
   "title": "ParticipantTimelineData",
   "description": "The object contains timeline data",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.ParticipantTimelineData",
+  "javaType": "gg.buff.dorans.objects.generated.match.ParticipantTimelineData",
   "properties": {
     "tenToTwenty": {
       "tenToTwenty": {

@@ -1,7 +1,7 @@
 {
   "title": "Timeline",
   "type": "object",
-  "javaType": "gg.buff.dorans.objects.generated.generated.match.Timeline",
+  "javaType": "gg.buff.dorans.objects.generated.match.Timeline",
   "properties": {
     "frameInterval": {
       "title": "Mastery rank",
