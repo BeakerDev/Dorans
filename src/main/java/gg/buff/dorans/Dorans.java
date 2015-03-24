@@ -7,12 +7,13 @@ import gg.buff.dorans.query.QueryManager;
 public class Dorans {
 	private final QueryManager query;
 	private final Gson gson = new Gson();
-
+	// API Objects
 	private final SummonerApi summoner = new SummonerApi(this);
 	private final ChampionApi champion = new ChampionApi(this);
 	private final CurrentGameApi currentGame = new CurrentGameApi(this);
 	private final FeaturedGamesApi featuredGames = new FeaturedGamesApi(this);
 	private final GameApi game = new GameApi(this);
+	private final LeagueApi league = new LeagueApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -50,6 +51,10 @@ public class Dorans {
 
 	public GameApi game() {
 		return game;
+	}
+
+	public LeagueApi league() {
+		return league;
 	}
 
 	public Region getRegion() {
