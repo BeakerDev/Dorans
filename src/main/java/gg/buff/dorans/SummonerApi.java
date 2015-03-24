@@ -53,7 +53,7 @@ public class SummonerApi extends CommonApi {
 		} else if (standardizedSummonders.size() == 1) {
 			summonerList = standardizedSummonders.get(0);
 		} else if (standardizedSummonders.size() > 40) {
-			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+			throw new InvalidParameterException("Method limited to 40 summoner ids per query");
 		} else {
 			summonerList = StringUtils.join(standardizedSummonders, ",");
 		}
@@ -124,7 +124,7 @@ public class SummonerApi extends CommonApi {
 		} else if (summonerIds.size() == 1) {
 			summonerList = Long.toString(summonerIds.get(0));
 		} else if (summonerIds.size() > 40) {
-			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+			throw new InvalidParameterException("Method limited to 40 summoner ids per query");
 		} else {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
@@ -183,7 +183,7 @@ public class SummonerApi extends CommonApi {
 		} else if (summonerIds.size() == 1) {
 			summonerList = Long.toString(summonerIds.get(0));
 		} else if (summonerIds.size() > 40) {
-			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+			throw new InvalidParameterException("Method limited to 40 summoner ids per query");
 		} else {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
@@ -243,7 +243,7 @@ public class SummonerApi extends CommonApi {
 		} else if (summonerIds.size() == 1) {
 			summonerList = Long.toString(summonerIds.get(0));
 		} else if (summonerIds.size() > 40) {
-			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+			throw new InvalidParameterException("Method limited to 40 summoner ids per query");
 		} else {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
@@ -302,7 +302,7 @@ public class SummonerApi extends CommonApi {
 		} else if (summonerIds.size() == 1) {
 			summonerList = Long.toString(summonerIds.get(0));
 		} else if (summonerIds.size() > 40) {
-			throw new InvalidParameterException("Method limited to 40 summoner names per query");
+			throw new InvalidParameterException("Method limited to 40 summoner ids per query");
 		} else {
 			summonerList = StringUtils.join(summonerIds, ",");
 		}
