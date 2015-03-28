@@ -14,6 +14,7 @@ public class Dorans {
 	private final FeaturedGamesApi featuredGames = new FeaturedGamesApi(this);
 	private final GameApi game = new GameApi(this);
 	private final LeagueApi league = new LeagueApi(this);
+	private final StaticApi lolStatic = new StaticApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -55,6 +56,10 @@ public class Dorans {
 
 	public LeagueApi league() {
 		return league;
+	}
+
+	public StaticApi lolStatic() {
+		return lolStatic;
 	}
 
 	public Region getRegion() {

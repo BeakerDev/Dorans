@@ -1,0 +1,18 @@
+{
+  "title": "SummonerSpellList",
+  "description": "This object contains summoner spell list data",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.lol_static.SummonerSpellList",
+  "properties": {
+    "data": {
+      "type": "object",
+      "javaType": "java.util.Map<String, gg.buff.dorans.objects.generated.lol_static.SummonerSpell>"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}
