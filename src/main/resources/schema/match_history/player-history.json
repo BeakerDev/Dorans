@@ -1,0 +1,15 @@
+{
+  "title": "MatchSummary",
+  "description": "This object contains player match history information",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.match_history.PlayerHistory",
+  "properties": {
+    "matches": {
+      "title": "List of matches for the player",
+      "type": "array",
+      "items": {
+        "$ref": "match-summary.json"
+      }
+    }
+  }
+}
