@@ -48,7 +48,7 @@ public class MatchHistoryParams extends Params {
 	}
 
 	/**
-	 * 	The end index to use for fetching games.
+	 * The end index to use for fetching games.
 	 *
 	 * @param endIndex end index
 	 * @return this
@@ -92,6 +92,7 @@ public class MatchHistoryParams extends Params {
 		RANKED_TEAM_5X5("RANKED_TEAM_5x5");
 
 		private final String value;
+
 		RankedQueue(String value) {
 			this.value = value;
 		}

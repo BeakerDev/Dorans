@@ -15,7 +15,7 @@ public class StatsApi extends CommonApi {
 	 * Includes ranked stats for Twisted Treeline and Summoner's Rift.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional params for this method {@link StatsParams}
+	 * @param params     optional params for this method {@link StatsParams}
 	 * @return raw json ranked stats object
 	 * @throws DoransException
 	 */
@@ -28,7 +28,7 @@ public class StatsApi extends CommonApi {
 	 * Includes ranked stats for Twisted Treeline and Summoner's Rift.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional params for this method {@link StatsParams}
+	 * @param params     optional params for this method {@link StatsParams}
 	 * @return ranked stats object as {@link RankedStats}
 	 * @throws DoransException
 	 */
@@ -41,7 +41,7 @@ public class StatsApi extends CommonApi {
 	 * One summary is returned per queue type.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional params for this method {@link StatsParams}
+	 * @param params     optional params for this method {@link StatsParams}
 	 * @return raw json player stats summary list
 	 * @throws DoransException
 	 */
@@ -54,7 +54,7 @@ public class StatsApi extends CommonApi {
 	 * One summary is returned per queue type.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional params for this method {@link StatsParams}
+	 * @param params     optional params for this method {@link StatsParams}
 	 * @return player stats summary list as {@link PlayerStatsSummaryList}
 	 * @throws DoransException
 	 */

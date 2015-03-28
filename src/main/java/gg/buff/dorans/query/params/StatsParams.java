@@ -12,6 +12,7 @@ public class StatsParams extends Params {
 		SEASON_3("SEASON3");
 
 		private final String value;
+
 		Season(String value) {
 			this.value = value;
 		}

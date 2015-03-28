@@ -18,7 +18,7 @@ public class MatchHistoryApi extends CommonApi {
 	 * is specified, the other will be computed accordingly.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional parameters for this method {@link MatchHistoryParams}
+	 * @param params     optional parameters for this method {@link MatchHistoryParams}
 	 * @return raw json player history object
 	 * @throws DoransException
 	 */
@@ -35,7 +35,7 @@ public class MatchHistoryApi extends CommonApi {
 	 * is specified, the other will be computed accordingly.
 	 *
 	 * @param summonerId id of the summoner
-	 * @param params optional parameters for this method {@link MatchHistoryParams}
+	 * @param params     optional parameters for this method {@link MatchHistoryParams}
 	 * @return player history object as {@link PlayerHistory}
 	 * @throws DoransException
 	 */

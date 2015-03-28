@@ -4,7 +4,6 @@ import com.google.common.base.Joiner;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class StaticChampionQueryParams extends Params {
 	/**

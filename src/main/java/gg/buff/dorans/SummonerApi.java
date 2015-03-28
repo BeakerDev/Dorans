@@ -195,7 +195,7 @@ public class SummonerApi extends CommonApi {
 	 * Method to get summoners mastery pages from their IDs
 	 *
 	 * @param summonerIds {@link java.util.List} of summoner ids as {@link java.lang.Long}
-	 * @return {@link java.util.Map} of summoner id as {@link java.lang.Long} to mastery pages 
+	 * @return {@link java.util.Map} of summoner id as {@link java.lang.Long} to mastery pages
 	 * as {@link gg.buff.dorans.objects.generated.summoner.MasteryPages}
 	 * @throws DoransException
 	 */

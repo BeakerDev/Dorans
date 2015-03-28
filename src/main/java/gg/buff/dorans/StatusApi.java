@@ -49,6 +49,7 @@ public class StatusApi extends CommonApi {
 
 	/**
 	 * Method to get a region's shard
+	 *
 	 * @param region region to get the shard for
 	 * @return shard object as a {@link Shard}
 	 * @throws DoransException
