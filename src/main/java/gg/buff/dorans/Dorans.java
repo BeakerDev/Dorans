@@ -19,6 +19,7 @@ public class Dorans {
 	private final MatchApi match = new MatchApi(this);
 	private final MatchHistoryApi matchHistory = new MatchHistoryApi(this);
 	private final StatsApi stats = new StatsApi(this);
+	private final TeamApi team = new TeamApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -80,6 +81,10 @@ public class Dorans {
 
 	public StatsApi stats() {
 		return stats;
+	}
+
+	public TeamApi team() {
+		return team;
 	}
 
 	public Region getRegion() {
