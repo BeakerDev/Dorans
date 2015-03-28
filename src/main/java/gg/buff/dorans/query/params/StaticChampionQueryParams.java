@@ -74,10 +74,6 @@ public class StaticChampionQueryParams extends Params {
 		return this;
 	}
 
-	public Map<String, String> getParams() {
-		return getParams();
-	}
-
 	private List<String> convertToStringList(ChampData[] champData) {
 		List<String> result = new ArrayList<>();
 		for (ChampData o : champData) {
