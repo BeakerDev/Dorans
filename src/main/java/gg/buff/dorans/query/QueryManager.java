@@ -20,6 +20,7 @@ import java.util.Map;
 import static gg.buff.dorans.query.QueryConstants.APIKEY;
 import static gg.buff.dorans.query.QueryConstants.SEPARATOR;
 import static gg.buff.dorans.query.QueryConstants.STATIC_PATH;
+import static gg.buff.dorans.query.QueryConstants.STATUS_BASE;
 
 public class QueryManager {
 	private final OkHttpClient client;
@@ -61,6 +62,12 @@ public class QueryManager {
 
 	public String staticQuery(String path, Map<String, String> parameters) throws DoransException {
 		Request request = new Request.Builder().url(new StringBuilder().append(Region.GLOBAL.getResourceUrl()).append(STATIC_PATH).append(region.name().toLowerCase()).append(SEPARATOR).append(path).append(APIKEY).append(apiKey).append(buildParameters(parameters)).toString()).build();
+
+		return execute(request);
+	}
+
+	public String statusQuery(String path) throws DoransException {
+		Request request = new Request.Builder().url(new StringBuilder(STATUS_BASE).append(path).toString()).build();
 
 		return execute(request);
 	}
