@@ -75,7 +75,7 @@ public class TeamApi extends CommonApi {
 			teamList = StringUtils.join(teamIds, ",");
 		}
 
-		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/team/").append(teamIds).toString());
+		return getParent().getQuery().query(new StringBuilder(getVersion()).append("/team/").append(teamList).toString());
 	}
 
 	/**
