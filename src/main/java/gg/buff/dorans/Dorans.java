@@ -18,6 +18,7 @@ public class Dorans {
 	private final StatusApi lolStatus = new StatusApi(this);
 	private final MatchApi match = new MatchApi(this);
 	private final MatchHistoryApi matchHistory = new MatchHistoryApi(this);
+	private final StatsApi stats = new StatsApi(this);
 
 	public Dorans() {
 		query = new QueryManager();
@@ -75,6 +76,10 @@ public class Dorans {
 
 	public MatchHistoryApi matchHistory() {
 		return matchHistory;
+	}
+
+	public StatsApi stats() {
+		return stats;
 	}
 
 	public Region getRegion() {
