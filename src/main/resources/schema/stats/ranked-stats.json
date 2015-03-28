@@ -1,0 +1,24 @@
+{
+  "title": "RankedStats",
+  "description": "This object contains ranked stats information",
+  "type": "object",
+  "javaType": "gg.buff.dorans.objects.generated.stats.RankedStats",
+  "properties": {
+    "champions": {
+      "title": "Collection of aggregated stats summarized by champion.",
+      "type": "array",
+      "items": {
+        "$ref": "champion-stats.json"
+      }
+    },
+    "modifyDate": {
+      "title": "Date stats were last modified specified as epoch milliseconds",
+      "type": "object",
+      "javaObject": "long"
+    },
+    "summonerId": {
+      "title": "Summoner ID",
+      "type": "integer"
+    }
+  }
+}
